@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.game-frame iframe
+{
+  height: 300px;
+}
+
+@media (min-width: 640px) {
+  .game-frame iframe {
+      
+      height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-frame iframe {
+      
+      height: 720px;
+  }
+}
