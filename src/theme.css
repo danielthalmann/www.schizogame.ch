@@ -535,6 +535,9 @@
   .bottom-1 {
     bottom: calc(var(--spacing) * 1);
   }
+  .z-9 {
+    z-index: 9;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
