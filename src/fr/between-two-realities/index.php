@@ -18,7 +18,7 @@
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="/fr" class="flex items-center">
-                    <img src="../../images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
+                    <img src="/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Schizogame</span>
                 </a>
                 <div class="flex items-center lg:order-2 lg:hidden">
