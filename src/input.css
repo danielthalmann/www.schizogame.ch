@@ -23,3 +23,40 @@ html {
       height: 720px;
   }
 }
+
+.bg-psyquiz {
+  background-image: url(https://psyquiz.ch/wp-content/uploads/2023/03/hao-wang-pVq6YhmDPtk-unsplash2-scaled.jpg); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+}
+.bg-escape {
+  background-image: url(/images/escape-game_500x600.png); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+}
+
+.text-jds
+{
+  color: #50bd21;
+}
+
+.bg-jds
+{
+  background-color: #50bd21;
+}
+
+.text-greyjds
+{
+  background-color: #585858;
+}
+.bg-greyjds
+{
+  background-color: #585858;
+}
+
+@theme {  
+  --color-jds-500: #50bd21;
+  --color-jdsgray-500: #585858;
+}

@@ -4,9 +4,9 @@ window.addEventListener('click', (event) => {
     target = event.target;
     while (target != null && target != window.document)
     {
-        if (target.id == 'h-menu') {
+        if ('toggle' in target.dataset) {
 
-            menu = document.getElementById('mobile-menu');
+            menu = document.getElementById(target.dataset.toggle);
             if (menu != null)
             {
                 if (menu.classList.contains('hidden')) {
@@ -19,21 +19,6 @@ window.addEventListener('click', (event) => {
         }
         target = target.parentElement;
     }
-
-    target = event.target;
-    while (target != null && target != window.document)
-    {
-        if (target.id == 'mobile-menu') {
-
-            menu = document.getElementById('mobile-menu');
-            if (menu != null)
-            {
-                menu.classList.add('hidden');
-            }
-            break;
-        }
-        target = target.parentElement;
-    }    
 
 });
 

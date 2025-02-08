@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <title>Between two realities</title>
@@ -22,14 +22,14 @@
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Schizogame</span>
                 </a>
                 <div class="flex items-center lg:order-2 lg:hidden">
-                    <button class="mt-2 mr-4 sm:inline-block cursor-pointer" id="h-menu" type="button">
+                    <button class="mt-2 mr-4 sm:inline-block cursor-pointer" data-toggle="menu" type="button">
                         <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Mobile menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
                     </button>
                 </div>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 " id="mobile-menu">
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" data-toggle="menu" id="menu">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <?php echo menu('Home', '#') ?>
                         <?php echo menu('Jeux', '#game') ?>
@@ -279,7 +279,7 @@
             <figure class="max-w-screen-md mx-auto">
                 <svg class="h-12 mx-auto mb-3 text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"></path>
-                </svg> 
+                </svg>
                 <blockquote>
                     <p class="text-xl font-medium  md:text-2xl text-white">"Ce jeu est exceptionnel ! Il est assez fidèle à la réalité"</p>
                 </blockquote>
@@ -328,20 +328,7 @@
     </section>
     <!-- End block -->
 
-    <footer class="bg-gray-100">
-        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
 
-            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
-            <div class="text-center">
-                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
-                    <img src="../../images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
-                    Schizogame    
-                </a>
-                <span class="block text-sm text-center text-gray-500">© 2025 Schizogame
-                </span>
-            </div>
-        </div>
-    </footer>
 
     <?php include('../../components/footer.php'); ?>
 
