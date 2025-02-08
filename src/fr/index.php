@@ -142,7 +142,70 @@
         </div>
 
     </section>
-    <!-- End block -->    
+    <!-- End block -->
+     
+    <!-- Start block -->
+    <section class="bg-neutral-200">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+            <!-- Row -->
+            <div class="items-center">
+                <div class="text-gray-500 sm:text-lg">
+                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Qui sommes nous ?</h2>
+                    <div class="mb-3">
+                        <div>
+
+                            <p class="mb-5">Nous sommes le comité fribourgeois des Journée de la schizophrénie.</p>
+                        
+                            <p class="mb-5">Notre comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, nous œuvrons à la déstigmatisation des troubles psychiques et au renforcement de l’accès à nos prestations locales.</p>
+
+
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>    
+    <!-- End block -->   
+
+    
+    <!-- Start block -->
+    <section class="bg-white">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+            <!-- Row -->
+            <div class="items-center">
+                <div class="text-gray-500 sm:text-lg">
+                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Membres du comité</h2>
+                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
+                        <div>
+                            <a target="_blank" href="https://www.rfsm.ch/"><img src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
+                        </div> 
+                        <div>
+                            <a target="_blank" href="https://horizonsud.ch/"><img src="../../images/partners/logo-HorizonSud-scaled.jpg" alt="logo-horizon-sud"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://www.st-louis.ch/"><img src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://www.fr.ch/dsas"><img src="../../images/partners/logo-DSAS.jpg" alt="logo-dsas"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://www.lestraversees.ch/"><img src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
+                        </div> 
+                        <div>
+                            <a target="_blank" href="https://afaap.ch/"><img src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
+                        </div> 
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>    
+    <!-- End block -->   
+
 
     <!-- Start block -->
     <section class="bg-white">
@@ -186,41 +249,7 @@
     </section>    
     <!-- End block -->    
 
-    <!-- Start block -->
-    <section class="bg-white">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-            <!-- Row -->
-            <div class="items-center">
-                <div class="text-gray-500 sm:text-lg">
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Membres du comité</h2>
-                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
-                        <div>
-                            <a target="_blank" href="https://www.rfsm.ch/"><img src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
-                        </div> 
-                        <div>
-                            <a target="_blank" href="https://horizonsud.ch/"><img src="../../images/partners/logo-HorizonSud-scaled.jpg" alt="logo-horizon-sud"></a>
-                        </div>
-                        <div>
-                            <a target="_blank" href="https://www.st-louis.ch/"><img src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
-                        </div>
-                        <div>
-                            <a target="_blank" href="https://www.fr.ch/dsas"><img src="../../images/partners/logo-DSAS.jpg" alt="logo-dsas"></a>
-                        </div>
-                        <div>
-                            <a target="_blank" href="https://www.lestraversees.ch/"><img src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
-                        </div> 
-                        <div>
-                            <a target="_blank" href="https://afaap.ch/"><img src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
-                        </div> 
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>    
-    <!-- End block -->    
+ 
 
     <?php include('../components/footer.php'); ?>
     <script>

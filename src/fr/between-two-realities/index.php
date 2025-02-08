@@ -31,9 +31,24 @@
                 </div>
                 <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" data-toggle="menu" id="menu">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <?php echo menu('Home', '#') ?>
                         <?php echo menu('Jeux', '#game') ?>
                         <?php echo menu('Plus', '#more') ?>
+                        <?php echo menu('Troubles', '#troubles') ?>
+                        <li class="hidden lg:inline m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
+                            <div class="h-full inline-block border-jds-500 border-l-2"></div>
+                        </li>
+                        <li class="">
+                            <div class="inline-block">
+                                <ul class="flex flex-row mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                                    <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
+                                        <span class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
+                                    </li>
+                                    <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
+                                        <?php echo menu('DE', '/de/between-two-realities') ?>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -41,14 +56,50 @@
     </header>
 
     <!-- Start block -->
-    <section class="bg-white">
-        <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-            <div class="mr-auto place-self-center lg:col-span-7">
+    <section class="bg-radial-[at_50%_75%] from-neutral-800 to-jdsgray-500 text-white">
+        <div class="grid grid-cols-1 max-w-screen-xl mx-auto lg:min-h-screen">
+            <div class="mt-20 p-5">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#50bd21]">Between two realities</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl">
+                <a name="game"></a>
+                <p class="max-w-2xl mb-6 font-light text-gray-100 lg:mb-2 md:text-lg lg:text-xl">
                     Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. 
                 </p>
-            </div>
+                <div class="text-right">
+                    <button class="bg-jds-500 cursor-pointer text-neutral-100 p-3 rounded-t-lg shadow-lg shadow-jdsgray-500/50" id="togglefullscreen">En plein écran</button>
+                </div>
+                <div class="mx-auto align-middle">
+                    <div class="game-frame w-full mb-5">
+                        <iframe 
+                            id="game-frame"
+                            class="w-full"
+                            mozallowfullscreen="true" 
+                            msallowfullscreen="true" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            scrolling="no" 
+                            src="../../game/index.html?v=0.1.0" 
+                            allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
+                            allowtransparency="true" 
+                            webkitallowfullscreen="true">
+                        </iframe>
+                    </div>
+                    <script>
+                        var button = document.getElementById("togglefullscreen");
+
+                        button.addEventListener('click', function() {
+
+                            var elem = document.getElementById("game-frame");
+                            if (elem.requestFullscreen) {
+                                elem.requestFullscreen();
+                            }
+
+                        });
+
+                    </script>
+                    <!--img src="../../images/game.png" alt="game"/-->
+                </div>
+            </div>         
+            
         </div>
     </section>
     <!-- End block -->
@@ -73,42 +124,7 @@
                         Between two realities s’adresse à un large public car aucune scène choquante viendra troubler le voyage. Pourtant, les thèmes abordés demandent une certaine maturité émotionnelle pour saisir pleinement la richesse de l’expérience. 
                     </p>
                 </div>
-                <a name="game"></a>
-                <div class="mx-auto align-middle">
-                    <div class="game-frame w-full mb-5">
-                        <iframe 
-                            id="game"
-                            class="w-full"
-                            mozallowfullscreen="true" 
-                            msallowfullscreen="true" 
-                            frameborder="0" 
-                            allowfullscreen="true" 
-                            scrolling="no" 
-                            src="../../game/index.html?v=0.1.0" 
-                            allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
-                            allowtransparency="true" 
-                            webkitallowfullscreen="true">
-                        </iframe>
-                    </div>
-                    <div class="text-center">
-                        <button class="bg-blue-400 bottom-1 border-blue-900 p-3 rounded-xl text-gray-800" id="togglefullscreen">En plein écran</button>
-                    </div>
-                    <script>
-                        var button = document.getElementById("togglefullscreen");
 
-                        button.addEventListener('click', function() {
-
-                            var elem = document.getElementById("game");
-                            if (elem.requestFullscreen) {
-                                elem.requestFullscreen();
-                            }
-
-                        });
-
-                    </script>
-                    <!--img src="../../images/game.png" alt="game"/-->
-                </div>
-                
             </div>
 
         </div>
@@ -208,6 +224,7 @@
     <!-- End block -->
 
     <!-- Start block -->
+    <a name="troubles"></a>
     <a name="delires"></a>
     <a name="hallucinations"></a>
     <a name="desorganisation"></a>
