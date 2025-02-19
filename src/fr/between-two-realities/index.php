@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
 
-    <link rel="alternate" href="/fr/between-two-realities" hreflang="fr" />
-    <link rel="alternate" href="/de/between-two-realities" hreflang="de" />
+    <link rel="alternate" href="/fr/between-two-realities/" hreflang="fr" />
+    <link rel="alternate" href="/de/between-two-realities/" hreflang="de" />
 
     <?php include('../../components/header.php'); ?>
     <?php include('../../components/menu.php'); ?>
@@ -17,7 +17,7 @@
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="/fr" class="flex items-center">
+                <a href="/fr/" class="flex items-center">
                     <img src="/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Schizogame</span>
                 </a>
@@ -41,11 +41,11 @@
                             <div class="inline-block">
                                 <ul class="flex flex-row mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                        <span class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
+                                        <span class="underline underline-offset-5 block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
                                     </li>
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                        <?php echo menu('DE', '/de/between-two-realities') ?>
-                                    </li>
+                                    <a href="/de/between-two-realities/" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</a>
+                                    </li>                                    
                                 </ul>
                             </div>
                         </li>
@@ -327,18 +327,7 @@
                     <p class="mb-8 font-light lg:text-xl">
                         <b>Les journées de la schizophrénie</b>
                     </p>
-                    <p class="mb-4 font-light lg:text-xl">
-                        Depuis 2004, l’association PositiveMinders coordonne en Suisse et au niveau international les Journées de la Schizophrénie - JdS - pour raconter et dédramatiser la maladie psychique.
-                    </p>   
-                    <p class="mb-4 font-light lg:text-xl">
-                        Les partenaires des JdS organisent des événements visant à sensibiliser le grand public et les jeunes en particuliers sur les troubles psychiques. Ces manifestations ont également pour but d’aider les personnes concernées et leurs proches à sortir de l’isolement, les informer sur les possibilités de soins et de détection précoce pour augmenter les chances d’amélioration face à la maladie.
-                    </p>
-                    <p class="mb-4 font-light lg:text-xl">
-                        Le comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, ils œuvrent à la déstigmatisation des troubles psychiques et au renforcement de l’accès aux prestations locales.
-                    </p>
-                    <!--p class="mb-4 font-light lg:text-xl">
-                        <b>White Ermine Game Studio</b>
-                    </p-->
+
                 </div>
             </div>
         </div>

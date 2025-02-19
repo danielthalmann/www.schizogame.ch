@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
 
-    <link rel="alternate" href="/fr" hreflang="fr" />
-    <link rel="alternate" href="/de" hreflang="de" />
+    <link rel="alternate" href="/fr/" hreflang="fr" />
+    <link rel="alternate" href="/de/" hreflang="de" />
 
     <?php include('../components/menu.php'); ?>
 </head>
 <body>
 
-    <header class="fixed w-full">
+    <header class="fixed w-full" style="z-index: 100;">
         <nav class="transition-all duration-700 py-2.5 ">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="/fr" class="flex items-center">
+                <a href="/fr/" class="flex items-center">
                     <img src="../../images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap ">Schizogame</span>
                 </a>
@@ -40,10 +40,10 @@
                             <div class="inline-block">
                                 <ul class="flex flex-row mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                        <span class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
+                                        <span class="underline underline-offset-5 block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
                                     </li>
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                        <?php echo menu('DE', '/de') ?>
+                                    <a href="/de/" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</a>
                                     </li>
                                 </ul>
                             </div>
@@ -61,15 +61,17 @@
             <div class="my-25 lg:my-none mx-5 lg:mx-auto flex">
                 <div class="m-auto">
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-jds-500">Between two realities</h1>
-                    <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+                    <!--p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. 
+                    </p-->
+                    <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+                        Pour son édition 2025, le comité fribourgeois des Journées de la Schizophrénie vous invite à une expérience immersive inédite : un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.
                     </p>
 
                     
-                    <div class="w-full mb-15">
-                        <video class="w-full shadow-lg shadow-jdsgray-500/50" width="400" loop="true" autoplay="true" muted>
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    <div class=" mb-15 max-w-[640px] mx-auto">
+                        <video class="w-full shadow-lg shadow-jdsgray-500/50 " width="600" loop="true" autoplay="true" muted>
+                            <source src="../videos/between_two_realities.mp4" type="video/mp4">
                             Your browser does not support HTML video.
                         </video>    
                     </div>
@@ -92,8 +94,11 @@
     <section class="bg-neutral-900">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
-
-            <div class="bg-psyquiz text-white flex">
+            
+            <div class="bg-psyquiz text-white flex relative overflow-hidden">
+                <label class="top-0 right-0 whitespace-nowrap absolute">
+                    <span class="block translate-y-10 translate-x-16 origin-center rotate-30 text-neutral-800 bg-amber-400 border-t-1 border-white text-center w-[310px] py-2 shadow-jdsgray-500/50">nouvelles fonctionalités</span>
+                </label>
                 <div class="bg-neutral-900/75 p-5 lg:text-center my-15 lg:m-auto w-full">
 
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
@@ -101,6 +106,11 @@
                     </h1>
                     <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         Info ou intox : sauras-tu distinguer le vrai du faux sur les troubles psychiques ?
+                    </div>
+                    <div class="my-15 max-w-2xl mb-6 font-light lg:mb-10 md:text-lg lg:text-xl">
+                    <div class="mb-5">Découvrez les dernières améliorations</div>
+                        <div class="font-bold ">Une nouvelle langue</div>
+                        <div class="font-bold">Des questions actualisées</div>
                     </div>
                     <div class="my-10 text-center">
                         <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="https://psyquiz.ch/">
@@ -111,30 +121,38 @@
                 </div>
             </div>
 
-            <div class="bg-escape text-white flex">
+            <div class="bg-escape text-white flex relative overflow-hidden">
+                <label class="top-0 right-0 whitespace-nowrap absolute">
+                    <span class="block translate-y-10 translate-x-16 origin-center rotate-30 text-neutral-800 bg-amber-400 border-t-1 border-white text-center w-[310px] py-2 shadow-jdsgray-500/50">À venir</span>
+                </label>
                 <div class="bg-neutral-900/75 p-5 lg:text-center my-25 lg:m-auto  w-full">
 
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                         Escape Game
                     </h1>
                     <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-                    Cédric est un jeune
-                    étudiant fribourgeois
-                    qui ne va pas très bien
-                    en ce moment »
-                    <p>
-                    Sauriez-vous l’aider à mettre
-                    des mots sur ses symptômes
-                    et à trouver les soutiens dont il
-                    a besoin pour se mettre sur le
-                    chemin d’un rétablissement ?
-                    </p>
+                        <p class="mb-5">
+                        Cédric est un jeune
+                        étudiant fribourgeois
+                        qui ne va pas très bien
+                        en ce moment
+                        </p>
+                        <p class="mb-5">
+                        Sauriez-vous l’aider à mettre
+                        des mots sur ses symptômes
+                        et à trouver les soutiens dont il
+                        a besoin pour se mettre sur le
+                        chemin d’un rétablissement ?
+                        </p>
+                        <p class="mb-5">
+                            L’Escape Game des JdS 2024 se réinvente en format de poche ! Son lancement est prévu au courant 2025.
+                        </p>
                     </div>
                     <div class="my-10 text-center">
-                        <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="#">
+                        <!--a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="#">
                             <span>Plus d'informations</span>
                             <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
-                        </a>
+                        </a-->
                     </div>
                 </div>
             </div>            
@@ -154,10 +172,11 @@
                     <div class="mb-3">
                         <div>
 
-                            <p class="mb-5">Nous sommes le comité fribourgeois des Journée de la schizophrénie.</p>
+                            <p class="mb-5">Depuis 2004, l’association PositiveMinders coordonne en Suisse et au niveau international <span class="whitespace-pre">les Journées de la Schizophrénie (JdS)</span> pour raconter et dédramatiser la maladie psychique.</p>
                         
-                            <p class="mb-5">Notre comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, nous œuvrons à la déstigmatisation des troubles psychiques et au renforcement de l’accès à nos prestations locales.</p>
+                            <p class="mb-5">Les partenaires des JdS organisent des événements visant à sensibiliser le grand public et les jeunes en particuliers sur les troubles psychiques. Ces manifestations ont également pour but d’aider les personnes concernées et leurs proches à sortir de l’isolement, les informer sur les possibilités de soins et de détection précoce pour augmenter les chances d’amélioration face à la maladie.</p>
 
+                            <p class="mb-5">Le comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, ils œuvrent à la déstigmatisation des troubles psychiques et au renforcement de l’accès aux prestations locales.</p>
 
                         </div>
                    
@@ -182,7 +201,7 @@
                             <a target="_blank" href="https://www.rfsm.ch/"><img src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
                         </div> 
                         <div>
-                            <a target="_blank" href="https://horizonsud.ch/"><img src="../../images/partners/logo-HorizonSud-scaled.jpg" alt="logo-horizon-sud"></a>
+                            <a target="_blank" href="https://horizonsud.ch/"><img src="../../images/partners/logo-HorizonSud.png" alt="logo-horizon-sud"></a>
                         </div>
                         <div>
                             <a target="_blank" href="https://www.st-louis.ch/"><img src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
