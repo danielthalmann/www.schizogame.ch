@@ -71,7 +71,7 @@
                     
                     <div class=" mb-15 max-w-[640px] mx-auto">
                         <video class="w-full shadow-lg shadow-jdsgray-500/50 " width="600" loop="true" autoplay="true" muted>
-                            <source src="../videos/between_two_realities.mp4" type="video/mp4">
+                            <source src="../videos/between_two_realities_de.mp4" type="video/mp4">
                             Your browser does not support HTML video.
                         </video>    
                     </div>
