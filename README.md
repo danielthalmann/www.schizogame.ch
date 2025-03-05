@@ -37,5 +37,3 @@ Commande disponible après installation :
 | ```npm run serve``` | lance un serveur de dev php |
 | ```npm run build``` | effectue une seule compilation de la css |
 
-
-test
