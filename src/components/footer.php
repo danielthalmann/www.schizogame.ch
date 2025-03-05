@@ -7,7 +7,7 @@
                     <img src="/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
                     Schizogame    
                 </a>
-                <span class="block text-sm text-center text-gray-500">© 2025 Schizogame
+                <span class="block text-sm text-center text-gray-500">© 2025 Schizogame - by <a href="https://white-ermine.ch">White Ermine Game Studio</a>
                 </span>
             </div>
         </div>
