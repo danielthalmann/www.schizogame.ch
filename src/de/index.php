@@ -185,29 +185,29 @@
     
     <!-- Start block -->
     <section class="bg-white">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+        <div class="max-w-screen-xl px-4 pt-8 mx-auto space-y-12 lg:space-y-20 lg:pt-24 lg:px-6">
             <!-- Row -->
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
                     <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Komitee-Mitglieder</h2>
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
-                        <div>
-                            <a target="_blank" href="https://www.rfsm.ch/"><img src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
                         </div> 
-                        <div>
-                            <a target="_blank" href="https://horizonsud.ch/"><img src="../../images/partners/logo-HorizonSud.png" alt="logo-horizon-sud"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://horizonsud.ch/"><img class="max-h-52" src="../../images/partners/logo-HorizonSud.png" alt="logo-horizon-sud"></a>
                         </div>
-                        <div>
-                            <a target="_blank" href="https://www.st-louis.ch/"><img src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://www.st-louis.ch/"><img class="max-h-52" src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
                         </div>
-                        <div>
-                            <a target="_blank" href="https://www.fr.ch/dsas"><img src="../../images/partners/logo-DSAS.jpg" alt="logo-dsas"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://www.fr.ch/dsas"><img class="max-h-52" src="../../images/partners/logo-DSAS.jpg" alt="logo-dsas"></a>
                         </div>
-                        <div>
-                            <a target="_blank" href="https://www.lestraversees.ch/"><img src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://www.lestraversees.ch/"><img class="max-h-52" src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
                         </div> 
-                        <div>
-                            <a target="_blank" href="https://afaap.ch/"><img src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
+                        <div class="p-4">
+                            <a target="_blank" href="https://afaap.ch/"><img class="max-h-52" src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
                         </div> 
 
                     </div>
@@ -218,7 +218,35 @@
         </div>
     </section>    
     <!-- End block -->   
+    
+    <!-- Start block -->
+    <section class="bg-white">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+            <!-- Row -->
+            <div class="items-center">
+                <div class="text-gray-500 sm:text-lg">
+                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Partner</h2>
+                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
+                        <div class="flex flex-col items-center">
+                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="../../images/partners/logo_white_ermine.svg" alt="logo-logo_white_ermine"></a>
+                        </div>                        
+                        <div class="flex flex-col items-center">
+                            <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="../../images/partners/logo-MR.svg" alt="logo-michelereymond"></a>
+                        </div> 
+                        <div class="flex flex-col items-center">
+                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="../../images/partners/logo_polygravia.svg" alt="logo-logo_polygravia"></a>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <a target="_blank" href="https://fri-host.ch/"><img class="max-h-52" src="../../images/partners/logo_fri-host.png" alt="logo-fri-host"></a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+
+        </div>
+    </section>    
+    <!-- End block -->   
 
     <!-- Start block -->
     <section class="bg-white">
