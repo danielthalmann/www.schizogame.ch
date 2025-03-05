@@ -15,8 +15,9 @@ En plus des prérequis pour la production, pour le développement, il est néces
 
 ## Procédure d'installation
 
-1. cloner le dépôt GIT dans un dossier
-2. configurer la racine du site sur le dossier
+1. clonez le dépôt GIT dans un dossier
+2. configurez la racine du site sur le dossier
+3. lancez la commande suivante pour récupérer le jeu ```php install.php```
 
 ## Développement
 
