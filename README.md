@@ -39,5 +39,3 @@ Commande disponible après installation :
 
 
 
-
-
