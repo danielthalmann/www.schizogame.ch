@@ -5,15 +5,18 @@
     <title>Between two realities</title>
     <link href="../../theme.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Kevin ist ein junger Mensch mit Schizophrenie. In diesem interaktiven Spiel können Sie in seine Haut schlüpfen und seine Welt erleben.">
+    <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
 
     <link rel="alternate" href="/fr/between-two-realities/" hreflang="fr" />
     <link rel="alternate" href="/de/between-two-realities/" hreflang="de" />
-
+    <?php include('../../components/header_googletag.php'); ?>
     <?php include('../../components/header.php'); ?>
     <?php include('../../components/menu.php'); ?>
 </head>
 <body>
+    <?php include('../../components/body_googletag.php'); ?>
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">

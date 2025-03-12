@@ -5,15 +5,17 @@
     <title>Schizogame</title>
     <link href="../theme.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Für seine Ausgabe 2025 lädt Sie das Freiburger Komitee der Schizophrenie-Tage zu einer völlig neuen immersiven Erfahrung ein: ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.">
+    <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
 
     <link rel="alternate" href="/fr/" hreflang="fr" />
     <link rel="alternate" href="/de/" hreflang="de" />
-
+    <?php include('../components/header_googletag.php'); ?>
     <?php include('../components/menu.php'); ?>
 </head>
 <body>
-
+    <?php include('../components/header_googletag.php'); ?>
     <header class="fixed w-full" style="z-index: 100;">
         <nav class="transition-all duration-700 py-2.5 ">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -98,11 +100,11 @@
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                         Online- Event
                     </h1>                      
-                    <?php 
+                    <?php
                         $event_date = new DateTime('2025-03-19 15:30:00');
-                        $current_date = new DateTime();
-                        if ($event_date > $current_date):
-                    ?>
+    $current_date = new DateTime();
+    if ($event_date > $current_date):
+        ?>
                     <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         Schalten Sie am Mittwoch, den <span class="font-bold">19. März 2025</span>,<br>
                         von <span class="font-bold">14:30 bis 15:30 Uhr</span> live zu uns.<br>
@@ -117,7 +119,7 @@
                         </a>
                     </div>
 
-                    <?php  else:  ?>
+                    <?php else:  ?>
                      
                     <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         Hier finden Sie die Wiederholung der Live-Übertragung, die am Mittwoch, dem <span class="font-bold">19. März 2025</span>, 
