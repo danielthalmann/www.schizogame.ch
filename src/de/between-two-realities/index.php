@@ -80,7 +80,7 @@
                             frameborder="0" 
                             allowfullscreen="true" 
                             scrolling="no" 
-                            src="../../game/index.html?v=0.1.0" 
+                            src="../../game/index.html?v=1.0.2" 
                             allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share"
                             allowtransparency="true" 
                             webkitallowfullscreen="true">

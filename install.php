@@ -1,6 +1,6 @@
 <?php
 
-copy('https://white-ermine.ch/storage/app/media/games/between-two-realities-webgl-1.0.1.zip', 'game.zip');
+copy('https://white-ermine.ch/storage/app/media/games/between-two-realities-webgl-1.0.2.zip', 'game.zip');
 
 $zip = new ZipArchive();
 $res = $zip->open('game.zip');
