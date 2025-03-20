@@ -55,7 +55,7 @@
             </div>
         </nav>
     </header>
-    
+
 
     <!-- Start block -->
     <section class="bg-radial-[at_50%_75%] from-jds-500 to-jdsgray-500 text-white">
@@ -64,25 +64,25 @@
                 <div class="m-auto">
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-jds-500">Between two realities</h1>
                     <!--p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-                        Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. 
+                        Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.
                     </p-->
                     <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         Pour son édition 2025, le comité fribourgeois des Journées de la Schizophrénie vous invite à une expérience immersive inédite : un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.
                     </p>
 
-                    
+
                     <div class=" mb-15 max-w-[640px] mx-auto">
                         <video class="w-full shadow-lg shadow-jdsgray-500/50 " width="600" loop="true" autoplay="true" muted>
                             <source src="../videos/between_two_realities.mp4" type="video/mp4">
                             Your browser does not support HTML video.
-                        </video>    
+                        </video>
                     </div>
-                    
+
                     <div class="text-center">
                         <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="/fr/between-two-realities/">
                             <span>Incarner Kevin</span>
                             <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
-                        </a>                    
+                        </a>
                     </div>
 
 
@@ -99,7 +99,7 @@
                 <div class="p-5 lg:text-center my-15 lg:m-auto w-full">
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                         Événement en ligne
-                    </h1>  
+                    </h1>
                     <?php
                         $event_date = new DateTime('2025-03-19 15:30:00');
     $current_date = new DateTime();
@@ -127,7 +127,7 @@
                     <div class="my-15 max-w-2xl mb-6 font-light lg:mb-10 md:text-lg lg:text-xl">
                     </div>
                     <div class="my-10 text-center">
-                        <a target="_blank" class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="https://schizinfo.com/eventbrite_category/maison25/">
+                        <a target="_blank" class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="https://www.youtube.com/watch?v=mitRvWKm2c4">
                             <span>Regarder</span>
                             <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
                         </a>
@@ -139,7 +139,7 @@
                 <div class="p-5 lg:text-center lg:my-15 lg:m-auto w-full">
                     <img src="/images/INSTAGRAM_POST_2018x2018_150125.jpg">
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
     <!-- End block -->
@@ -147,7 +147,7 @@
     <!-- Start block -->
     <section class="bg-neutral-900">
         <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
-            
+
             <div class="bg-psyquiz text-white flex relative overflow-hidden">
                 <label class="top-0 right-0 whitespace-nowrap absolute">
                     <span class="block translate-y-10 translate-x-16 origin-center rotate-30 text-neutral-800 bg-amber-400 border-t-1 border-white text-center w-[310px] py-2 shadow-jdsgray-500/50">nouvelles fonctionalités</span>
@@ -208,13 +208,13 @@
                         </a-->
                     </div>
                 </div>
-            </div>            
+            </div>
 
         </div>
 
     </section>
     <!-- End block -->
-     
+
     <!-- Start block -->
     <section class="bg-neutral-200">
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
@@ -226,25 +226,25 @@
                         <div>
 
                             <p class="mb-5">Depuis 2004, l’association PositiveMinders coordonne en Suisse et au niveau international <span class="whitespace-pre">les Journées de la Schizophrénie (JdS)</span> pour raconter et dédramatiser la maladie psychique.</p>
-                        
+
                             <p class="mb-5">Les partenaires des JdS organisent des événements visant à sensibiliser le grand public et les jeunes en particuliers sur les troubles psychiques. Ces manifestations ont également pour but d’aider les personnes concernées et leurs proches à sortir de l’isolement, les informer sur les possibilités de soins et de détection précoce pour augmenter les chances d’amélioration face à la maladie.</p>
 
                             <p class="mb-5">Le comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, ils œuvrent à la déstigmatisation des troubles psychiques et au renforcement de l’accès aux prestations locales.</p>
 
                         </div>
-                   
+
                     </div>
                 </div>
             </div>
 
         </div>
-    </section>    
-    <!-- End block -->   
+    </section>
+    <!-- End block -->
 
-    
+
     <!-- Start block -->
     <section class="bg-white">
-        
+
         <div class="max-w-screen-xl px-4 pt-8 mx-auto space-y-12 lg:space-y-20 lg:pt-24 lg:px-6">
             <!-- Row -->
             <div class="items-center">
@@ -253,7 +253,7 @@
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
                         <div class="p-4">
                             <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
-                        </div> 
+                        </div>
                         <div class="p-4">
                             <a target="_blank" href="https://horizonsud.ch/"><img class="max-h-52" src="../../images/partners/logo-HorizonSud.png" alt="logo-horizon-sud"></a>
                         </div>
@@ -265,10 +265,10 @@
                         </div>
                         <div class="p-4">
                             <a target="_blank" href="https://www.lestraversees.ch/"><img class="max-h-52" src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
-                        </div> 
+                        </div>
                         <div class="p-4">
                             <a target="_blank" href="https://afaap.ch/"><img class="max-h-52" src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
-                        </div> 
+                        </div>
 
                     </div>
 
@@ -276,8 +276,8 @@
             </div>
 
         </div>
-    </section>    
-    <!-- End block -->   
+    </section>
+    <!-- End block -->
 
     <!-- Start block -->
     <section class="bg-white">
@@ -289,10 +289,10 @@
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
                         <div class="flex flex-col items-center">
                             <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="../../images/partners/logo_white_ermine.svg" alt="logo-logo_white_ermine"></a>
-                        </div>                        
+                        </div>
                         <div class="flex flex-col items-center">
                             <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="../../images/partners/logo-MR.svg" alt="logo-michelereymond"></a>
-                        </div> 
+                        </div>
                         <div class="flex flex-col items-center">
                             <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="../../images/partners/logo_polygravia.svg" alt="logo-logo_polygravia"></a>
                         </div>
@@ -305,8 +305,8 @@
             </div>
 
         </div>
-    </section>    
-    <!-- End block -->       
+    </section>
+    <!-- End block -->
 
 
     <!-- Start block -->
@@ -320,27 +320,27 @@
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://positiveminders.com/">positiveminders.com</a> regroupe des infos sur la santé mentale en général
-                        </div> 
+                        </div>
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://schizinfo.com/">schizinfo.com</a> sur les troubles de la schizophrénie
-                        </div> 
+                        </div>
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://santepsy.ch/">santepsy.ch</a> promotion de la santé mentale dans les cantons latins
-                        </div> 
+                        </div>
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://www.promentesana.org/">www.promentesana.org</a> défend les intérêts et les droits des personnes souffrant de troubles ou d’un handicap psychiques
-                        </div> 
+                        </div>
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://associationciao.ch/">associationciao.ch</a> information pour les 11-20 ans
-                        </div> 
+                        </div>
 
                         <div class="mb-8">
                             <a class="text-jds-500" target="_blank" href="https://psyquiz.ch/">psyquiz.ch</a> Quiz sur différents troubles en santé mentale
-                        </div> 
+                        </div>
 
                     </div>
 
@@ -348,10 +348,10 @@
             </div>
 
         </div>
-    </section>    
-    <!-- End block -->    
+    </section>
+    <!-- End block -->
 
- 
+
 
     <?php include('../components/footer.php'); ?>
     <script>
@@ -369,6 +369,6 @@
             }
         });
     </script>
-    
+
 </body>
 </html>
