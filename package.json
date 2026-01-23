@@ -5,7 +5,7 @@
     "tailwindcss": "^4.0.2"
   },
   "scripts": {
-    "serve": "php -S localhost:8000 -t ./src",
+    "serve": "npx concurrently -c \"#93c5fd,#c4b5fd\" \"php -S localhost:8000 -t src/\" \"npm run dev\" --names=server,tailwindcss",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/theme.css --watch",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/theme.css --build"
   }
