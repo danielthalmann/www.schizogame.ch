@@ -1,0 +1,1 @@
+<h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500"><?= $title ?></h2>

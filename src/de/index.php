@@ -178,7 +178,7 @@
             <!-- Row -->
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Wer sind wir?</h2>
+                    <?= component('title2', ['title' => 'Wer sind wir?']) ?>
                     <div class="mb-3">
                         <div>
 
@@ -205,7 +205,7 @@
             <!-- Row -->
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Komitee-Mitglieder</h2>
+                    <?= component('title2', ['title' => 'Komitee-Mitglieder']) ?>
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
                         <div class="p-4">
                             <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-RFSM-2019.jpg') ?>" alt="logo-RFSM"></a>
@@ -241,7 +241,7 @@
             <!-- Row -->
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Externe Links</h2>
+                    <?= component('title2', ['title' => 'Externe Links']) ?>
                     <div class="">
 
                         <div class="mb-8">

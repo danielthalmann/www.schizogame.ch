@@ -6,9 +6,9 @@
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
                     <?php if ($lang == 'fr') : ?>
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Nos partenaires</h2>
+                    <?= component('title2', ['title' => 'Nos partenaires']) ?>
                     <?php elseif ($lang == 'de') : ?>
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Partner</h2>
+                    <?= component('title2', ['title' => 'Partner']) ?>
                     <?php endif; ?>
 
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
