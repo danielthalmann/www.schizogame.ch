@@ -1139,11 +1139,6 @@
       order: 2;
     }
   }
-  .lg\:order-last {
-    @media (width >= 64rem) {
-      order: calc(infinity);
-    }
-  }
   .lg\:order-none {
     @media (width >= 64rem) {
       order: 0;
