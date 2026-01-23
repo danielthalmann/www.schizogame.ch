@@ -59,61 +59,35 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
 
-            <div class="bg-psyquiz text-white flex relative overflow-hidden">
-                <label class="top-0 right-0 whitespace-nowrap absolute">
-                    <span class="block translate-y-10 translate-x-16 origin-center rotate-30 text-neutral-800 bg-amber-400 border-t-1 border-white text-center w-[310px] py-2 shadow-jdsgray-500/50">neue Funktionen</span>
-                </label>
-                <div class="bg-neutral-900/75 p-5 lg:text-center my-15 lg:m-auto w-full">
 
+            <?= component('card_game',
+            [
+                //'toptext' => 'neue Funktionen',
+                'css' => 'bg-psyquiz',
+                'title' => 'PsyQuiz 4.0',
+                'sentences' => [
+                    'Info oder Intox: Testen Sie Ihre Kenntnisse über psychische Störungen.',
+                    '&nbsp;',
+                    'Entdecken Sie die neuesten Verbesserungen',
+                    '<span class="font-bold">Eine neue Sprache<br>Aktualisierte Fragen</span>'
+                ],
+                'link_url' => 'https://psyquiz.ch/de',
+                'link_text' => 'Weitere Informationen'
+            ]) ?>
 
-                    <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
-                        PsyQuiz 4.0
-                    </h1>
-                    <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-                        Info oder Intox: Testen Sie Ihre Kenntnisse über psychische Störungen.
-                    </div>
-                    <div class="my-15 max-w-2xl mb-6 font-light lg:mb-10 md:text-lg lg:text-xl">
-                    <div class="mb-5">Entdecken Sie die neuesten Verbesserungen</div>
-                        <div class="font-bold ">Eine neue Sprache</div>
-                        <div class="font-bold">Aktualisierte Fragen</div>
-                    </div>
-                    <div class="my-10 text-center">
-                        <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="https://psyquiz.ch/de/">
-                            <span>Weitere Informationen</span>
-                            <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <?= component('card_game',
+            [
+                //'toptext' => 'neue Funktionen',
+                //'css' => 'bg-psyquiz',
+                'title' => 'Between two realities',
+                'sentences' => [
+                    'Ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.' , 
+                    'Kevin ist ein junger Mensch mit Schizophrenie. In diesem interaktiven Spiel können Sie in seine Haut schlüpfen und seine Welt erleben.',
+                ],
+                'link_url' => url( 'de/between-two-realities/'),
+                'link_text' => 'Weitere Informationen'
+            ]) ?> 
 
-            <div class="bg-escape text-white flex relative overflow-hidden">
-                <label class="top-0 right-0 whitespace-nowrap absolute">
-                    <span class="block translate-y-10 translate-x-16 origin-center rotate-30 text-neutral-800 bg-amber-400 border-t-1 border-white text-center w-[310px] py-2 shadow-jdsgray-500/50">In der Zukunft</span>
-                </label>
-                <div class="bg-neutral-900/75 p-5 lg:text-center my-25 lg:m-auto  w-full">
-
-                    <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
-                        Escape Game
-                    </h1>
-                    <div class="my-15 max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
-                        <p class="mb-5">
-                        Cédric ist ein junger Student aus Freiburg, dem es im Moment nicht besonders gut geht.
-                        </p>
-                        <p class="mb-5">
-                        Können Sie ihm helfen, seine Symptome in Worte zu fassen und die Unterstützung zu finden, die er braucht, um sich auf den Weg der Genesung zu begeben?
-                        </p>
-                        <p class="mb-5">
-                        Das Escape Game der Weltjugendtage 2024 erfindet sich im Taschenformat neu! Es soll im Laufe des Jahres 2025 eingeführt werden.
-                        </p>
-                    </div>
-                    <div class="my-10 text-center">
-                        <!--a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="#">
-                            <span>Weitere Informationen</span>
-                            <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
-                        </a-->
-                    </div>
-                </div>
-            </div>
 
         </div>
 
