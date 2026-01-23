@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include('../../Bootstrap.php'); ?>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -7,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
-    <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
+    <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
     <link rel="alternate" href="/fr/between-two-realities/" hreflang="fr" />
     <link rel="alternate" href="/de/between-two-realities/" hreflang="de" />
-    <?php include('../../components/header_googletag.php'); ?>
-    <?php include('../../components/header.php'); ?>
-    <?php include('../../components/menu.php'); ?>
+    <?php include(base_path('components/header_googletag.php')); ?>
+    <?php include(base_path('components/header.php')); ?>
+    <?php include(base_path('components/menu.php')); ?>
 </head>
 <body>
-    <?php include('../../components/body_googletag.php'); ?>
+    <?php include(base_path('components/body_googletag.php')); ?>
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -99,7 +100,7 @@
                         });
 
                     </script>
-                    <!--img src="../../images/game.png" alt="game"/-->
+                    <!--img src="<?= url('images/game.png') ?>" alt="game"/-->
                 </div>
             </div>         
             
@@ -142,82 +143,82 @@
 
             <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-12 md:space-y-0">
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/photo.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/photo.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">la photo de sa famille</h3>
                     <p class="font-light text-gray-800">La schizophrénie peut avoir une composante génétique. Les antécédents familiaux peuvent augmenter le risque mais d’autres facteurs biopsychosociaux comme par exemple l’environnement, des facteurs biologiques, le stress ou encore la consommation de substances jouent également un rôle dans l’apparition ou la gravité du trouble.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/wardrobe.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/wardrobe.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">l'armoire</h3>
                     <p class="font-light text-gray-800">Les <a class="font-semibold text-[#50bd21]" href="#hallucinations">hallucinations</a> sont des perceptions sensorielles en absence de tout stimulus (acoustique, visuel,…) que la personne concernée considère comme faisant partie de la réalité. Dans le cas de Kevin, il voit et entend Horus. Dans la schizophrénie, ces hallucinations ont souvent un impact négatif, et se manifeste sous forme d’injonctions et de commentaires menaçants ou négatifs qui renforcent l’anxiété, la méfiance ou la souffrance émotionnelle de la personne.</p>
                 </div>                
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/bed.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/bed.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le lit</h3>
                     <p class="font-light text-gray-800">La perte de motivation ou d’intérêt ainsi que le retrait social font partie des <a class="font-semibold text-[#50bd21]" href="#symptomes-negatifs">symptômes négatifs</a> de la schizophrénie. On observe également souvent des troubles du sommeil comme l’insomnie, des réveils fréquents ou des rêves perturbants, ce qui peuvent aggraver les autres symptômes.</p>
                 </div>  
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/curtain.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/curtain.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">la fenêtre</h3>
                     <p class="font-light text-gray-800">La perte de motivation et d’énergie, un <a class="font-semibold text-[#50bd21]" href="#symptomes-negatifs">symptôme négatif</a> de la schizophrénie, peut rendre le monde extérieur moins attirant et plus difficile d’accès. De plus, certaines personnes éprouvent aussi un sentiment de persécution (<a class="font-semibold text-[#50bd21]" href="#delires">délire</a> de persécution), comme dans le cas Kevin qui pense être observé ou suivi à travers la fenêtre, ce qui le rend méfiant et donc moins enclin à sortir et à rencontrer des gens, ce qui peut accentuer son isolement social (autre symptôme négatif de la schizophrénie).</p>
                 </div> 
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/book.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/book.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le livre</h3>
                     <p class="font-light text-gray-800">Une majorité (mais pas tous) des personnes souffrant de schizophrénie présentent des <a class="font-semibold text-[#50bd21]" href="#troubles-cognitifs">troubles cognitifs</a> comme la difficulté à se concentrer, à mémoriser, à organiser ses pensées ou à suivre une discussion ou un film. Ces difficultés peuvent être améliorées grâce à des thérapies ciblées.</p>
                 </div> 
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/medicines.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/medicines.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">les médicaments</h3>
                     <p class="font-light text-gray-800">Les traitements médicamenteux comme les antipsychotiques sont essentiels pour réduire les symptômes de la schizophrénie. Ils ne « guérissent » pas la maladie mais aide à stabiliser l’état de la personne et à améliorer sa qualité de vie. Il faut être attentif à la présence et à la gestion de potentiels effets secondaires de tels médicaments.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/mirror.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/mirror.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le miroir</h3>
                     <p class="font-light text-gray-800">Les illusions peuvent concerner des altérations de l’image de soi. Contrairement aux <a class="font-semibold text-[#50bd21]" href="#hallucinations">hallucinations</a>, il y a un stimulus mais celui-ci est perçu d’une manière distordue ou inexacte. Une personne pourrait se voir déformée ou différente dans le miroir. Ces perceptions erronées entrainent de l’anxiété, de la confusion ou un sentiment de détresse, affectant ainsi l’estime de soi et le rapport à la réalité. Elles peuvent être présentes dans la schizophrénie sans en être un critère déterminant.</p>
                 </div>  
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/watercloset.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/watercloset.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">les toilettes</h3>
                     <p class="font-light text-gray-800">Les troubles du sommeil comme l’insomnie ou les réveils fréquents pendant la nuit sont souvent présents chez les personnes souffrant de schizophrénie. Ils peuvent être causés par l’anxiété associée à différents symptômes (les hallucinations peuvent augmenter durant la nuit) ou les déséquilibres liés à la maladie (la baisse de l’énergie avec réduction de l’activité diurne réduit le besoin de sommeil).</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/horus.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/horus.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">Horus</h3>
                     <p class="font-light text-gray-800">Les <a class="font-semibold text-[#50bd21]" href="#hallucinations">hallucinations</a> sont des perceptions qui semblent réelles pour la personne concernée en absence de tout stimulus sensoriel (auditifs, visuels ou autres). Dans le cas de Kevin, il voit et entend Horus. Souvent, ces hallucinations, notamment acoustico-verbales, sont perçues comme des influences négatives, à travers des propos manipulateurs ou menaçants qui renforcent l’anxiété, la méfiance ou la souffrance émotionnelle de la personne.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/sink.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/sink.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le lavabo</h3>
                     <p class="font-light text-gray-800">Les <a class="font-semibold text-[#50bd21]" href="#symptomes-negatifs">symptômes négatifs</a> de la schizophrénie peuvent aussi entraîner une négligence de l’hygiène personnelle. Prendre soin de son hygiène peut aider à renforcer la routine quotidienne, favoriser le bien-être émotionnel et améliorer le sentiment de contrôle sur sa vie.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/postit.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/postit.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le post-It</h3>
                     <p class="font-light text-gray-800">Les troubles de la mémoire, de la concentration et des capacités d'organisation et de planification sont des <a class="font-semibold text-[#50bd21]" href="#troubles-cognitifs">troubles cognitifs</a> souvent associés à la schizophrénie. Ces difficultés peuvent rendre difficile la réalisation et planification des tâches.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/assiette.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/assiette.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">l'assiette sur la table</h3>
                     <p class="font-light text-gray-800">L’avolition ou aboulie, est un <a class="font-semibold text-[#50bd21]" href="#symptomes-negatifs">symptôme négatif</a> de la schizophrénie. Elle se manifeste par des difficultés ou impossibilité à exercer sa volonté, notamment dans le passage à l'action, avec tendance à différer celle-ci (procrastination).</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/radio.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/radio.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">la radio</h3>
                     <p class="font-light text-gray-800">Le <a class="font-semibold text-[#50bd21]" href="#delires">délire</a> de référence, est un trouble délirant qui peut apparaître dans la schizophrénie. La personne est convaincue que des évènements de son environnement ont une signification particulière personnelle et souvent cachée en lien avec elle. Par exemple, les informations diffusées à la radio, à la télévision ou sur internet peuvent être interprétées comme des messages adressés directement et intentionnellement à la personne. Le délire de concernement repose sur les mêmes interprétations mais avec la perception d’une intentionnalité malveillante.</p>
                 </div>   
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/phone.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/phone.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">le téléphone</h3>
                     <p class="font-light text-gray-800">Le <a class="font-semibold text-[#50bd21]" href="#delires">délire</a> de persécution est un symptôme psychotique qui apparaît fréquemment dans certaines formes de schizophrénie, notamment dans le type paranoïde. Il se caractérise par des idées délirantes où la personne est convaincue qu’elle est menacée, espionnée, suivie, ou victime d’une conspiration, sans fondement rationnel.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/distributor.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/distributor.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">distributeur</h3>
                     <p class="font-light text-gray-800">Le <a class="font-semibold text-[#50bd21]" href="#delires">délire</a> d’empoisonnement est un type de délire de persécution dans lequel une personne croit, sans preuve objective, qu'on cherche à l'empoisonner ou à nuire à sa santé en contaminant sa nourriture, ses boissons ou son environnement. Ce délire peut isoler la personne, altérer ses relations sociales et engendrer des carences alimentaires ou une déshydratation si elle évite systématiquement de consommer des aliments ou boissons qu’elle perçoit comme dangereux.</p>
                 </div>
                 <div>
-                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="../../images/thumbnails/bus.png"></div>
+                    <div class="p-5 bg-gray-100 rounded-full mb-5 w-40 mx-auto"><img src="<?= url('images/thumbnails/bus.png') ?>"></div>
                     <h3 class="mb-2 text-2xl font-bold text-[#50bd21]">bus</h3>
                     <p class="font-light text-gray-800">Chez une personne atteinte de schizophrénie, le stress lié à la présence de nombreuses personnes peut être particulièrement intense et exacerber les symptômes de la maladie. Ce stress peut parfois déclencher la réapparition ou l’exacerbation de symptômes psychotiques comme des idées délirantes ou des hallucinations. Des difficultés cognitives, ou un isolement social préalable sont des facteurs qui peuvent augmenter la sensibilité au stress.</p>
                 </div>                  
@@ -339,7 +340,7 @@
 
 
 
-    <?php include('../../components/footer.php'); ?>
+    <?php include(base_path('components/footer.php')); ?>
 
 </body>
 </html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include('../Bootstrap.php'); ?>
 <html lang="de">
 <head>
     <meta charset="utf-8">
@@ -7,20 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Für seine Ausgabe 2025 lädt Sie das Freiburger Komitee der Schizophrenie-Tage zu einer völlig neuen immersiven Erfahrung ein: ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
-    <link rel="icon" href="../../images/logo.svg" sizes="32x32" />
+    <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
     <link rel="alternate" href="/fr/" hreflang="fr" />
     <link rel="alternate" href="/de/" hreflang="de" />
-    <?php include('../components/header_googletag.php'); ?>
-    <?php include('../components/menu.php'); ?>
+    <?php include(base_path('components/header_googletag.php')); ?>
+    <?php include(base_path('components/menu.php')); ?>
 </head>
 <body>
-    <?php include('../components/header_googletag.php'); ?>
+    <?php include(base_path('components/header_googletag.php')); ?>
     <header class="fixed w-full" style="z-index: 100;">
         <nav class="transition-all duration-700 py-2.5 ">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="/de/" class="flex items-center">
-                    <img src="../../images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
+                    <img src="<?= url('images/logo.svg') ?>" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap ">Schizogame</span>
                 </a>
                 <div class="flex items-center lg:order-2 lg:hidden">
@@ -247,22 +248,22 @@
                     <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Komitee-Mitglieder</h2>
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
                         <div class="p-4">
-                            <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="../../images/partners/logo-RFSM-2019.jpg" alt="logo-RFSM"></a>
+                            <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-RFSM-2019.jpg') ?>" alt="logo-RFSM"></a>
                         </div>
                         <div class="p-4">
-                            <a target="_blank" href="https://horizonsud.ch/"><img class="max-h-52" src="../../images/partners/logo-HorizonSud.png" alt="logo-horizon-sud"></a>
+                            <a target="_blank" href="https://horizonsud.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-HorizonSud.png') ?>" alt="logo-horizon-sud"></a>
                         </div>
                         <div class="p-4">
-                            <a target="_blank" href="https://www.st-louis.ch/"><img class="max-h-52" src="../../images/partners/logo-st-louis.jpg" alt="logo-st-louis"></a>
+                            <a target="_blank" href="https://www.st-louis.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-st-louis.jpg') ?>" alt="logo-st-louis"></a>
                         </div>
                         <div class="p-4">
-                            <a target="_blank" href="https://www.fr.ch/dsas"><img class="max-h-52" src="../../images/partners/logo-DSAS.jpg" alt="logo-dsas"></a>
+                            <a target="_blank" href="https://www.fr.ch/dsas"><img class="max-h-52" src="<?= url('images/partners/logo-DSAS.jpg') ?>" alt="logo-dsas"></a>
                         </div>
                         <div class="p-4">
-                            <a target="_blank" href="https://www.lestraversees.ch/"><img class="max-h-52" src="../../images/partners/logo-Les_Traversees.png" alt="logo-lestraversees"></a>
+                            <a target="_blank" href="https://www.lestraversees.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-Les_Traversees.png') ?>" alt="logo-lestraversees"></a>
                         </div>
                         <div class="p-4">
-                            <a target="_blank" href="https://afaap.ch/"><img class="max-h-52" src="../../images/partners/logo-AFAAP.jpg" alt="logo-AFAAP"></a>
+                            <a target="_blank" href="https://afaap.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-AFAAP.jpg') ?>" alt="logo-AFAAP"></a>
                         </div>
 
                     </div>
@@ -283,16 +284,16 @@
                     <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Partner</h2>
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
                         <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="../../images/partners/logo_white_ermine.svg" alt="logo-logo_white_ermine"></a>
+                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo-logo_white_ermine"></a>
                         </div>
                         <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="../../images/partners/logo-MR.svg" alt="logo-michelereymond"></a>
+                            <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-MR.svg') ?>" alt="logo-michelereymond"></a>
                         </div>
                         <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="../../images/partners/logo_polygravia.svg" alt="logo-logo_polygravia"></a>
+                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_polygravia.svg') ?>" alt="logo-logo_polygravia"></a>
                         </div>
                         <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://fri-host.ch/"><img class="max-h-52" src="../../images/partners/logo_fri-host.png" alt="logo-fri-host"></a>
+                            <a target="_blank" href="https://fri-host.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_fri-host.png') ?>" alt="logo-fri-host"></a>
                         </div>
                     </div>
 
@@ -347,7 +348,7 @@
 
 
 
-    <?php include('../components/footer.php'); ?>
+    <?php include(base_path('components/footer.php')); ?>
     <script>
         document.addEventListener('scroll', () => {
             className = 'bg-gray-200';

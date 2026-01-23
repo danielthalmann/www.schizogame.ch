@@ -14,5 +14,18 @@ function dd($var)
 
 function url(string $url): string
 {
-    return '/'. $url;
+    return protocol() . $_SERVER['HTTP_HOST'] . '/' . $url;
+}
+
+function protocol()
+{
+    if (isset($_SERVER['HTTPS']) &&
+        ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||
+        isset($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
+        $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+        return 'https://';
+    }
+    else {
+        return 'http://';
+    }
 }
