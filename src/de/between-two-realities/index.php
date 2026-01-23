@@ -14,7 +14,6 @@
     <link rel="alternate" href="<?= url('de/between-two-realities/') ?>" hreflang="de" />
     <?php include(base_path('components/header_googletag.php')); ?>
     <?php include(base_path('components/header.php')); ?>
-    <?php include(base_path('components/menu.php')); ?>
 </head>
 <body>
     <?php include(base_path('components/body_googletag.php')); ?>
@@ -317,7 +316,8 @@
         </div>
       </section>
     <!-- End block -->
-   
+
+       
     <!-- Start block -->
     <section class="bg-gray-300">
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
@@ -337,9 +337,9 @@
     </section>
     <!-- End block -->
 
+    <?= component('partners_btr', ['lang' => 'de']) ?>
 
-
-    <?php include(base_path('components/footer.php')); ?>
+    <?= component('footer', ['lang' => 'de']) ?>
 
 </body>
 </html>

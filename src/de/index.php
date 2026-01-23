@@ -13,50 +13,10 @@
     <link rel="alternate" href="<?= url('fr/') ?>" hreflang="fr" />
     <link rel="alternate" href="<?= url('de/') ?>" hreflang="de" />
     <?php include(base_path('components/header_googletag.php')); ?>
-    <?php include(base_path('components/menu.php')); ?>
 </head>
 <body>
-    <?php include(base_path('components/header_googletag.php')); ?>
-    <header class="fixed w-full" style="z-index: 100;">
-        <nav class="transition-all duration-700 py-2.5 ">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="<?= url('de/') ?>" class="flex items-center">
-                    <img src="<?= url('images/logo.svg') ?>" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap ">Schizogame</span>
-                </a>
-                <div class="flex items-center lg:order-2 lg:hidden">
-                    <button class="mt-2 mr-4 sm:inline-block cursor-pointer" data-toggle="menu" type="button">
-                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Mobile menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" data-toggle="menu" id="menu">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <?php echo menu('Psyquiz', 'https://psyquiz.ch/de/') ?>
-                        <?php echo menu('Between two realities', url('de/between-two-realities/')) ?>
-                        <li class="hidden lg:inline m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                            <div class="h-full inline-block border-jds-500 border-l-2"></div>
-                        </li>
-                        <li class="">
-                            <div class="inline-block">
-                                <ul class="flex flex-row mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                                    <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                    <a href="<?= url('fr/') ?>" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</a>
-                                    </li>
-                                    <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                    <span class="underline underline-offset-5 block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+    <?php include(base_path('components/body_googletag.php')); ?>
+    <?= component('menu_root', ['lang' => 'de']) ?>
 
     <!-- Start block -->
     <section class="bg-radial-[at_50%_75%] from-jds-500 to-jdsgray-500 text-white">
@@ -281,35 +241,6 @@
             <!-- Row -->
             <div class="items-center">
                 <div class="text-gray-500 sm:text-lg">
-                    <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Partner</h2>
-                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
-                        <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo-logo_white_ermine"></a>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-MR.svg') ?>" alt="logo-michelereymond"></a>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_polygravia.svg') ?>" alt="logo-logo_polygravia"></a>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://fri-host.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_fri-host.png') ?>" alt="logo-fri-host"></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End block -->
-
-    <!-- Start block -->
-    <section class="bg-white">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-            <!-- Row -->
-            <div class="items-center">
-                <div class="text-gray-500 sm:text-lg">
                     <h2 class="mb-8 text-3xl font-extrabold tracking-tight text-center lg:mb-8 lg:text-3xl text-jds-500">Externe Links</h2>
                     <div class="">
 
@@ -348,7 +279,7 @@
 
 
 
-    <?php include(base_path('components/footer.php')); ?>
+    <?= component('footer', ['lang' => 'de']) ?>
     <script>
         document.addEventListener('scroll', () => {
             className = 'bg-gray-200';
