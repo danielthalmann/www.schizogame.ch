@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Schizogame</title>
-    <link href="../theme.css" rel="stylesheet">
+    <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Für seine Ausgabe 2025 lädt Sie das Freiburger Komitee der Schizophrenie-Tage zu einer völlig neuen immersiven Erfahrung ein: ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
-    <link rel="alternate" href="/fr/" hreflang="fr" />
-    <link rel="alternate" href="/de/" hreflang="de" />
+    <link rel="alternate" href="<?= url('fr/') ?>" hreflang="fr" />
+    <link rel="alternate" href="<?= url('de/') ?>" hreflang="de" />
     <?php include(base_path('components/header_googletag.php')); ?>
     <?php include(base_path('components/menu.php')); ?>
 </head>
@@ -20,7 +20,7 @@
     <header class="fixed w-full" style="z-index: 100;">
         <nav class="transition-all duration-700 py-2.5 ">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="/de/" class="flex items-center">
+                <a href="<?= url('de/') ?>" class="flex items-center">
                     <img src="<?= url('images/logo.svg') ?>" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap ">Schizogame</span>
                 </a>
@@ -35,7 +35,7 @@
                 <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" data-toggle="menu" id="menu">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <?php echo menu('Psyquiz', 'https://psyquiz.ch/de/') ?>
-                        <?php echo menu('Between two realities', '/de/between-two-realities') ?>
+                        <?php echo menu('Between two realities', url('de/between-two-realities/')) ?>
                         <li class="hidden lg:inline m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
                             <div class="h-full inline-block border-jds-500 border-l-2"></div>
                         </li>
@@ -43,7 +43,7 @@
                             <div class="inline-block">
                                 <ul class="flex flex-row mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                    <a href="/fr/" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</a>
+                                    <a href="<?= url('fr/') ?>" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</a>
                                     </li>
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
                                     <span class="underline underline-offset-5 block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</span>
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="text-center">
-                        <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="/de/between-two-realities/">
+                        <a class="bg-jds-500 text-neutral-100 p-3 rounded-lg shadow-lg shadow-jdsgray-500/50" href="<?= url('de/between-two-realities/') ?>">
                             <span> Kevin verkörpern</span>
                             <svg class="inline ml-2 mb-1 h-4 fill-neutral-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>
                         </a>

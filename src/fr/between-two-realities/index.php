@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Between two realities</title>
-    <link href="../../theme.css" rel="stylesheet">
+    <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
-    <link rel="alternate" href="/fr/between-two-realities/" hreflang="fr" />
-    <link rel="alternate" href="/de/between-two-realities/" hreflang="de" />
+    <link rel="alternate" href="<?= url('fr/between-two-realities/') ?>" hreflang="fr" />
+    <link rel="alternate" href="<?= url('de/between-two-realities/') ?>" hreflang="de" />
     <?php include(base_path('components/header_googletag.php')); ?>
     <?php include(base_path('components/header.php')); ?>
     <?php include(base_path('components/menu.php')); ?>
@@ -21,7 +21,7 @@
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="/fr/" class="flex items-center">
+                <a href="<?= url('fr/') ?>" class="flex items-center">
                     <img src="/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Schizogame Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap">Schizogame</span>
                 </a>
@@ -48,7 +48,7 @@
                                         <span class="underline underline-offset-5 block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">FR</span>
                                     </li>
                                     <li class="m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
-                                    <a href="/de/between-two-realities/" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</a>
+                                    <a href="<?= url('de/between-two-realities/') ?>" class="block py-2 pl-3 pr-4 text-[#50bd21] hover:text-[#50bd21] visited:text-[#50bd21]  lg:text-neutral-800 lg:hover:text-neutral-800 lg:visited:text-neutral-800 rounded lg:bg-transparent lg:p-0">DE</a>
                                     </li>                                    
                                 </ul>
                             </div>
