@@ -291,6 +291,8 @@
     </section>    
     <!-- End block -->   
 
+    <?= component('onlineevent_btr_de', ['lang' => 'de']) ?>
+
     <!-- Start block -->
     <section class="bg-[#50bd21]">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
