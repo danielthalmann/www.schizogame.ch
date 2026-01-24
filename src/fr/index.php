@@ -27,7 +27,7 @@
         //'video' => '../videos/between_two_realities.mp4',
         'image' => url('images/escapebox/escape-box.png'),
         'link_url' => url('fr/escape-box/'),
-        'link_text' => 'En savoir plus...'
+        'link_text' => 'Info et inscription'
     ]) ?>
 
 

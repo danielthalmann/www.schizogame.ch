@@ -2,8 +2,15 @@
     <section class="bg-radial-[at_50%_75%] from-jds-500 to-jdsgray-500 text-white">
         <div class="grid grid-cols-1 max-w-screen-xl mx-auto lg:min-h-screen">
             <div class="my-25 lg:my-none mx-5 lg:mx-auto flex">
-                <div class="m-auto">
-                    <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-jds-500"><?= $title ?></h1>
+                <div class="m-auto relative">
+                    <label class="top-0 right-0 whitespace-nowrap absolute">
+                        <span class="block -translate-y-5 lg:translate-y-0 lg:translate-x-16 origin-center lg:rotate-10 rounded-2xl text-2xl font-bold bg-orange-400 text-white border-2 border-white text-center py-2 px-3 shadow-jdsgray-500/50">
+                            <?= $toptext ?? 'Édition 2026' ?>
+                        </span>
+                    </label>
+                    <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-jds-500">
+                        <?= $title ?>
+                    </h1>
 
                     <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
                         <?= $description ?>
