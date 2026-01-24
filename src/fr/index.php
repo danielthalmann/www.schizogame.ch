@@ -48,7 +48,6 @@
                 'link_text' => 'Plus d\'informations'
             ]) ?>
 
-            <?php /*
             <?= component('card_game',
             [
                 //'toptext' => 'nouvelles fonctionalités',
@@ -62,22 +61,7 @@
                 'link_text' => 'Plus d\'informations'
             ]) 
             ?>
-             */ ?>
             
-            <?= component('card_game',
-            [
-                'toptext' => 'À venir',
-                'css' => 'bg-escape',
-                'title' => 'Escape Game',
-                'sentences' => [
-                    'Cédric est un jeune étudiant fribourgeois qui ne va pas très bien en ce moment' , 
-                    'Sauriez-vous l’aider à mettre des mots sur ses symptômes et à trouver les soutiens dont il a besoin pour se mettre sur le chemin d’un rétablissement ?',
-                    'L’Escape Game des JdS 2024 se réinvente en format de poche ! Son lancement est prévu au courant 2025.'
-                ],
-                //'link_url' => url( 'fr/between-two-realities/'),
-                //'link_text' => 'Plus d\'informations'
-            ]) ?> 
-
         </div>
 
     </section>
@@ -110,42 +94,7 @@
     <!-- End block -->
 
 
-    <!-- Start block -->
-    <section class="bg-white">
-
-        <div class="max-w-screen-xl px-4 pt-8 mx-auto space-y-12 lg:space-y-20 lg:pt-24 lg:px-6">
-            <!-- Row -->
-            <div class="items-center">
-                <div class="text-gray-500 sm:text-lg">
-                    <?= component('title2', ['title' => 'Membres du comité']) ?>
-                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-3 md:gap-12 md:space-y-0">
-                        <div class="p-4">
-                            <a target="_blank" href="https://www.rfsm.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-RFSM-2019.jpg') ?>" alt="logo-RFSM"></a>
-                        </div>
-                        <div class="p-4">
-                            <a target="_blank" href="https://horizonsud.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-HorizonSud.png') ?>" alt="logo-horizon-sud"></a>
-                        </div>
-                        <div class="p-4">
-                            <a target="_blank" href="https://www.st-louis.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-st-louis.jpg') ?>" alt="logo-st-louis"></a>
-                        </div>
-                        <div class="p-4">
-                            <a target="_blank" href="https://www.fr.ch/dsas"><img class="max-h-52" src="<?= url('images/partners/logo-DSAS.jpg') ?>" alt="logo-dsas"></a>
-                        </div>
-                        <div class="p-4">
-                            <a target="_blank" href="https://www.lestraversees.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-Les_Traversees.png') ?>" alt="logo-lestraversees"></a>
-                        </div>
-                        <div class="p-4">
-                            <a target="_blank" href="https://afaap.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-AFAAP.jpg') ?>" alt="logo-AFAAP"></a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End block -->
+    <?= component('committee', ['lang' => 'fr']) ?>
 
 
     <!-- Start block -->
