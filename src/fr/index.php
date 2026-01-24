@@ -48,6 +48,7 @@
                 'link_text' => 'Plus d\'informations'
             ]) ?>
 
+            <?php /*
             <?= component('card_game',
             [
                 //'toptext' => 'nouvelles fonctionalités',
@@ -59,8 +60,23 @@
                 ],
                 'link_url' => url( 'fr/between-two-realities/'),
                 'link_text' => 'Plus d\'informations'
-            ]) ?>            
-
+            ]) 
+            ?>
+             */ ?>
+            
+            <?= component('card_game',
+            [
+                'toptext' => 'À venir',
+                'css' => 'bg-escape',
+                'title' => 'Escape Game',
+                'sentences' => [
+                    'Cédric est un jeune étudiant fribourgeois qui ne va pas très bien en ce moment' , 
+                    'Sauriez-vous l’aider à mettre des mots sur ses symptômes et à trouver les soutiens dont il a besoin pour se mettre sur le chemin d’un rétablissement ?',
+                    'L’Escape Game des JdS 2024 se réinvente en format de poche ! Son lancement est prévu au courant 2025.'
+                ],
+                //'link_url' => url( 'fr/between-two-realities/'),
+                //'link_text' => 'Plus d\'informations'
+            ]) ?> 
 
         </div>
 

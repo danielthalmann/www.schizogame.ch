@@ -50,6 +50,7 @@
                 'link_text' => 'Weitere Informationen'
             ]) ?>
 
+            <?php /*
             <?= component('card_game',
             [
                 //'toptext' => 'neue Funktionen',
@@ -61,6 +62,21 @@
                 ],
                 'link_url' => url( 'de/between-two-realities/'),
                 'link_text' => 'Weitere Informationen'
+            ]) ?> 
+             */ ?>
+
+            <?= component('card_game',
+            [
+                'toptext' => 'In der Zukunft',
+                'css' => 'bg-escape',
+                'title' => 'Escape Game',
+                'sentences' => [
+                    'Cédric ist ein junger Student aus Freiburg, dem es im Moment nicht besonders gut geht.' , 
+                    'Können Sie ihm helfen, seine Symptome in Worte zu fassen und die Unterstützung zu finden, die er braucht, um sich auf den Weg der Genesung zu begeben?',
+                    'Das Escape Game der Weltjugendtage 2024 erfindet sich im Taschenformat neu! Es soll im Laufe des Jahres 2025 eingeführt werden.',
+                ],
+                //'link_url' => url( 'de/between-two-realities/'),
+                //'link_text' => 'Weitere Informationen'
             ]) ?> 
 
 
