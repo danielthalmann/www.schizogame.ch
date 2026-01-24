@@ -16,6 +16,9 @@
                             Your browser does not support HTML video.
                         </video>
                         <?php endif; ?>
+                        <?php if (isset($image)) : ?>
+                            <img src="<?= $image ?>" alt="<?= $image ?>">
+                        <?php endif; ?>
                     </div>
 
                     <div class="text-center">
