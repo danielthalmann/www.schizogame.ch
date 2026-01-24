@@ -16,21 +16,23 @@
 </head>
 <body>
     <?php include(base_path('components/body_googletag.php')); ?>
+
     <?= component('menu_root', ['lang' => 'fr']) ?>
     
     <?= component('block_main',
     [
         //'toptext' => 'nouvelles fonctionalités',
-        'title' => 'Between two realities',
-        'description' => 'Pour son édition 2025, le comité fribourgeois des Journées de la Schizophrénie vous invite à une expérience immersive inédite : un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.',
-        'video' => '../videos/between_two_realities.mp4',
-        'link_url' => url('fr/between-two-realities/'),
-        'link_text' => 'Incarner Kevin'
+        'title' => 'Escape Box',
+        'description' => 'Pour son édition 2026, le comité fribourgeois des Journées de la Schizophrénie vous invite à plonger dans une expérience immersive où coopération, réflexion et émotions s’entremêlent ! En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
+        //'video' => '../videos/between_two_realities.mp4',
+        'image' => url('images/escapebox/escape-box.png'),
+        'link_url' => url('fr/escape-box/'),
+        'link_text' => 'En savoir plus...'
     ]) ?>
 
 
     <!-- Start block -->
-    <section class="bg-neutral-900">
+    <section class="bg-neutral-900  ">
         <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
 
             <?= component('card_game',
@@ -51,7 +53,7 @@
             <?= component('card_game',
             [
                 //'toptext' => 'nouvelles fonctionalités',
-                //'css' => 'bg-psyquiz',
+                'css' => ' bg-linear-to-t from-neutral-800 to-jdsgray-500',
                 'title' => 'Between two realities',
                 'sentences' => [
                     'Un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.' , 
@@ -140,22 +142,6 @@
     <!-- End block -->
 
     <?= component('footer', ['lang' => 'fr']) ?>
-
-    <script>
-        document.addEventListener('scroll', () => {
-            className = 'bg-gray-200';
-            nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                if (!nav.classList.contains(className)) {
-                    nav.classList.add(className);
-                }
-            } else {
-                if (nav.classList.contains(className)) {
-                    nav.classList.remove(className);
-                }
-            }
-        });
-    </script>
 
 </body>
 </html>

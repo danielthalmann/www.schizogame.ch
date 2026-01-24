@@ -21,12 +21,15 @@
     <?= component('block_main',
     [
         //'toptext' => 'nouvelles fonctionalités',
-        'title' => 'Between two realities',
-        'description' => 'Für seine Ausgabe 2025 lädt Sie das Freiburger Komitee der Schizophrenie-Tage zu einer völlig neuen immersiven Erfahrung ein: ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.',
-        'video' => '../videos/between_two_realities_de.mp4',
-        'link_url' => url('de/between-two-realities/'),
-        'link_text' => 'Kevin verkörpern'
+        'title' => 'Escape Box',
+        'description' => 'Das Fribourger Komitee der Schizophrenie-Tage 2026 lädt Sie zu einem immersiven Erlebnis ein, bei dem Zusammenarbeit, Reflexion und Emotionen ineinandergreifen! Stellen Sie sich in Teams Herausforderungen, lösen Sie Rätsel und erkunden Sie die Konzepte von gegenseitiger Unterstützung, Genesung und Verständnis für andere. Ein interaktives Spiel, das auf neue Weise über psychische Gesundheit spricht: mit Neugier, Humor und Menschlichkeit.',
+        //'video' => '../videos/between_two_realities_de.mp4',
+        'image' => url('images/escapebox/escape-box.png'),
+        'link_url' => url('de/escape-box/'),
+        'link_text' => 'Mehr erfahren...'
     ]) ?>    
+
+
 
 
     <!-- Start block -->
@@ -53,7 +56,7 @@
             <?= component('card_game',
             [
                 //'toptext' => 'neue Funktionen',
-                //'css' => 'bg-psyquiz',
+                'css' => ' bg-linear-to-t from-neutral-800 to-jdsgray-500',
                 'title' => 'Between two realities',
                 'sentences' => [
                     'Ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.' , 
@@ -141,21 +144,6 @@
 
 
     <?= component('footer', ['lang' => 'de']) ?>
-    <script>
-        document.addEventListener('scroll', () => {
-            className = 'bg-gray-200';
-            nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                if (!nav.classList.contains(className)) {
-                    nav.classList.add(className);
-                }
-            } else {
-                if (nav.classList.contains(className)) {
-                    nav.classList.remove(className);
-                }
-            }
-        });
-    </script>
 
 </body>
 </html>
