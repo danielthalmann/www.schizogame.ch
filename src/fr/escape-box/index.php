@@ -28,7 +28,7 @@
         'image' => url('images/escapebox/escape-box.png'),
     ]) ?>
 
-    <?= component('block_sentence',
+    <?= component('block_map',
     [
         'title' => 'Venez tester l’Escape Box et d’autres jeux uniques au cœur de Fribourg !',
         'sentences' => [
