@@ -17,6 +17,19 @@
 </head>
 <body>
     <?php include(base_path('components/body_googletag.php')); ?>
+
+    <?= component('menu_root', [
+        'lang' => 'fr',
+        'transparent' => false,
+        'path' => 'between-two-realities/',
+        'menuPage' => [
+            'Jeux' => '#game',
+            'Plus' => '#more',
+            'Troubles' => '#troubles',   
+        ]
+    ]) ?>
+
+    <?php /* 
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -57,6 +70,7 @@
             </div>
         </nav>
     </header>
+    */ ?>
 
     <!-- Start block -->
     <section class="bg-radial-[at_50%_75%] from-neutral-800 to-jdsgray-500 text-white">
