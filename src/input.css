@@ -56,6 +56,33 @@ html {
 {
   background-color: #585858;
 }
+.text-escapebox-light
+{
+  color: #387b9a;
+}
+
+.bg-escapebox-light
+{
+  background-color: #387b9a;
+}
+.text-escapebox-dark
+{
+  color: #134570;
+}
+
+.bg-escapebox-dark
+{
+  background-color: #134570;
+}
+
+.text-escapebox
+{
+  color: #11416c;
+}
+.bg-escapebox
+{
+  background-color: #11416c;
+}
 
 @theme {  
   --color-jds-500: #50bd21;
