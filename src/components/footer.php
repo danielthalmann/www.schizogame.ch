@@ -13,5 +13,5 @@
         </div>
     </footer>
 
-<script src="/js/service.js"></script>
-<script src="/js/menu.js"></script>
+<script src="<?= url('js/service.js') ?>"></script>
+<script src="<?= url('js/menu.js') ?>"></script>
