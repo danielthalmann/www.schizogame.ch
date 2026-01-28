@@ -1,5 +1,5 @@
     <!-- Start block -->
-    <section class="bg-radial-[at_50%_75%]  from-cyan-600 to-jdsgray-500 text-white">
+    <section class="bg-radial-[at_50%_75%] <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?>  text-white">
         <div class="grid grid-cols-1 max-w-screen-xl mx-auto">
             <div class="mt-20 p-5">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#50bd21]"><?= $title ?></h1>

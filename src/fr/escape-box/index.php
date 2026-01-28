@@ -22,7 +22,6 @@
 
     <?= component('block_title',
     [
-        //'toptext' => 'nouvelles fonctionalités',
         'title' => 'Escape Box',
         'description' => 'Que vous soyez joueur·se aguerri·e ou simple curieux·se, cette aventure vous invite à dépasser vos préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : vous ne verrez plus la santé mentale du même œil !' ,
         'image' => url('images/escapebox/escape-box.png'),
@@ -50,7 +49,7 @@
 
     <?= component('block_sentence',
     [
-        //'css' => 'bg-neutral-200',
+        'css' => 'bg-escapebox-light text-white',
         'title' => 'Après l\'événement',
         'sentences' => [
             'Escape Box en prêt : Pour vos événements !' , 
@@ -74,7 +73,7 @@
     ]) ?>
 
     <!-- Start block -->
-    <section class="bg-[#50bd21]">
+    <section class="bg-escapebox">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
 
         </div>
