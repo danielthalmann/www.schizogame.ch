@@ -23,9 +23,19 @@
     <?= component('block_title',
     [
         'title' => 'Escape Box',
-        'description' => 'Plongez dans l’histoire de Federico, un jeune confronté à des troubles psychiques, à travers notre Escape Box sur le thème de la santé mentale : une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler. En équipe, explorez différentes pièces pour résoudre l’énigme en 60 minutes chrono et accompagnez Federico pas à pas vers le rétablissement ! Que vous soyez joueur.se aguerri.e ou simple curieux.se, cette aventure vous invite à dépasser vos préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : vous ne verrez plus la santé mentale du même œil !' ,
+        'description' => 'Résous des énigmes et trouve des indices pour aider Federico, un jeune confronté à des troubles schizophréniques, à se rétablir.' ,
         'image' => url('images/escapebox/escape-box.png'),
     ]) ?>
+
+    <?= component('block_sentence',
+    [
+        'css' => 'bg-white',
+        'title' => 'L’escape Box',
+        'sentences' => [
+            'Dans une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler, explore différentes pièces pour résoudre les énigmes en 60 minutes chrono et accompagne Federico pas à pas vers le rétablissement !' , 
+            'Que tu sois joueur.se aguerri.e ou simple curieux.se, cette aventure t’invite à dépasser tes préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : tu ne verras plus la santé mentale du même œil !',
+        ]
+    ]) ?>    
 
     <?= component('block_map',
     [
