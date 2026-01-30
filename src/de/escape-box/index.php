@@ -6,7 +6,7 @@
     <title>Zwischen zwei Realitäten</title>
     <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta name="description" content="Schlüpfe in die Rolle von Kevin, einem jungen Menschen mit schizophrenen Störungen, und begleite ihn in einem kurzen interaktiven Abenteuer.">
+    <meta name="description" content="Löse Rätsel und finde Hinweise, um Federico, einen jungen Menschen mit schizophrenen Störungen, auf seinem Weg zur Genesung zu unterstützen.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
