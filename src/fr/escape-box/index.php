@@ -23,7 +23,7 @@
     <?= component('block_title',
     [
         'title' => 'Escape Box',
-        'description' => 'Que vous soyez joueur·se aguerri·e ou simple curieux·se, cette aventure vous invite à dépasser vos préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : vous ne verrez plus la santé mentale du même œil !' ,
+        'description' => 'Plongez dans l’histoire de Federico, un jeune confronté à des troubles psychiques, à travers notre Escape Box sur le thème de la santé mentale : une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler. En équipe, explorez différentes pièces pour résoudre l’énigme en 60 minutes chrono et accompagnez Federico pas à pas vers le rétablissement ! Que vous soyez joueur.se aguerri.e ou simple curieux.se, cette aventure vous invite à dépasser vos préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : vous ne verrez plus la santé mentale du même œil !' ,
         'image' => url('images/escapebox/escape-box.png'),
     ]) ?>
 
@@ -46,7 +46,9 @@
             'Escape Box à Ludesco : 28-29 mars 2026' , 
             'L’Escape Box s’invite au Festival Ludesco (www.ludesco.ch) les 28 et 29 mars à La Chaux-de-Fonds ! Rejoignez-nous pour vivre cette expérience immersive au cœur du plus grand festival de jeux de Suisse romande.',
             'Inscriptions obligatoires via le site de Ludesco – Ne manquez pas cette occasion unique de jouer, échanger et changer de regard sur la santé mentale dans l’ambiance festive du festival !',
-        ]
+        ],
+        'link_text' => 'ludesco',
+        'link_url' => 'https://ludesco.ch/',
     ]) ?>
 
     <?= component('block_sentence',
