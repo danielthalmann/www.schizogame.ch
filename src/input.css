@@ -42,8 +42,22 @@ html {
   background-position: center center; 
   background-repeat: no-repeat;
 }
-
-
+  @media (width >= 64rem) {
+  .bg-locked {
+    background-image: url(/images/escapebox/escape-box-lock.png); 
+    background-size: 200px;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+  .bg-tree {
+    background-image: url(/images/escapebox/escape-box-tree.png); 
+    background-size: 300px;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+  }
+}
 .text-jds
 {
   color: #50bd21;

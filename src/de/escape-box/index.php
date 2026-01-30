@@ -18,7 +18,7 @@
 <body>
     <?php include(base_path('components/body_googletag.php')); ?>
 
-    <?= component('menu_root', ['lang' => 'fr', 'path' => 'escape-box/']) ?>
+    <?= component('menu_root', ['lang' => 'de', 'path' => 'escape-box/']) ?>
 
     <?= component('block_title',
     [
@@ -97,9 +97,9 @@
     <!-- End block -->
 
 
-    <?= component('partners_escapebox', ['lang' => 'fr']) ?>
+    <?= component('partners_escapebox', ['lang' => 'de']) ?>
 
-    <?= component('footer', ['lang' => 'fr']) ?>
+    <?= component('footer', ['lang' => 'de']) ?>
 
 </body>
 </html>
