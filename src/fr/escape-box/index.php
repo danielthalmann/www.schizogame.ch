@@ -41,8 +41,8 @@
     [
         'title' => 'Venez tester l’Escape Box et d’autres jeux uniques au cœur de Fribourg !',
         'sentences' => [
-            'Du 14 au 21 mars 2026, le comité fribourgeois des Journées de la Schizophrénie (JdS) ouvre les combles du restaurant de l’Aigle Noir en ville de Fribourg pour une semaine dédiée au jeu et à la santé mentale. Inscrivez-vous dès maintenant via notre site pour jouer à l’Escape Box, plonger dans le Psyquiz et tester le jeu vidéo Between Two Realities, deux expériences phares des éditions précédentes des JdS.',
-            'En plus des jeux immersifs, un espace d’échanges avec des professionnel·le·s de la santé mentale vous accueillera pour répondre à vos questions et favoriser le dialogue. Une occasion unique de découvrir, jouer et échanger dans une ambiance conviviale et bienveillante !',
+            'Du 14 au 21 mars 2026, le comité fribourgeois des Journées de la Schizophrénie (JdS) ouvre les combles du restaurant de l’Aigle Noir en ville de Fribourg pour une semaine dédiée au jeu et à la santé mentale. Inscris-toi dès maintenant pour jouer à l’Escape Box. Tu pourras aussi retester le Psyquiz et le jeu vidéo Between Two Realities, deux expériences phares des éditions précédentes des JdS.',
+            'En plus des jeux immersifs, un espace d’échanges avec des professionnel·le·s de la santé mentale t’accueillera pour répondre à tes questions et favoriser le dialogue. Une occasion unique de découvrir, jouer et échanger dans une ambiance conviviale et bienveillante !',
         ],
         'link_text' => 'Réservations',
         'link_url' => 'https://reservations.schizogame.ch/',
@@ -54,8 +54,8 @@
         'title' => 'Évènement Ludesco',
         'sentences' => [
             'Escape Box à Ludesco : 28-29 mars 2026' , 
-            'L’Escape Box s’invite au Festival Ludesco (www.ludesco.ch) les 28 et 29 mars à La Chaux-de-Fonds ! Rejoignez-nous pour vivre cette expérience immersive au cœur du plus grand festival de jeux de Suisse romande.',
-            'Inscriptions obligatoires via le site de Ludesco – Ne manquez pas cette occasion unique de jouer, échanger et changer de regard sur la santé mentale dans l’ambiance festive du festival !',
+            'L’Escape Box s’invite au Festival Ludesco (www.ludesco.ch) les 28 et 29 mars à La Chaux-de-Fonds ! Rejoins-nous pour vivre cette expérience immersive au cœur du plus grand festival de jeux de Suisse romande.',
+            'Inscriptions obligatoires via le site de Ludesco – Ne manque pas cette occasion unique de jouer, échanger et changer de regard sur la santé mentale dans l’ambiance festive du festival !',
         ],
         'link_text' => 'ludesco',
         'link_url' => 'https://ludesco.ch/',
@@ -66,9 +66,9 @@
         'css' => 'bg-escapebox-light text-white',
         'title' => 'Après l\'événement',
         'sentences' => [
-            'Escape Box en prêt : Pour vos événements !' , 
-            'Après les JdS et Ludesco, l’Escape Box est disponible gratuitement pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
-            'Contactez-nous par mail à info@horizonsud.ch pour réserver votre Escape Box. Un simple contrat de prêt est à signer – mettez la santé mentale au cœur de votre événement !',
+            'Escape Box en prêt : mets la santé mentale au cœur d’un événement !' , 
+            'Après les JdS et Ludesco, l’Escape Box est disponible en location pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
+            'Contacte-nous par mail à info@horizonsud.ch pour réserver l’Escape Box.',
         ]
     ]) ?>
 
@@ -79,10 +79,10 @@
         'sentences' => [
             'De l’Escape Game à l’Escape Box : Une géniale réinvention !' , 
             'Un projet innovant conçu pour déstigmatiser la santé mentale par le jeu !',
-            'L’idée de l’Escape Box est née après le succès de l’Escape Game présenté lors des JdS 2024 à l’Aigle Noir. Nombreux partenaires ont sollicité le comité fribourgeois pour l’emmener partout, mais son format lourd (déménagement, suivi) s’est révélé impossible. L’Escape Game s’est donc réinventée en format poche : l’Escape Box, plus mobile, prête à voyager !',
+            'L’idée de l’Escape Box est née après le succès de l’Escape Game présenté lors des JdS 2024 à l’Aigle Noir. Nombreux partenaires ont sollicité le comité fribourgeois pour pouvoir rejouer l’Escape Game lors de manifestations, mais le jeu avec ce format s’est révélé impossible à redéployer. L’Escape Game s’est donc réinventée en format poche : l’Escape Box, plus mobile, prête à voyager !',
             'Un mandat a ainsi été confié à une personne concernée par un trouble psychique, passionnée d’Escape Game et calée en conception de jeux. Son travail a été soutenu par différents partenaires talentueux : Fondation St-Louis (menuisiers du Chantier Écologique), White Ermine Studio Game (électronique, informatique, site internet), Frilance (formulaire d’inscription JdS), Polygravia (visuels et impressions), Brick Occasion (Bulle) : espaces immersifs.',
             'La conception et la réalisation de l’Escape Box a durée une année environ.',
-            'Résultat : une boîte immersive qui sensibilise avec humanité et efficacité.',
+            'Résultat : une boîte immersive qui sensibilise avec humanité et efficacité au thème de la santé mentale.',
         ]
     ]) ?>
 
