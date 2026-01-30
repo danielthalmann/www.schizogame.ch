@@ -3,7 +3,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Zwischen zwei Realitäten</title>
+    <title>Escape Box</title>
     <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Löse Rätsel und finde Hinweise, um Federico, einen jungen Menschen mit schizophrenen Störungen, auf seinem Weg zur Genesung zu unterstützen.">
