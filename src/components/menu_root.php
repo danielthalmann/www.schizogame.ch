@@ -1,4 +1,4 @@
-    <header class="fixed w-full" style="z-index: 100;">
+    <header class="fixed w-full" style="z-index: 10000;">
         <nav class="transition-all duration-700 py-2.5 bg-gray-200  <?php if ($transparent   ?? true) : ?> lg:bg-transparent <?php endif; ?>">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto px-4">
                 <a href="<?= url($lang . '/') ?>" class="flex items-center">
