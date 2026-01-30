@@ -81,7 +81,7 @@
             'Un projet innovant conçu pour déstigmatiser la santé mentale par le jeu !',
             'L’idée de l’Escape Box est née après le succès de l’Escape Game présenté lors des JdS 2024 à l’Aigle Noir. Nombreux partenaires ont sollicité le comité fribourgeois pour pouvoir rejouer l’Escape Game lors de manifestations, mais le jeu avec ce format s’est révélé impossible à redéployer. L’Escape Game s’est donc réinventée en format poche : l’Escape Box, plus mobile, prête à voyager !',
             'Un mandat a ainsi été confié à une personne concernée par un trouble psychique, passionnée d’Escape Game et calée en conception de jeux. Son travail a été soutenu par différents partenaires talentueux : Fondation St-Louis (menuisiers du Chantier Écologique), White Ermine Studio Game (électronique, informatique, site internet), Frilance (formulaire d’inscription JdS), Polygravia (visuels et impressions), Brick Occasion (Bulle) : espaces immersifs.',
-            'La conception et la réalisation de l’Escape Box a durée une année environ.',
+            'La conception et la réalisation de l’Escape Box ont duré une année environ.',
             'Résultat : une boîte immersive qui sensibilise avec humanité et efficacité au thème de la santé mentale.',
         ]
     ]) ?>
