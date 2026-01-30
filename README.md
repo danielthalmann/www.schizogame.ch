@@ -4,7 +4,7 @@
 
 Pour la production :
 
-* PHP 7 ou plus
+* PHP 8 ou plus
 * Serveur web (nginix, apache, iis,...)
 
 En plus des prérequis pour la production, pour le développement, il est nécessaire d'avoir :
