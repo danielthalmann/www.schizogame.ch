@@ -1407,6 +1407,12 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.bg-btr {
+  background-image: url(/images/btr_500x600.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .text-jds {
   color: #50bd21;
 }
