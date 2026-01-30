@@ -56,7 +56,7 @@
             <?= component('card_game',
             [
                 //'toptext' => 'neue Funktionen',
-                'css' => ' bg-linear-to-t from-neutral-800 to-jdsgray-500',
+                'css' => ' bg-btr',
                 'title' => 'Between two realities',
                 'sentences' => [
                     'Ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.' , 
