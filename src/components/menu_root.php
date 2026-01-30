@@ -16,7 +16,7 @@
 
                 <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 rounded-b-lg" data-toggle="menu" id="menu">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <?php if ($menuPage) : ?>
+                        <?php if (isset($menuPage) && count($menuPage) > 0) : ?>
                         <?php foreach($menuPage as $text => $url) : ?>
                             <?= menu($text, $url) ?>
                         <?php endforeach; ?>   
