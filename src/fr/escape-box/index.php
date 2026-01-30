@@ -33,7 +33,9 @@
         'sentences' => [
             'Du 14 au 21 mars 2026, le comité fribourgeois des Journées de la Schizophrénie (JdS) ouvre les combles du restaurant de l’Aigle Noir en ville de Fribourg pour une semaine dédiée au jeu et à la santé mentale. Inscrivez-vous dès maintenant via notre site pour jouer à l’Escape Box, plonger dans le Psyquiz et tester le jeu vidéo Between Two Realities, deux expériences phares des éditions précédentes des JdS.',
             'En plus des jeux immersifs, un espace d’échanges avec des professionnel·le·s de la santé mentale vous accueillera pour répondre à vos questions et favoriser le dialogue. Une occasion unique de découvrir, jouer et échanger dans une ambiance conviviale et bienveillante !',
-        ]
+        ],
+        'link_text' => 'Réservations',
+        'link_url' => 'https://reservations.schizogame.ch/',
     ]) ?>    
 
     <?= component('block_sentence',
