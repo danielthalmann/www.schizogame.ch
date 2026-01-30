@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php include('../../Bootstrap.php'); ?>
-<html lang="fr">
+<html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Between two realities</title>
+    <title>Zwischen zwei Realitäten</title>
     <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta name="description" content="Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.">
+    <meta name="description" content="Schlüpfe in die Rolle von Kevin, einem jungen Menschen mit schizophrenen Störungen, und begleite ihn in einem kurzen interaktiven Abenteuer.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
@@ -23,7 +23,7 @@
     <?= component('block_title',
     [
         'title' => 'Escape Box',
-        'description' => 'Résous des énigmes et trouve des indices pour aider Federico, un jeune confronté à des troubles schizophréniques, à se rétablir.' ,
+        'description' => 'Löse Rätsel und finde Hinweise, um Federico, einen jungen Menschen mit schizophrenen Störungen, auf seinem Weg zur Genesung zu unterstützen.' ,
         'image' => url('images/escapebox/escape-box.png'),
     ]) ?>
 
@@ -31,45 +31,45 @@
     [
         'css' => 'bg-white',
         'illustration' => 'bg-locked',
-        'title' => 'L’escape Box',
+        'title' => 'Die Escape Box',
         'sentences' => [
-            'Dans une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler, explore différentes pièces pour résoudre les énigmes en 60 minutes chrono et accompagne Federico pas à pas vers le rétablissement !' , 
-            'Que tu sois joueur.se aguerri.e ou simple curieux.se, cette aventure t’invite à dépasser tes préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : tu ne verras plus la santé mentale du même œil !',
+            'In einer kompakten Box voller Rätsel, Zahlenschlösser, versteckter Hinweise und manipulierbarer Objekte erkundest du verschiedene Bereiche, um die Aufgaben in 60 Minuten zu lösen und begleitest Federico Schritt für Schritt auf dem Weg zur Genesung!', 
+            'Ob erfahrener Spieler oder neugierige Person, dieses Abenteuer lädt dich ein, Vorurteile zu überwinden und einen intensiven, zugleich spielerischen und zutiefst menschlichen Moment zu erleben. Eines ist sicher: Du wirst psychische Gesundheit mit anderen Augen sehen!',
         ]
     ]) ?>    
 
     <?= component('block_map',
     [
-        'title' => 'Venez tester l’Escape Box et d’autres jeux uniques au cœur de Fribourg !',
+        'title' => 'Komm und teste die Escape Box und andere einzigartige Spiele im Herzen von Freiburg!',
         'sentences' => [
-            'Du 14 au 21 mars 2026, le comité fribourgeois des Journées de la Schizophrénie (JdS) ouvre les combles du restaurant de l’Aigle Noir en ville de Fribourg pour une semaine dédiée au jeu et à la santé mentale. Inscris-toi dès maintenant pour jouer à l’Escape Box. Tu pourras aussi retester le Psyquiz et le jeu vidéo Between Two Realities, deux expériences phares des éditions précédentes des JdS.',
-            'En plus des jeux immersifs, un espace d’échanges avec des professionnel·le·s de la santé mentale t’accueillera pour répondre à tes questions et favoriser le dialogue. Une occasion unique de découvrir, jouer et échanger dans une ambiance conviviale et bienveillante !',
+            'Vom 14. bis 21. März 2026 öffnet das Freiburger Komitee der Schizophrenie-Tage (JdS) die Dachböden des Restaurants L\'Aigle Noir in der Stadt Freiburg für eine Woche, die Spielen und psychischer Gesundheit gewidmet ist. Melde dich jetzt an, um die Escape Box zu spielen. Du kannst auch das Psyquiz und das Videospiel Between Two Realities erneut testen, zwei Highlights früherer JdS-Ausgaben.',
+            'Neben den immersiven Spielen gibt es einen Austauschbereich mit Fachpersonen aus der psychischen Gesundheitsversorgung, die deine Fragen beantworten und den Dialog fördern. Eine einzigartige Gelegenheit, zu entdecken, zu spielen und sich in einer freundlichen, unterstützenden Atmosphäre auszutauschen!',
         ],
-        'link_text' => 'Réservations',
+        'link_text' => 'Reservierungen',
         'link_url' => 'https://reservations.schizogame.ch/',
     ]) ?>    
 
     <?= component('block_sentence',
     [
         'css' => 'bg-neutral-200',
-        'title' => 'Évènement Ludesco',
+        'title' => 'Ludesco-Veranstaltung',
         'sentences' => [
-            'Escape Box à Ludesco : 28-29 mars 2026' , 
-            'L’Escape Box s’invite au Festival Ludesco (www.ludesco.ch) les 28 et 29 mars à La Chaux-de-Fonds ! Rejoins-nous pour vivre cette expérience immersive au cœur du plus grand festival de jeux de Suisse romande.',
-            'Inscriptions obligatoires via le site de Ludesco – Ne manque pas cette occasion unique de jouer, échanger et changer de regard sur la santé mentale dans l’ambiance festive du festival !',
+            'Escape Box bei Ludesco: 28.–29. März 2026' , 
+            'Die Escape Box ist am 28. und 29. März beim Festival Ludesco (www.ludesco.ch) in La Chaux-de-Fonds vertreten! Komm vorbei und erlebe diese immersive Erfahrung im Herzen des größten Spiel-Festivals der Romandie.',
+            'Anmeldung erforderlich über die Website von Ludesco – Verpasse nicht diese einzigartige Gelegenheit zu spielen, dich auszutauschen und den Blick auf psychische Gesundheit in der festlichen Festivalstimmung zu verändern!',
         ],
-        'link_text' => 'ludesco',
+        'link_text' => 'Ludesco',
         'link_url' => 'https://ludesco.ch/',
     ]) ?>
 
     <?= component('block_sentence',
     [
         'css' => 'bg-escapebox-light text-white',
-        'title' => 'Après l\'événement',
+        'title' => 'Nach der Veranstaltung',
         'sentences' => [
-            'Escape Box en prêt : mets la santé mentale au cœur d’un événement !' , 
-            'Après les JdS et Ludesco, l’Escape Box est disponible en location pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
-            'Contacte-nous par mail à info@horizonsud.ch pour réserver l’Escape Box.',
+            'Escape Box zur Ausleihe: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
+            'Nach den JdS und Ludesco kann die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
+            'Kontaktiere uns per E-Mail an info@horizonsud.ch, um die Escape Box zu reservieren.',
         ]
     ]) ?>
 
@@ -77,14 +77,14 @@
     [
         'css' => 'bg-white',
         'illustration' => 'bg-tree',
-        'title' => 'En apprendre plus',
+        'title' => 'Mehr erfahren',
         'sentences' => [
-            'De l’Escape Game à l’Escape Box : Une géniale réinvention !' , 
-            'Un projet innovant conçu pour déstigmatiser la santé mentale par le jeu !',
-            'L’idée de l’Escape Box est née après le succès de l’Escape Game présenté lors des JdS 2024 à l’Aigle Noir. Nombreux partenaires ont sollicité le comité fribourgeois pour pouvoir rejouer l’Escape Game lors de manifestations, mais le jeu avec ce format s’est révélé impossible à redéployer. L’Escape Game s’est donc réinventée en format poche : l’Escape Box, plus mobile, prête à voyager !',
-            'Un mandat a ainsi été confié à une personne concernée par un trouble psychique, passionnée d’Escape Game et calée en conception de jeux. Son travail a été soutenu par différents partenaires talentueux : Fondation St-Louis (menuisiers du Chantier Écologique), White Ermine Studio Game (électronique, informatique, site internet), Frilance (formulaire d’inscription JdS), Polygravia (visuels et impressions), Brick Occasion (Bulle) : espaces immersifs.',
-            'La conception et la réalisation de l’Escape Box ont duré une année environ.',
-            'Résultat : une boîte immersive qui sensibilise avec humanité et efficacité au thème de la santé mentale.',
+            'Vom Escape Game zur Escape Box: Eine geniale Neuinterpretation!' , 
+            'Ein innovatives Projekt, das psychische Gesundheit durch Spiel entstigmatisieren soll!',
+            'Die Idee zur Escape Box entstand nach dem Erfolg des Escape Games, das bei den JdS 2024 im L\'Aigle Noir präsentiert wurde. Viele Partner baten das Freiburger Komitee, das Escape Game bei Veranstaltungen erneut spielen zu können, doch das Format ließ sich nicht einfach übertragen. Daher wurde das Escape Game neu erfunden – als kompakte Escape Box: mobiler und reisefähig!',
+            'Ein Auftrag wurde einer Person mit eigener psychischer Beeinträchtigung anvertraut, die sich für Escape Games begeistert und in der Spielekonzeption erfahren ist. Ihre Arbeit wurde von verschiedenen talentierten Partnern unterstützt: Fondation St-Louis (Schreiner des Chantier Écologique), White Ermine Studio Game (Elektronik, Informatik, Website), Frilance (Anmeldeformular JdS), Polygravia (Visuelle Gestaltung und Druck), Brick Occasion (Bulle): immersive Räume.',
+            'Die Konzeption und Umsetzung der Escape Box dauerten etwa ein Jahr.',
+            'Ergebnis: eine immersive Box, die mit Menschlichkeit und Effektivität für das Thema psychische Gesundheit sensibilisiert.',
         ]
     ]) ?>
 
