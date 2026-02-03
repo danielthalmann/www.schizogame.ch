@@ -12,17 +12,17 @@
                     <?php endif; ?>
 
                     <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
-                        <div class="flex flex-col items-center">
+                        <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo-logo_white_ermine"></a>
                         </div>
-                        <div class="flex flex-col items-center">
+                        <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://michelereymond.ch/"><img class="max-h-52" src="<?= url('images/partners/logo-MR.svg') ?>" alt="logo-michelereymond"></a>
                         </div>
-                        <div class="flex flex-col items-center">
+                        <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_polygravia.svg') ?>" alt="logo-logo_polygravia"></a>
                         </div>
-                        <div class="flex flex-col items-center">
-                            <a target="_blank" href="https://fri-host.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_fri-host.png') ?>" alt="logo-fri-host"></a>
+                        <div class="flex mx-auto items-center">
+                            <a target="_blank" href="https://frilance.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_frilance.png') ?>" alt="logo-frilance"></a>
                         </div>
                     </div>
 
