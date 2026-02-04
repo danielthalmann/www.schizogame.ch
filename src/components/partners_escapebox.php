@@ -11,7 +11,7 @@
                     <?= component('title2', ['title' => 'Partner']) ?>
                     <?php endif; ?>
 
-                    <div class="col-span-2 space-y-8 md:grid md:grid-cols-4 md:gap-12 md:space-y-0">
+                    <div class="col-span-2 space-y-8 grid grid-cols-1 md:grid-cols-4 md:gap-12 md:space-y-0">
                         <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://brickoccasion.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_brick_occasion.svg') ?>" alt="logo-logo_brick_occasion"></a>
                         </div>
