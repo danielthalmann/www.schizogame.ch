@@ -77,10 +77,11 @@ function component(string $name, array $var = [])
     
 
     ob_start();
-
+    
+    $_component_name = implode(DIRECTORY_SEPARATOR, explode('.', $name));
+    
     extract($var);
-
-    include(base_path('components' . DIRECTORY_SEPARATOR . $name . '.php'));
+    include(base_path('components' . DIRECTORY_SEPARATOR . $_component_name . '.php'));
 
     $out = ob_get_contents();
     
