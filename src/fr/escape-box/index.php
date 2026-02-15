@@ -69,8 +69,9 @@
         'sentences' => [
             'Escape Box en prêt : mets la santé mentale au cœur d’un événement !' , 
             'Après les JdS et Ludesco, l’Escape Box est disponible en location pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
-            'Contacte-nous par mail à info@horizonsud.ch pour réserver l’Escape Box.',
-        ]
+            'Contacte-nous par mail à info@horizonsud.ch pour réserver l’Escape Box.'],
+        'link_text' => 'Réservations',
+        'link_url' => url('fr/escape-box/reservations'),
     ]) ?>
 
     <?= component('block_sentence',
