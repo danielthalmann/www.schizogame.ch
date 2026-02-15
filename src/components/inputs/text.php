@@ -13,7 +13,7 @@
         id="<?= $name ?? 'name' ?>_id"
         value="<?= $value ?? '' ?>"
         <?php if (isset($mandatory) && $mandatory) : ?>
-        mandatory="mandatory"
+        required="required"
         <?php endif; ?>
     >
 </div>

@@ -7,12 +7,13 @@
             <?php endif; ?>
         </label>
     <?php endif; ?>
-    <textarea class="block min-h-36 focus-visible:outline-gray-600 focus-visible:outline-2 hover:outline-1 hover:outline-gray-600 w-full border-1 rounded-sm p-2" 
+    <input class="block focus-visible:outline-gray-600 focus-visible:outline-2 hover:outline-1 hover:outline-gray-600 w-full border-1 rounded-sm p-2" 
+        type="date"
         name="<?= $name ?? 'name' ?>"
         id="<?= $name ?? 'name' ?>_id"
-        type="textarea" 
+        value="<?= $value ?? '' ?>"
         <?php if (isset($mandatory) && $mandatory) : ?>
         required="required"
         <?php endif; ?>
-    ><?= $value ?? '' ?></textarea>
+    >
 </div>
