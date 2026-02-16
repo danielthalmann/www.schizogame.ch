@@ -2,6 +2,10 @@
 
 class HttpAcceptLanguage
 {
+    /**
+     * Accepted languages
+     * @var HttpLanguage[]
+     */
     protected $acceptedLanguages = [];
     function __construct(?string $httpAcceptLanguage)
     {

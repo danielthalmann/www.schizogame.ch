@@ -18,7 +18,7 @@ function base_path(string $path)
 function dd($var)
 {
     ob_clean();
-    echo $var;
+    var_dump($var);
     die();
 }
 
@@ -89,4 +89,14 @@ function component(string $name, array $var = [])
 
     return $out;
 
+}
+
+/**
+ * redirect page
+ * @param mixed $location
+ * @return void
+ */
+function redirect($location)
+{
+    header('Location: ' . $location, true, 301);
 }

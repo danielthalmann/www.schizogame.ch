@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php include('../../../Bootstrap.php'); ?>
+<?= (new \ReservationController())->handle() ?>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
