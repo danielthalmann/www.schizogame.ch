@@ -3,8 +3,8 @@
         <div class="grid grid-cols-1 max-w-screen-xl mx-auto lg:min-h-screen">
             <div class="my-25 lg:my-none mx-5 lg:mx-auto flex">
                 <div class="m-auto relative">
-                    <label class="top-0 right-0 whitespace-nowrap absolute">
-                        <span class="block -translate-y-5 lg:translate-y-0 lg:translate-x-16 origin-center lg:rotate-10 rounded-2xl text-2xl font-bold bg-orange-400 text-white border-2 border-white text-center py-2 px-3 shadow-jdsgray-500/50">
+                    <label class="top-0 right-0 whitespace-nowrap sm:absolute">
+                        <span class="inline-block sm:block -translate-y-5 lg:translate-y-0 lg:translate-x-16 origin-center lg:rotate-10 rounded-2xl text-2xl font-bold bg-orange-400 text-white border-2 border-white text-center py-2 px-3 shadow-jdsgray-500/50">
                             <?= $toptext ?? 'Édition 2026' ?>
                         </span>
                     </label>
