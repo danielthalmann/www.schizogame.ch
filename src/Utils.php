@@ -98,5 +98,7 @@ function component(string $name, array $var = [])
  */
 function redirect($location)
 {
+    ob_clean();
     header('Location: ' . $location, true, 301);
+    exit();
 }
