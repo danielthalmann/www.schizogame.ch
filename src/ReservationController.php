@@ -1,6 +1,4 @@
 <?php
-use Exception;
-use SmtpMail;
 
 class ReservationController
 {
@@ -17,14 +15,14 @@ class ReservationController
             if($_POST['accept'] === 'on') {
                 
                 try {
-                    $sender = new SmtpMail();
+                    $sender = new \SmtpMail();
                     $sender->from = 'daniel.thalmann@white-ermine.ch';
                     $sender->to = 'daniel@thalmann.li';
                     $sender->subject = 'Escape Box : demande';
                     $sender->message = component('email_reservation', $_POST);
                     $sender->Send();
 
-                } catch(Exception $ex) {
+                } catch(\Exception $ex) {
 
                     ob_clean();
                     echo $ex->getMessage();

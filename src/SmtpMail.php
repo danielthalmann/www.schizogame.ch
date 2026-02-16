@@ -1,6 +1,5 @@
 <?php
 
-use Exception;
 
 class SmtpMail
 {
@@ -27,7 +26,7 @@ class SmtpMail
         $accepted = mail($to, $subject, $message, $headers);
 
         if (!$accepted) {
-            throw new Exception('Email delivery not accepted');
+            throw new \Exception('Email delivery not accepted');
         }
     }
 
@@ -37,7 +36,7 @@ class SmtpMail
         {
             if (!filter_var($email, FILTER_VALIDATE_EMAIL))
             {
-                throw new Exception("Invalid email address :" . $email);
+                throw new \Exception("Invalid email address :" . $email);
             }
         }
         return $email;
