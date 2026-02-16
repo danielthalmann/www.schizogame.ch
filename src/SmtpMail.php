@@ -22,7 +22,7 @@ class SmtpMail
         $message = $this->message;
         $headers = [];
         $headers[] = 'MIME-Version: 1.0';
-        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+        $headers[] = 'Content-type: text/html; charset=utf-8';
         $headers[] = "From: " . $this->validate($this->from);
         $headers[] = "Reply-To: " . ($this->validate($this->replyTo) ?? $this->validate($this->from));
         $headers[] = "X-Mailer: PHP/" . phpversion();
