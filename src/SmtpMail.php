@@ -20,10 +20,13 @@ class SmtpMail
         $to = $this->validate($this->to);
         $subject = $this->subject;
         $message = $this->message;
-        $headers = "From: " . $this->validate($this->from) . "\r\n" .
-                "Reply-To: " . ($this->validate($this->replyTo) ?? $this->validate($this->from)) . "\r\n" .
-                "X-Mailer: PHP/" . phpversion();
-        $accepted = mail($to, $subject, $message, $headers);
+        $headers = [];
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+        $headers[] = "From: " . $this->validate($this->from);
+        $headers[] = "Reply-To: " . ($this->validate($this->replyTo) ?? $this->validate($this->from));
+        $headers[] = "X-Mailer: PHP/" . phpversion();
+        $accepted = mail($to, $subject, $message, implode("\r\n", $headers));
 
         if (!$accepted) {
             throw new \Exception('Email delivery not accepted');
