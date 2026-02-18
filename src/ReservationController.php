@@ -4,25 +4,48 @@ class ReservationController
 {
 
     protected $mandatories = [
-        'organisation' => 'Le nom de l\'entreprise ou organisation est obligatoire',
-        'firstname' => 'Le prénom est obligatoire',
-        'lastname' => 'Le nom est obligatoire',
-        'street' => 'La rue est obligatoire',
-        'zipcode' => 'Le numéro postale est obligatoire',
-        'locality' => 'La loccalité est obligatoire',
-        'email' => 'L\'adresse email est obligatoire',
-        'phone' => 'Le numér de téléphone est obligatoire',
-        'event' => 'Le nom de la manifestation est obligatoire',
-        'description' => 'La description est obligatoire',
-        'from' => 'La date du est obligatoire',
-        'to' => 'La date jusqu\'au est obligatoire',
-        'accept' => 'Veuillez accepter les conditions',
+        'fr' => [
+            'organisation' => 'Le nom de l\'entreprise ou organisation est obligatoire',
+            'firstname' => 'Le prénom est obligatoire',
+            'lastname' => 'Le nom est obligatoire',
+            'street' => 'La rue est obligatoire',
+            'zipcode' => 'Le numéro postale est obligatoire',
+            'locality' => 'La loccalité est obligatoire',
+            'email' => 'L\'adresse email est obligatoire',
+            'phone' => 'Le numér de téléphone est obligatoire',
+            'event' => 'Le nom de la manifestation est obligatoire',
+            'description' => 'La description est obligatoire',
+            'from' => 'La date du est obligatoire',
+            'to' => 'La date jusqu\'au est obligatoire',
+            'accept' => 'Veuillez accepter les conditions',
+        ],
+        'de' => [
+            'organisation' => 'Der Name des Unternehmens oder der Organisation ist erforderlich',
+            'firstname' => 'Der Vorname ist erforderlich',
+            'lastname' => 'Der Nachname ist erforderlich',
+            'street' => 'Die Straße ist erforderlich',
+            'zipcode' => 'Die Postleitzahl ist erforderlich',
+            'locality' => 'Der Ort ist erforderlich',
+            'email' => 'Die E-Mail-Adresse ist erforderlich',
+            'phone' => 'Die Telefonnummer ist erforderlich',
+            'event' => 'Der Name der Veranstaltung ist erforderlich',
+            'description' => 'Die Beschreibung ist erforderlich',
+            'from' => 'Das Startdatum ist erforderlich',
+            'to' => 'Das Enddatum ist erforderlich',
+            'accept' => 'Bitte akzeptieren Sie die Bedingungen',
+        ]
     ];
 
     function validate()
     {
+
+        $lang = request_esc('lang');
+
+        if ( !in_array($lang, ['fr', 'de'] ) ) {
+            $lang = 'fr';
+        }
     
-        array_walk($this->mandatories, function($item, $key) {
+        array_walk($this->mandatories[$lang], function($item, $key) {
 
             if ( request($key, null) === null ) {
 
