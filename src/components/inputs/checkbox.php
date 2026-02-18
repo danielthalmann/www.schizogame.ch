@@ -3,9 +3,12 @@
         name="<?= $name ?? 'name' ?>"
         id="<?= $name ?? 'name' ?>_id"
         type="checkbox" 
-        value="<?= $value ?? 'on' ?>"
+        value="on"
         <?php if (isset($mandatory) && $mandatory) : ?>
             required="required"
+        <?php endif; ?>
+        <?php if (($value ?? request_esc($name)) != ''): ?>
+            checked="checked"
         <?php endif; ?>
         >
     <?php if (isset($label)) : ?>

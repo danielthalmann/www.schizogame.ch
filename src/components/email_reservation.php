@@ -2,56 +2,52 @@
 <body>
 <table>
     <tr>
-        <td>organisation           </td>    
+        <td>Entreprise / organisation           </td>    
         <td><?= $organisation ?>   </td>
     </tr>
     <tr>
-        <td>firstname              </td>
+        <td>Prénom              </td>
         <td><?= $firstname ?>      </td>
     </tr>
     <tr>
-        <td>lastname                </td>
+        <td>Nom                </td>
         <td><?= $lastname ?>       </td>
     </tr>
     <tr>
-        <td>street                </td>
+        <td>Rue                </td>
         <td><?= $street ?>        </td>
     </tr>
     <tr>
-        <td>zipcode               </td>
+        <td>Numéro postale               </td>
         <td><?= $zipcode ?>       </td>
     </tr>
     <tr>
-        <td>locality               </td>
+        <td>Localité               </td>
         <td><?= $locality ?>       </td>
     </tr>
     <tr>
-        <td>email                  </td>
+        <td>Email                  </td>
         <td><?= $email ?>          </td>
     </tr>
     <tr>
-        <td>phone                  </td>
+        <td>Téléphone                  </td>
         <td><?= $phone ?>          </td>
     </tr>
     <tr>
-        <td>event                  </td>
+        <td>Nom de l'événement       </td>
         <td><?= $event ?>          </td>
     </tr>
     <tr>
-        <td>description            </td>
+        <td>Description            </td>
         <td><?= $description ?>    </td>
     </tr>
     <tr>
-        <td>from                    </td>
+        <td>A partir du            </td>
         <td><?= $from ?>           </td>
     </tr>
     <tr>
-        <td>to                    </td>
+        <td>Jusqu'au               </td>
         <td><?= $to ?>             </td>
-    </tr>
-    <tr>
-        <td>accept                </td>
-        <td><?= $accept ?>         </td>
     </tr>
 </table>
 

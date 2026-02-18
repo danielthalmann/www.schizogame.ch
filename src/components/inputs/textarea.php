@@ -14,5 +14,5 @@
         <?php if (isset($mandatory) && $mandatory) : ?>
         required="required"
         <?php endif; ?>
-    ><?= $value ?? '' ?></textarea>
+    ><?= $value ?? request_esc($name, '') ?></textarea>
 </div>

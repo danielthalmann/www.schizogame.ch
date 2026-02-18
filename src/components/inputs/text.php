@@ -11,7 +11,7 @@
         type="text"
         name="<?= $name ?? 'name' ?>"
         id="<?= $name ?? 'name' ?>_id"
-        value="<?= $value ?? '' ?>"
+        value="<?= $value ?? request_esc($name, '') ?>"
         <?php if (isset($mandatory) && $mandatory) : ?>
         required="required"
         <?php endif; ?>
