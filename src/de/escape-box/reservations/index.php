@@ -1,12 +1,12 @@
 <?php include('../../../Bootstrap.php'); (new \ReservationController())->handle(); ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Escape Box - réservations</title>
+    <title>Escape Box - Reservierungen</title>
     <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <meta name="description" content="Résous des énigmes et trouve des indices pour aider Federico, un jeune confronté à des troubles schizophréniques, à se rétablir.">
+    <meta name="description" content="Löse Rätsel und finde Hinweise, um Federico, einen Jugendlichen mit schizophrenen Störungen, bei seiner Genesung zu unterstützen.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
     <link rel="icon" href="<?= url('images/logo.svg') ?>" sizes="32x32" />
 
@@ -19,7 +19,7 @@
     <?php include(base_path('components/body_googletag.php')); ?>
 
     <?= component('menu_root', [
-        'lang' => 'fr', 
+        'lang' => 'de', 
         'transparent' => false,
         'path' => 'escape-box/reservations/']) ?>
 
@@ -30,44 +30,44 @@
 
             <div class="bg-white rounded-xl p-5 mb-5 lg:mb-0 ">
                     
-                    <h2 class="mb-3 font-bold">Où chercher l'Escape-box</h2>
+                    <h2 class="mb-3 font-bold">Wo die Escape-Box zu finden ist</h2>
                     
                     <div class="mb-3">
 
-                       <span>Lieu :</span> dans les combles du Restaurant de l’Aigle-noir📍 Rue des Alpes 10, 1700 Fribourg    
+                       <span>Ort :</span> im Dachgeschoss des Restaurants L'Aigle-Noir📍 Rue des Alpes 10, 1700 Fribourg    
 
                     </div>   
                     
-                    <h2 class="mb-3 font-bold">A qui s'adresse l'Escape Box</h2>
+                    <h2 class="mb-3 font-bold">Für wen ist die Escape-Box geeignet</h2>
                     
                     <div class="mb-3">
                     
-                        <p><span class="font-bold">Groupe :</span> 3 à 5 personnes maximum (optimal : 4 personnes)</p>
-                        <p><span class="font-bold">Horaires :</span> du lundi au samedi, de 09:15 à 19:45 (dernier départ)</p>
-                        <p><span class="font-bold">Durée maximale du jeu :</span> 60 minutes</p>
-                        <p><span class="font-bold">Inscription :</span> préalable obligatoire</p>
-                        <p><span class="font-bold">Tarif :</span> gratuit et ouvert à tous-tes dès 16 ans</p>
-                        <p><span class="font-bold">Confirmation :</span> dès votre inscription, vous recevez un mail de confirmation</p>
+                        <p><span class="font-bold">Gruppe :</span> 3 bis 5 Personen maximal (optimal: 4 Personen)</p>
+                        <p><span class="font-bold">Öffnungszeiten :</span> Montag bis Samstag, 09:15–19:45 (letzter Start)</p>
+                        <p><span class="font-bold">Maximale Spieldauer :</span> 60 Minuten</p>
+                        <p><span class="font-bold">Anmeldung :</span> Voranmeldung erforderlich</p>
+                        <p><span class="font-bold">Preis :</span> kostenlos und offen für alle ab 16 Jahren</p>
+                        <p><span class="font-bold">Bestätigung :</span> Nach Ihrer Anmeldung erhalten Sie eine Bestätigungs-E-Mail</p>
                     
                     </div>
 
 
-                    <h2 class="mb-3 font-bold">Condition d'emprunt</h2>
+                    <h2 class="mb-3 font-bold">Leihbedingungen</h2>
                     
                     <div class="mb-3">
 
                     
-                        En cas de contretemps, merci d’annoncer votre annulation dans les meilleurs délais à l’adresse :
+                        Bei Verhinderung bitten wir Sie, Ihre Absage so früh wie möglich an folgende Adresse zu senden:
                         contact@schizogame.ch
 
                     </div>
 
-                    <h2 class="mb-3 font-bold">Condition d'utilisation</h2>
+                    <h2 class="mb-3 font-bold">Nutzungsbedingungen</h2>
                     
                     <div class="mb-3">
 
                     
-                        En cas de contretemps, merci d’annoncer votre annulation dans les meilleurs délais à l’adresse :
+                        Bei Verhinderung bitten wir Sie, Ihre Absage so früh wie möglich an folgende Adresse zu senden:
                         contact@schizogame.ch
 
                     </div>
@@ -78,7 +78,7 @@
 
             <form action="" method="post" >
 
-                <h2 class="mb-3 font-bold">Formulaire de réservation de l'Escape Box</h2>
+                <h2 class="mb-3 font-bold">Reservierungsformular für die Escape-Box</h2>
 
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
@@ -88,20 +88,20 @@
                         
                         <div class="border-1  bg-green-400 p-3 rounded-sm my-4">
 
-                            Les informations sasies dans le formulaire ci-dessous ont bien été envoyé. Vous allez être contacté dès que possible par téléphone ou e-mail.
+                            Die im untenstehenden Formular eingegebenen Informationen wurden erfolgreich gesendet. Sie werden so bald wie möglich telefonisch oder per E-Mail kontaktiert.
 
                         </div>
 
                     <?php endif; ?>
 
                     <p class="mb-5">
-                        Indiquez les informations de l'entreprise ou l'organisation qui souhaite emprunter l'Escape Box.<br>
+                        Geben Sie die Informationen des Unternehmens oder der Organisation an, die die Escape-Box ausleihen möchte.<br>
                     </p>
 
                     <div>
                         <?= component('inputs.text',[
                             'name' => 'organisation',
-                            'label' => 'Entreprise ou organisation',
+                            'label' => 'Firma oder Organisation',
                             'mandatory' => true,
                         ] ) ?>
                         
@@ -111,7 +111,7 @@
                         <div>
                             <?= component('inputs.text',[
                                 'name' => 'lastname',
-                                'label' => 'Nom',
+                                'label' => 'Nachname',
                                 'mandatory' => true,
                             ] ) ?>
                             
@@ -119,7 +119,7 @@
                         <div>
                             <?= component('inputs.text',[
                                 'name' => 'firstname',
-                                'label' => 'Prénom',
+                                'label' => 'Vorname',
                                 'mandatory' => true,
                             ] ) ?>
 
@@ -129,7 +129,7 @@
                     <div>
                         <?= component('inputs.text',[
                             'name' => 'street',
-                            'label' => 'Rue et numéro de rue',
+                            'label' => 'Straße und Hausnummer',
                             'mandatory' => true,
                         ] ) ?>
                         
@@ -139,7 +139,7 @@
                         <div>
                             <?= component('inputs.text',[
                                 'name' => 'zipcode',
-                                'label' => 'NPA',
+                                'label' => 'PLZ',
                                 'mandatory' => true,
                             ] ) ?>
                             
@@ -147,7 +147,7 @@
                         <div class="col-span-3">
                             <?= component('inputs.text',[
                                 'name' => 'locality',
-                                'label' => 'Localité',
+                                'label' => 'Ort',
                                 'mandatory' => true,
                             ] ) ?>
 
@@ -156,13 +156,13 @@
 
                     <?= component('inputs.text',[
                         'name' => 'email',
-                        'label' => 'Adresse e-mail',
+                        'label' => 'E-Mail-Adresse',
                         'mandatory' => true,
                     ] ) ?>
 
                     <?= component('inputs.text',[
                         'name' => 'phone',
-                        'label' => 'Numéro de téléphone',
+                        'label' => 'Telefonnummer',
                         'mandatory' => true,
                     ] ) ?>
 
@@ -171,19 +171,19 @@
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
                     <p class="mb-5">
-                        Indiquez les informations de la manifestation ou de l'événement où sera utilisé l'Escape Box.<br>
+                        Geben Sie die Informationen zur Veranstaltung an, bei der die Escape-Box eingesetzt wird.<br>
                     </p>
 
                     <?= component('inputs.text',[
                         'name' => 'event',
-                        'label' => 'Nom de la manifestation ou de l\'événement',
+                        'label' => 'Name der Veranstaltung',
                         'mandatory' => true,
 
                     ] ) ?>
 
                     <?= component('inputs.textarea',[
                         'name' => 'description',
-                        'label' => 'Description de la manifestation ou de l\'événement',
+                        'label' => 'Beschreibung der Veranstaltung',
                         'mandatory' => true,
 
                     ] ) ?>
@@ -193,15 +193,15 @@
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
                     <p class="mb-5">
-                        Veuillez indiquer la période de location de l'Escape Box.<br>
-                        L'Escape Box ne peut pas être réservé avant le le <span class="font-bold"><?= (new DateTime())->add(new DateInterval('P1W'))->format('d.m.Y') ?></span>.
+                        Bitte geben Sie den Mietzeitraum der Escape-Box an.<br>
+                        Die Escape-Box kann nicht vor dem <span class="font-bold"><?= (new DateTime())->add(new DateInterval('P1W'))->format('d.m.Y') ?></span> reserviert werden.
                     </p>
 
                     <div class="md:grid md:grid-cols-2 md:gap-3">
                         <div>
                             <?= component('inputs.date',[
                                 'name' => 'from',
-                                'label' => 'À partir du',
+                                'label' => 'Ab dem',
                                 'mandatory' => true,
                             ] ) ?>
                             
@@ -209,7 +209,7 @@
                         <div>
                             <?= component('inputs.date',[
                                 'name' => 'to',
-                                'label' => 'Jusqu\'au',
+                                'label' => 'Bis zum',
                                 'mandatory' => true,
                             ] ) ?>
 
@@ -221,7 +221,7 @@
 
                 <?= component('inputs.checkbox',[
                     'name' => 'accept',
-                    'label' => 'J\'accepte les conditions d\'emprunt de l\'Escape-box',
+                    'label' => 'Ich akzeptiere die Leihbedingungen der Escape-Box',
                     'mandatory' => true,
 
                 ] ) ?>
@@ -232,7 +232,7 @@
 
                 <div class="my-5 text-center">
                     <?= component('inputs.button',[
-                        'label' => 'Envoyer la demande',
+                        'label' => 'Anfrage senden',
                     ] ) ?>
                 </div>
 
@@ -244,7 +244,7 @@
 
                 <?= component('inputs.hidden',[
                     'name' => 'lang',
-                    'value' => 'fr'
+                    'value' => 'de'
                 ] ) ?>                
             
             </form>
