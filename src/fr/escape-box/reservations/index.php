@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Escape Box</title>
+    <title>Escape Box - réservations</title>
     <link href="<?= url('theme.css') ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Résous des énigmes et trouve des indices pour aider Federico, un jeune confronté à des troubles schizophréniques, à se rétablir.">
@@ -82,6 +82,8 @@
 
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
+                    <?= component('errors') ?>
+
                     <p class="mb-5">
                         Indiquez les informations de l'entreprise ou l'organisation qui souhaite emprunter l'Escape Box.<br>
                     </p>
@@ -98,7 +100,7 @@
                     <div class="md:grid md:grid-cols-2 md:gap-3">
                         <div>
                             <?= component('inputs.text',[
-                                'name' => 'firstname',
+                                'name' => 'lastname',
                                 'label' => 'Nom',
                                 'mandatory' => true,
                             ] ) ?>
@@ -106,7 +108,7 @@
                         </div>
                         <div>
                             <?= component('inputs.text',[
-                                'name' => 'lastname',
+                                'name' => 'firstname',
                                 'label' => 'Prénom',
                                 'mandatory' => true,
                             ] ) ?>
@@ -221,6 +223,10 @@
                         'label' => 'Envoyer la demande',
                     ] ) ?>
                 </div>
+
+                <?= component('inputs.nofilled',[
+                    'name' => 'street-nf',
+                ] ) ?>
             
             </form>
 

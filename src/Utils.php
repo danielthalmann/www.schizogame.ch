@@ -102,3 +102,47 @@ function redirect($location)
     header('Location: ' . $location, true, 301);
     exit();
 }
+
+/**
+ * return request value
+ * @param mixed $name
+ * @param mixed $default
+ */
+function request($name, $default = null)
+{
+    return $_POST[$name] ?? $_GET[$name] ?? $default;
+}
+
+/**
+ * return request value escaped
+ * @param mixed $name
+ * @param mixed $default
+ */
+function request_esc($name, $default = null)
+{
+    return htmlentities(request($name, $default));
+}
+
+/**
+ * return array of request value escaped
+ */
+function request_all()
+{
+    return array_merge($_POST, $_GET);
+}
+
+/**
+ * return array of request value escaped
+ * @return string[]
+ */
+function request_all_esc()
+{
+    $req = request_all();
+
+    array_walk($req, function (&$item, $key) {
+        $item = htmlentities($item);
+    });
+    
+    return $req;
+}
+
