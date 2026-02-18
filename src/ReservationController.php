@@ -97,7 +97,7 @@ class ReservationController
                 } catch(\Exception $ex) {
 
                     \MessageBag::set('error', true);
-                    \MessageBag::set('message', 'Erreur lors de l\'envoi : ' . $ex->getMessage());
+                    \MessageBag::set('message', 'Failed to send message : ' . $ex->getMessage());
                     
                     return;
                     
