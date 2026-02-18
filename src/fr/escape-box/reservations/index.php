@@ -84,6 +84,16 @@
 
                     <?= component('errors') ?>
 
+                    <?php if(MessageBag::get('sended', false)): ?>
+                        
+                        <div class="border-1  bg-green-400 p-3 rounded-sm my-4">
+
+                            Les informations sasie dans le formulaire ci-dessous ont bien été envoyé. Vous allez être contacté dès que possible par téléphone ou e-mail.
+
+                        </div>
+
+                    <?php endif; ?>
+
                     <p class="mb-5">
                         Indiquez les informations de l'entreprise ou l'organisation qui souhaite emprunter l'Escape Box.<br>
                     </p>
@@ -218,15 +228,24 @@
 
                 <hr>
 
+                <?php if(!MessageBag::get('sended', false)): ?>
+
                 <div class="my-5 text-center">
                     <?= component('inputs.button',[
                         'label' => 'Envoyer la demande',
                     ] ) ?>
                 </div>
 
+                <?php endif; ?>
+
                 <?= component('inputs.nofilled',[
                     'name' => 'street-nf',
                 ] ) ?>
+
+                <?= component('inputs.hidden',[
+                    'name' => 'lang',
+                    'value' => 'fr'
+                ] ) ?>                
             
             </form>
 

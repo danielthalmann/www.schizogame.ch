@@ -146,3 +146,13 @@ function request_all_esc()
     return $req;
 }
 
+/**
+ * return true if key is in request
+ * @param mixed $key
+ * @return bool
+ */
+function request_has($key)
+{
+    return in_array($key, array_keys(request_all()));
+}
+

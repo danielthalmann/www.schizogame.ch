@@ -553,24 +553,6 @@
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
@@ -912,6 +894,9 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
+  .bg-green-400 {
+    background-color: var(--color-green-400);
+  }
   .bg-jds-500 {
     background-color: var(--color-jds-500);
   }
@@ -1089,11 +1074,17 @@
   .text-gray-950 {
     color: var(--color-gray-950);
   }
+  .text-green-400 {
+    color: var(--color-green-400);
+  }
   .text-jds-500 {
     color: var(--color-jds-500);
   }
   .text-neutral-100 {
     color: var(--color-neutral-100);
+  }
+  .text-neutral-300 {
+    color: var(--color-neutral-300);
   }
   .text-neutral-800 {
     color: var(--color-neutral-800);

@@ -4,7 +4,6 @@ class ReservationController
 {
 
     protected $mandatories = [
-        'email' => 'L\'adresse email est obligatoire',
         'organisation' => 'Le nom de l\'entreprise ou organisation est obligatoire',
         'firstname' => 'Le prénom est obligatoire',
         'lastname' => 'Le nom est obligatoire',
@@ -68,19 +67,21 @@ class ReservationController
                     $sender->message = component('email_reservation', request_all_esc());
                     $sender->Send();
 
+                    \MessageBag::set('sended', true);
+
+                    //redirect(url(request_esc('lang') . '/escape-box/reservations/?sended'));
+
                 } catch(\Exception $ex) {
 
                     \MessageBag::set('error', true);
-                    \MessageBag::set('massage', 'Erreur lors de l\'envoi : ' . $ex->getMessage());
+                    \MessageBag::set('message', 'Erreur lors de l\'envoi : ' . $ex->getMessage());
                     
                     return;
                     
                 }
                 
             }
-            
-            redirect(url('fr/'));
-        
+                    
         }
 
     }
