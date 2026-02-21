@@ -559,6 +559,15 @@
   .m-4 {
     margin: calc(var(--spacing) * 4);
   }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
+  }
+  .m-9 {
+    margin: calc(var(--spacing) * 9);
+  }
+  .m-\[8�\18 �c�\+\7 Oz\*\15 \f �FZN��X\"뗣W��\14 b�gb�\^\1 \}�\12 n\1 v���ݲ��픱��Osm��u���u\~��9\7 �\7 ���\16 ��\5 \[��\5 S��\19 \]\.\}\15 Up�J\12 _�\$\11 ܃͑\)��5UБs��\7f \+\%�\$��\]�Tl��BI���\"SFVR����\^\*cak\%��oGfӥ��Z����\6 q�l\11 �ּy\\\[�z\<\1b �j\@�\] {
+    margin: 8��c�+Oz*�FZN��X"뗣W��b�gb�^}�nv���ݲ��픱��Osm��u���u~��9������[��S��].}Up�J �$܃͑)��5UБs��+%�$��]�Tl��BI���"SFVR����^*cak%��oGfӥ��Z����q�l�ּy\[�z<�j@�;
+  }
   .m-auto {
     margin: auto;
   }
@@ -567,6 +576,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
@@ -597,6 +609,9 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
@@ -664,6 +679,9 @@
   .table {
     display: table;
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -685,8 +703,20 @@
   .max-h-52 {
     max-height: calc(var(--spacing) * 52);
   }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
+  }
+  .max-h-96 {
+    max-height: calc(var(--spacing) * 96);
+  }
+  .max-h-124 {
+    max-height: calc(var(--spacing) * 124);
+  }
   .min-h-36 {
     min-height: calc(var(--spacing) * 36);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -903,6 +933,9 @@
   .bg-neutral-200 {
     background-color: var(--color-neutral-200);
   }
+  .bg-neutral-400 {
+    background-color: var(--color-neutral-400);
+  }
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
   }
@@ -1074,17 +1107,11 @@
   .text-gray-950 {
     color: var(--color-gray-950);
   }
-  .text-green-400 {
-    color: var(--color-green-400);
-  }
   .text-jds-500 {
     color: var(--color-jds-500);
   }
   .text-neutral-100 {
     color: var(--color-neutral-100);
-  }
-  .text-neutral-300 {
-    color: var(--color-neutral-300);
   }
   .text-neutral-800 {
     color: var(--color-neutral-800);
@@ -1123,6 +1150,9 @@
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
+  }
+  .\[us\3 \b �T�-\7 \{n\1 J���l_�f\]B8\>�\8 l�F�\1b �\}\:�h��\7f ����1\&��\18 ��dG�w\|w�\]E�\] {
+    us�T�-{nJ���l_�f]B8>�l�F��}: �h������1&����dG�w|w�]E�;
   }
   .select-none {
     -webkit-user-select: none;
