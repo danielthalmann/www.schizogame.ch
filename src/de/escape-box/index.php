@@ -38,7 +38,7 @@
         ]
     ]) ?>    
 
-    <?= component('block_map',
+    <?= component('block_image',
     [
         'title' => 'Komm und teste die Escape Box und andere einzigartige Spiele im Herzen von Freiburg!',
         'sentences' => [
@@ -47,6 +47,8 @@
         ],
         'link_text' => 'Reservierungen',
         'link_url' => 'https://reservations.schizogame.ch/',
+        'image' => url('images/affiche-jds2026.png'),
+        'image_url' => url('medias/JDS2026_Affiches_A3.pdf'),
     ]) ?>    
 
     <?= component('block_sentence',
@@ -67,10 +69,11 @@
         'css' => 'bg-escapebox-light text-white',
         'title' => 'Nach der Veranstaltung',
         'sentences' => [
-            'Escape Box zur Ausleihe: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
+            'Escape Box zur Miete: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
             'Nach den JdS und Ludesco kann die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
-            'Kontaktiere uns per E-Mail an info@horizonsud.ch, um die Escape Box zu reservieren.',
-        ]
+        ],
+        'link_text' => 'Informtionen und Escape Box-Vermietung',
+        'link_url' => url('de/escape-box/reservations'),        
     ]) ?>
 
     <?= component('block_sentence',
