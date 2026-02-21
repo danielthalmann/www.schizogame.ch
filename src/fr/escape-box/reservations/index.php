@@ -30,47 +30,44 @@
 
             <div class="bg-white rounded-xl p-5 mb-5 lg:mb-0 ">
                     
-                    <h2 class="mb-3 font-bold">Où chercher l'Escape-box</h2>
-                    
-                    <div class="mb-3">
-
-                       <span>Lieu :</span> dans les combles du Restaurant de l’Aigle-noir📍 Rue des Alpes 10, 1700 Fribourg    
-
-                    </div>   
-                    
                     <h2 class="mb-3 font-bold">A qui s'adresse l'Escape Box</h2>
                     
                     <div class="mb-3">
+
+                       L'Escape box est une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler. <br>
+                       Son usage est conçu exclusivement pour des personnes âgées de 16 ans et plus.<br>
+                       Elle est destinée aux écoles, organismes, associations souhaitant sensibiliser à la santé mentale lors de portes ouvertes, festivals, ateliers ou manifestations. <br>
+                       Elle se joue entre 3 à 5 personnes (optimal 4 personnes) et la durée maximale du jeu est de 60 minutes.
+
+                    </div>   
                     
-                        <p><span class="font-bold">Groupe :</span> 3 à 5 personnes maximum (optimal : 4 personnes)</p>
-                        <p><span class="font-bold">Horaires :</span> du lundi au samedi, de 09:15 à 19:45 (dernier départ)</p>
-                        <p><span class="font-bold">Durée maximale du jeu :</span> 60 minutes</p>
-                        <p><span class="font-bold">Inscription :</span> préalable obligatoire</p>
-                        <p><span class="font-bold">Tarif :</span> gratuit et ouvert à tous-tes dès 16 ans</p>
-                        <p><span class="font-bold">Confirmation :</span> dès votre inscription, vous recevez un mail de confirmation</p>
+                    <h2 class="mb-3 font-bold">Conditions de location</h2>
                     
+                    <div class="mb-3">
+                    
+                        Une réservation préalable par le biais du formulaire de réservation est nécessaire. <br>
+                        Un contrat de bail devra être signé et un état des lieux sera fait avant le retrait et à la restitution de l'Escape Box. <br>
+                        Un <span class="font-semibold">montant de CHF 100.-</span> est demandée pour la durée de la location (montant destiné à l'entretien de l'Escape Box).<br>
+                        Vous assumez et organisez entièrement le transport de l'Escape Box.<br>
+                        <div class="mt-3"><a class="text-escapebox font-semibold" href="#">Contrat de location</a></div>
+
+                   
                     </div>
 
 
-                    <h2 class="mb-3 font-bold">Condition d'emprunt</h2>
+                    <h2 class="mb-3 font-bold">L'Escape Box</h2>
                     
                     <div class="mb-3">
 
-                    
-                        En cas de contretemps, merci d’annoncer votre annulation dans les meilleurs délais à l’adresse :
-                        contact@schizogame.ch
+                        Le retrait et la restitution se font auprès de <span class="font-semibold">la Fondation Horizon Sud, Route de la Rotonde 25, 1633 Marsens</span>.<br>
+                        L'Escape Box pèse environ 50 kg.<br>
+                        Elle mesure un mètre de long, sur 50 centimètres de large et 50 centimètres de haut.<br>
+                        Il faut prévoir deux personnes minimum et un véhicule adapté pour la déplacer.<br>
 
                     </div>
 
-                    <h2 class="mb-3 font-bold">Condition d'utilisation</h2>
-                    
-                    <div class="mb-3">
+                    <div class="mt-10 mb-3">Toute demande de renseignements peut être faite via: <span class="font-semibold">secretariat@horizonsud.ch</span> (mardi-mercredi et jeudi matin)</div>
 
-                    
-                        En cas de contretemps, merci d’annoncer votre annulation dans les meilleurs délais à l’adresse :
-                        contact@schizogame.ch
-
-                    </div>
 
             </div>
 
@@ -95,7 +92,9 @@
                     <?php endif; ?>
 
                     <p class="mb-5">
-                        Indiquez les informations de l'entreprise ou l'organisation qui souhaite emprunter l'Escape Box.<br>
+
+                        Indiquez les informations de l'entreprise ou l'organisation qui souhaite louer l'Escape Box.<br>
+
                     </p>
 
                     <div>
@@ -193,8 +192,7 @@
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
                     <p class="mb-5">
-                        Veuillez indiquer la période de location de l'Escape Box.<br>
-                        L'Escape Box ne peut pas être réservé avant le le <span class="font-bold"><?= (new DateTime())->add(new DateInterval('P1W'))->format('d.m.Y') ?></span>.
+                        Veuillez indiquer la période souhaitée pour la location de l'Escape Box.<br>
                     </p>
 
                     <div class="md:grid md:grid-cols-2 md:gap-3">
@@ -221,7 +219,7 @@
 
                 <?= component('inputs.checkbox',[
                     'name' => 'accept',
-                    'label' => 'J\'accepte les conditions d\'emprunt de l\'Escape-box',
+                    'label' => 'J\'accepte les <a class="text-escapebox font-semibold" href="#">conditions de location</a> de l\'Escape Box',
                     'mandatory' => true,
 
                 ] ) ?>

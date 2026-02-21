@@ -30,47 +30,43 @@
 
             <div class="bg-white rounded-xl p-5 mb-5 lg:mb-0 ">
                     
-                    <h2 class="mb-3 font-bold">Wo die Escape-Box zu finden ist</h2>
+                    <h2 class="mb-3 font-bold">Wo die Escape Box zu finden ist</h2>
                     
                     <div class="mb-3">
 
-                       <span>Ort :</span> im Dachgeschoss des Restaurants L'Aigle-Noir📍 Rue des Alpes 10, 1700 Fribourg    
+                        Die Escape Box ist eine kompakte Box voller Rätsel, Zahlenschlösser, versteckter Hinweise und zum Anfassen gedachter Objekte.<br>
+                        Ihre Nutzung ist ausschließlich für Personen ab 16 Jahren vorgesehen.<br>
+                        Sie richtet sich an Schulen, Organisationen und Vereine, die bei Tagen der offenen Tür, Festivals, Workshops oder Veranstaltungen für psychische Gesundheit sensibilisieren möchten.<br>
+                        Gespielt wird in Gruppen von 3 bis 5 Personen (optimal 4 Personen) und die maximale Spieldauer beträgt 60 Minuten.<br>
 
                     </div>   
                     
-                    <h2 class="mb-3 font-bold">Für wen ist die Escape-Box geeignet</h2>
+                    <h2 class="mb-3 font-bold">Conditions de location</h2>
                     
                     <div class="mb-3">
                     
-                        <p><span class="font-bold">Gruppe :</span> 3 bis 5 Personen maximal (optimal: 4 Personen)</p>
-                        <p><span class="font-bold">Öffnungszeiten :</span> Montag bis Samstag, 09:15–19:45 (letzter Start)</p>
-                        <p><span class="font-bold">Maximale Spieldauer :</span> 60 Minuten</p>
-                        <p><span class="font-bold">Anmeldung :</span> Voranmeldung erforderlich</p>
-                        <p><span class="font-bold">Preis :</span> kostenlos und offen für alle ab 16 Jahren</p>
-                        <p><span class="font-bold">Bestätigung :</span> Nach Ihrer Anmeldung erhalten Sie eine Bestätigungs-E-Mail</p>
-                    
+                        Une réservation préalable par le biais du formulaire de réservation est nécessaire. <br>
+                        Un contrat de bail devra être signé et un état des lieux sera fait avant le retrait et à la restitution de l'Escape Box. <br>
+                        Un <span class="font-semibold">montant de CHF 100.-</span> est demandée pour la durée de la location (montant destiné à l'entretien de l'Escape Box).<br>
+                        Vous assumez et organisez entièrement le transport de l'Escape Box.<br>
+                        <div class="mt-3"><a class="text-escapebox font-semibold" href="#">Contrat de location</a></div>
+                   
                     </div>
 
 
-                    <h2 class="mb-3 font-bold">Leihbedingungen</h2>
+                    <h2 class="mb-3 font-bold">L'Escape Box</h2>
                     
                     <div class="mb-3">
 
-                    
-                        Bei Verhinderung bitten wir Sie, Ihre Absage so früh wie möglich an folgende Adresse zu senden:
-                        contact@schizogame.ch
+                        Le retrait et la restitution se font auprès de <span class="font-semibold">la Fondation Horizon Sud, Route de la Rotonde 25, 1633 Marsens</span>.<br>
+                        L'Escape Box pèse environ 50 kg.<br>
+                        Elle mesure un mètre de long, sur 50 centimètres de large et 50 centimètres de haut.<br>
+                        Il faut prévoir deux personnes minimum et un véhicule adapté pour la déplacer.<br>
 
                     </div>
 
-                    <h2 class="mb-3 font-bold">Nutzungsbedingungen</h2>
-                    
-                    <div class="mb-3">
+                    <div class="mt-10 mb-3">Toute demande de renseignements peut être faite via: <span class="font-semibold">secretariat@horizonsud.ch</span> (mardi-mercredi et jeudi matin)</div>
 
-                    
-                        Bei Verhinderung bitten wir Sie, Ihre Absage so früh wie möglich an folgende Adresse zu senden:
-                        contact@schizogame.ch
-
-                    </div>
 
             </div>
 
@@ -78,7 +74,7 @@
 
             <form action="" method="post" >
 
-                <h2 class="mb-3 font-bold">Reservierungsformular für die Escape-Box</h2>
+                <h2 class="mb-3 font-bold">Reservierungsformular für die Escape Box</h2>
 
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
@@ -95,7 +91,9 @@
                     <?php endif; ?>
 
                     <p class="mb-5">
-                        Geben Sie die Informationen des Unternehmens oder der Organisation an, die die Escape-Box ausleihen möchte.<br>
+
+                        Indiquez les informations de l'entreprise ou l'organisation qui souhaite louer l'Escape Box.<br>
+
                     </p>
 
                     <div>
@@ -171,7 +169,7 @@
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
                     <p class="mb-5">
-                        Geben Sie die Informationen zur Veranstaltung an, bei der die Escape-Box eingesetzt wird.<br>
+                        Geben Sie die Informationen zur Veranstaltung an, bei der die Escape Box eingesetzt wird.<br>
                     </p>
 
                     <?= component('inputs.text',[
@@ -193,8 +191,7 @@
                 <div class="border-1 border-zinc-500 rounded-sm p-3 mb-3">
 
                     <p class="mb-5">
-                        Bitte geben Sie den Mietzeitraum der Escape-Box an.<br>
-                        Die Escape-Box kann nicht vor dem <span class="font-bold"><?= (new DateTime())->add(new DateInterval('P1W'))->format('d.m.Y') ?></span> reserviert werden.
+                        Bitte geben Sie den Mietzeitraum der Escape Box an.<br>
                     </p>
 
                     <div class="md:grid md:grid-cols-2 md:gap-3">
@@ -221,7 +218,7 @@
 
                 <?= component('inputs.checkbox',[
                     'name' => 'accept',
-                    'label' => 'Ich akzeptiere die Leihbedingungen der Escape-Box',
+                    'label' => 'Ich akzeptiere <a class="text-escapebox font-semibold" href="#">die Mietbedingungen</a> von Escape Box',
                     'mandatory' => true,
 
                 ] ) ?>
