@@ -64,6 +64,7 @@
         'link_url' => 'https://ludesco.ch/',
     ]) ?>
 
+    <?php if((new DateTime()) > (new DateTime('2026-03-01'))): ?>
     <?= component('block_sentence',
     [
         'css' => 'bg-escapebox-light text-white',
@@ -75,6 +76,17 @@
         'link_text' => 'Informtionen und Escape Box-Vermietung',
         'link_url' => url('de/escape-box/reservations'),        
     ]) ?>
+    <?php else: ?>
+    <?= component('block_sentence',
+    [
+        'css' => 'bg-escapebox-light text-white',
+        'title' => 'Nach der Veranstaltung',
+        'sentences' => [
+            'Escape Box zur Miete: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
+            'Nach den JdS und Ludesco kann die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
+        ],
+    ]) ?>
+    <?php endif; ?>
 
     <?= component('block_sentence',
     [

@@ -64,6 +64,7 @@
         'link_url' => 'https://ludesco.ch/',
     ]) ?>
 
+    <?php if((new DateTime()) > (new DateTime('2026-03-01'))): ?>
     <?= component('block_sentence',
     [
         'css' => 'bg-escapebox-light text-white',
@@ -75,6 +76,17 @@
         'link_text' => 'Info et location',
         'link_url' => url('fr/escape-box/reservations'),
     ]) ?>
+    <?php else: ?>
+    <?= component('block_sentence',
+    [
+        'css' => 'bg-escapebox-light text-white',
+        'title' => 'Après l\'événement',
+        'sentences' => [
+            'Escape Box en location : mets la santé mentale au cœur d’un événement !' , 
+            'Après les JdS et Ludesco, l’Escape Box est disponible en location pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
+            ],
+    ]) ?>
+    <?php endif; ?>
 
     <?= component('block_sentence',
     [
