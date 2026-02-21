@@ -84,8 +84,8 @@ class ReservationController
 
                 try {
                     $sender = new \SmtpMail();
-                    $sender->from = 'daniel.thalmann@white-ermine.ch';
-                    $sender->to = 'daniel@thalmann.li';
+                    $sender->from = 'contact@schizogame.ch';
+                    $sender->to = 'secretariat@horizonsud.ch';
                     $sender->subject = 'Escape Box : demande';
                     $sender->message = component('email_reservation', request_all_esc());
                     $sender->Send();
