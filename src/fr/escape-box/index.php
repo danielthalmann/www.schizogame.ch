@@ -31,7 +31,7 @@
     [
         'css' => 'bg-white',
         'illustration' => 'bg-locked',
-        'title' => 'L’escape Box',
+        'title' => 'L’Escape Box',
         'sentences' => [
             'Dans une boîte compacte remplie de casse-têtes, cadenas à codes, indices cachés et objets à manipuler, explore différentes pièces pour résoudre les énigmes en 60 minutes chrono et accompagne Federico pas à pas vers le rétablissement !' , 
             'Que tu sois joueur.se aguerri.e ou simple curieux.se, cette aventure t’invite à dépasser tes préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : tu ne verras plus la santé mentale du même œil !',
