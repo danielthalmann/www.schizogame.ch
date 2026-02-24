@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Between two realities</title>
-    <link href="<?= url('theme.css') ?>" rel="stylesheet">
+    <link href="<?= url('theme.css?v' . SITE_VERSION) ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Kevin ist ein junger Mensch mit Schizophrenie. In diesem interaktiven Spiel können Sie in seine Haut schlüpfen und seine Welt erleben.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">

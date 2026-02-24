@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Escape Box - réservations</title>
-    <link href="<?= url('theme.css') ?>" rel="stylesheet">
+    <link href="<?= url('theme.css?v' . SITE_VERSION) ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Résous des énigmes et trouve des indices pour aider Federico, un jeune confronté à des troubles schizophréniques, à se rétablir.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Schizogame</title>
-    <link href="<?= url('theme.css') ?>" rel="stylesheet">
+    <link href="<?= url('theme.css?v' . SITE_VERSION) ?>" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta name="description" content="Pour son édition 2025, le comité fribourgeois des Journées de la Schizophrénie vous invite à une expérience immersive inédite : un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.">
     <meta name="author" content="Daniel Thalmann (white-ermine.ch)">
