@@ -84,6 +84,7 @@
         'sentences' => [
             'Escape Box en location : mets la santé mentale au cœur d’un événement !' , 
             'Après les JdS et Ludesco, l’Escape Box est disponible en location pour les écoles, organismes, associations et manifestations souhaitant sensibiliser à la santé mentale (portes ouvertes, festivals, ateliers, etc.).',
+            'Les réservations seront ouvertes prochainement.'
             ],
     ]) ?>
     <?php endif; ?>

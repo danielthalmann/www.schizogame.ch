@@ -523,9 +523,6 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
   .absolute {
     position: absolute;
   }
@@ -559,15 +556,6 @@
   .m-4 {
     margin: calc(var(--spacing) * 4);
   }
-  .m-8 {
-    margin: calc(var(--spacing) * 8);
-  }
-  .m-9 {
-    margin: calc(var(--spacing) * 9);
-  }
-  .m-\[8�\18 �c�\+\7 Oz\*\15 \f �FZN��X\"뗣W��\14 b�gb�\^\1 \}�\12 n\1 v���ݲ��픱��Osm��u���u\~��9\7 �\7 ���\16 ��\5 \[��\5 S��\19 \]\.\}\15 Up�J\12 _�\$\11 ܃͑\)��5UБs��\7f \+\%�\$��\]�Tl��BI���\"SFVR����\^\*cak\%��oGfӥ��Z����\6 q�l\11 �ּy\\\[�z\<\1b �j\@�\] {
-    margin: 8��c�+Oz*�FZN��X"뗣W��b�gb�^}�nv���ݲ��픱��Osm��u���u~��9������[��S��].}Up�J �$܃͑)��5UБs��+%�$��]�Tl��BI���"SFVR����^*cak%��oGfӥ��Z����q�l�ּy\[�z<�j@�;
-  }
   .m-auto {
     margin: auto;
   }
@@ -576,9 +564,6 @@
   }
   .mx-auto {
     margin-inline: auto;
-  }
-  .my-3 {
-    margin-block: calc(var(--spacing) * 3);
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
@@ -670,17 +655,8 @@
   .inline-block {
     display: inline-block;
   }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
   .table {
     display: table;
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-4 {
     height: calc(var(--spacing) * 4);
@@ -703,20 +679,11 @@
   .max-h-52 {
     max-height: calc(var(--spacing) * 52);
   }
-  .max-h-80 {
-    max-height: calc(var(--spacing) * 80);
-  }
-  .max-h-96 {
-    max-height: calc(var(--spacing) * 96);
-  }
   .max-h-124 {
     max-height: calc(var(--spacing) * 124);
   }
   .min-h-36 {
     min-height: calc(var(--spacing) * 36);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -751,9 +718,6 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .origin-center {
     transform-origin: center;
   }
@@ -777,9 +741,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -870,10 +831,6 @@
   .rounded-b-lg {
     border-bottom-right-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -1132,15 +1089,8 @@
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-jdsgray-500 {
-    --tw-shadow-color: var(--color-jdsgray-500);
-  }
   .shadow-jdsgray-500\/50 {
     --tw-shadow-color: color-mix(in oklab, var(--color-jdsgray-500) 50%, transparent);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -1150,9 +1100,6 @@
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
-  }
-  .\[us\3 \b �T�-\7 \{n\1 J���l_�f\]B8\>�\8 l�F�\1b �\}\:�h��\7f ����1\&��\18 ��dG�w\|w�\]E�\] {
-    us�T�-{nJ���l_�f]B8>�l�F��}: �h������1&����dG�w|w�]E�;
   }
   .select-none {
     -webkit-user-select: none;
@@ -1861,12 +1808,12 @@ html {
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
 }

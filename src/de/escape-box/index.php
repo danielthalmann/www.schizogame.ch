@@ -84,6 +84,7 @@
         'sentences' => [
             'Escape Box zur Miete: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
             'Nach den JdS und Ludesco kann die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
+            'Reservierungen sind in Kürze möglich.'
         ],
     ]) ?>
     <?php endif; ?>
