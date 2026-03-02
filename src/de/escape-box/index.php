@@ -98,9 +98,9 @@
         'sentences' => [
             'Vom Escape Game zur Escape Box: Eine geniale Neuinterpretation!' , 
             'Ein innovatives Projekt, das psychische Gesundheit durch Spiel entstigmatisieren soll!',
-            'Die Idee zur Escape Box entstand nach dem Erfolg des Escape Games, das bei den JdS 2024 im L\'Aigle Noir präsentiert wurde. Viele Partner baten das Freiburger Komitee, das Escape Game bei Veranstaltungen erneut spielen zu können, doch das Format ließ sich nicht einfach übertragen. Daher wurde das Escape Game neu erfunden – als kompakte Escape Box: mobiler und reisefähig!',
-            'Ein Auftrag wurde einer Person mit eigener psychischer Beeinträchtigung anvertraut, die sich für Escape Games begeistert und in der Spielekonzeption erfahren ist. Ihre Arbeit wurde von verschiedenen talentierten Partnern unterstützt: Fondation St-Louis (Schreiner des Chantier Écologique), White Ermine Studio Game (Elektronik, Informatik, Website), Frilance (Anmeldeformular JdS), Polygravia (Visuelle Gestaltung und Druck), Brick Occasion (Bulle): immersive Räume.',
-            'Die Konzeption und Umsetzung der Escape Box dauerten etwa ein Jahr.',
+            'Die Idee der Escape Box entstand nach dem Erfolg des Escape Games, das 2024 in Zusammenarbeit mit Entrée de Jeux bei den JdS im Aigle Noir präsentiert wurde. Zahlreiche Partner baten das Freiburger Komitee, das Escape Game bei Veranstaltungen erneut anbieten zu dürfen, doch das Spiel ließ sich in diesem Format nicht wiederverwendbar aufbauen. Das Escape Game wurde daher im Taschenformat neu erfunden: die Escape Box, mobiler und reisefertig!',
+            'Ein Auftrag wurde einer Person mit eigener psychischer Beeinträchtigung anvertraut, die sich für Escape Games begeistert und in der Spielekonzeption erfahren ist. Ihre Arbeit wurde von verschiedenen talentierten Partnern unterstützt: Fondation St-Louis (Team des Chantier Écologique), White Ermine Studio Game (Elektronik, Informatik, Website), Frilance (Anmeldeformular JdS), Polygravia (Visuelle Gestaltung und Druck), Brick Occasion (Bulle): immersive Räume.',
+            'Die Konzeption und Umsetzung der Escape Box dauerten etwa zwei Jahre.',
             'Ergebnis: eine immersive Box, die mit Menschlichkeit und Effektivität für das Thema psychische Gesundheit sensibilisiert.',
         ]
     ]) ?>
