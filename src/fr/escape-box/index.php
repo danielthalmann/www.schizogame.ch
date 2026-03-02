@@ -61,6 +61,7 @@
             'Inscriptions obligatoires via le site de Ludesco – Ne manque pas cette occasion unique de jouer, échanger et changer de regard sur la santé mentale dans l’ambiance festive du festival !',
         ],
         'link_text' => 'Ludesco',
+        'link_target' => 'blank',
         'link_url' => 'https://ludesco.ch/',
     ]) ?>
 

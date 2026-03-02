@@ -61,6 +61,7 @@
             'Anmeldung erforderlich über die Website von Ludesco – Verpasse nicht diese einzigartige Gelegenheit zu spielen, dich auszutauschen und den Blick auf psychische Gesundheit in der festlichen Festivalstimmung zu verändern!',
         ],
         'link_text' => 'Ludesco',
+        'link_target' => 'blank',
         'link_url' => 'https://ludesco.ch/',
     ]) ?>
 
