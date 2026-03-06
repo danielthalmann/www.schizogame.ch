@@ -47,8 +47,8 @@
         ],
         'link_text' => 'Reservierungen',
         'link_url' => 'https://reservations.schizogame.ch/',
-        'image' => url('images/affiche-jds2026.png'),
-        'image_url' => url('medias/JDS2026_Affiches_A3.pdf'),
+        'image' => url('images/affiche-jds2026-DE.png'),
+        'image_url' => url('medias/JDS2026_DE.pdf'),
     ]) ?>    
 
     <?= component('block_sentence',
