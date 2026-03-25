@@ -37,7 +37,7 @@
             'Que tu sois joueur.se aguerri.e ou simple curieux.se, cette aventure t’invite à dépasser tes préjugés et à vivre un moment fort, à la fois ludique et profondément humain. Une chose est sûre : tu ne verras plus la santé mentale du même œil !',
         ]
     ]) ?>    
-
+    <?php /*
     <?= component('block_image',
     [
         'title' => 'Viens tester l’Escape Box et d’autres jeux uniques au cœur de Fribourg !',
@@ -49,7 +49,9 @@
         'link_url' => 'https://reservations.schizogame.ch/',
         'image' => url('images/affiche-jds2026.png'),
         'image_url' => url('medias/JDS2026_Affiches_A3.pdf'),
-    ]) ?>    
+    ]) ?>   
+
+    */ ?>
 
     <?= component('block_sentence',
     [

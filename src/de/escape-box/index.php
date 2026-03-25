@@ -37,7 +37,7 @@
             'Ob erfahrener Spieler oder neugierige Person, dieses Abenteuer lädt dich ein, Vorurteile zu überwinden und einen intensiven, zugleich spielerischen und zutiefst menschlichen Moment zu erleben. Eines ist sicher: Du wirst psychische Gesundheit mit anderen Augen sehen!',
         ]
     ]) ?>    
-
+    <?php /*
     <?= component('block_image',
     [
         'title' => 'Komm und teste die Escape Box und andere einzigartige Spiele im Herzen von Freiburg!',
@@ -50,6 +50,7 @@
         'image' => url('images/affiche-jds2026-DE.png'),
         'image_url' => url('medias/JDS2026_DE.pdf'),
     ]) ?>    
+     */ ?>
 
     <?= component('block_sentence',
     [
