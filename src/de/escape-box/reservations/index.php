@@ -41,27 +41,27 @@
 
                     </div>   
                     
-                    <h2 class="mb-3 font-bold">Conditions de location</h2>
+                    <h2 class="mb-3 font-bold">Mietbedingungen</h2>
                     
                     <div class="mb-3">
                     
-                        Une réservation préalable par le biais du formulaire de réservation est nécessaire. <br>
-                        Un contrat de bail devra être signé et un état des lieux sera fait avant le retrait et à la restitution de l'Escape Box. <br>
-                        Un <span class="font-semibold">montant de CHF 100.-</span> est demandée pour la durée de la location (montant destiné à l'entretien de l'Escape Box).<br>
-                        Vous assumez et organisez entièrement le transport de l'Escape Box.<br>
-                        <div class="mt-3"><a class="text-escapebox font-semibold" href="#">Contrat de location</a></div>
+                        Eine vorherige Reservierung über das Reservierungsformular ist erforderlich. <br>
+                        Ein Mietvertrag muss unterzeichnet werden und eine Zustandsbeschreibung wird vor der Abholung und bei der Rückgabe der Escape Box erstellt. <br>
+                        Ein <span class="font-semibold">Betrag von CHF 50.-</span> wird für die Mietdauer verlangt (Betrag für die Wartung der Escape Box).<br>
+                        Sie übernehmen und organisieren den gesamten Transport der Escape Box.<br>
+                        <div class="mt-3"><a class="text-escapebox font-semibold" href="#">Mietvertrag</a></div>
                    
                     </div>
 
 
-                    <h2 class="mb-3 font-bold">L'Escape Box</h2>
+                    <h2 class="mb-3 font-bold">Die Escape Box</h2>
                     
                     <div class="mb-3">
 
-                        Le retrait et la restitution se font auprès de <span class="font-semibold">la Fondation Horizon Sud, Route de la Rotonde 25, 1633 Marsens</span>.<br>
-                        L'Escape Box pèse environ 50 kg.<br>
-                        Elle mesure un mètre de long, sur 50 centimètres de large et 50 centimètres de haut.<br>
-                        Il faut prévoir deux personnes minimum et un véhicule adapté pour la déplacer.<br>
+                        Die Abholung und Rückgabe erfolgen bei der <span class="font-semibold">Fondation Horizon Sud, Route de la Rotonde 25, 1633 Marsens</span>.<br>
+                        Die Escape Box wiegt etwa 50 kg.<br>
+                        Sie misst einen Meter in der Länge, 50 Zentimeter in der Breite und 50 Zentimeter in der Höhe.<br>
+                        Es müssen mindestens zwei Personen und ein geeignetes Fahrzeug für den Transport vorgesehen werden.<br>
 
                     </div>
 

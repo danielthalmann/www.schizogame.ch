@@ -47,7 +47,7 @@
                     
                         Une réservation préalable par le biais du formulaire de réservation est nécessaire. <br>
                         Un contrat de bail devra être signé et un état des lieux sera fait avant le retrait et à la restitution de l'Escape Box. <br>
-                        Un <span class="font-semibold">montant de CHF 100.-</span> est demandée pour la durée de la location (montant destiné à l'entretien de l'Escape Box).<br>
+                        Un <span class="font-semibold">montant de CHF 50.-</span> est demandée pour la durée de la location (montant destiné à l'entretien de l'Escape Box).<br>
                         Vous assumez et organisez entièrement le transport de l'Escape Box.<br>
                         <div class="mt-3"><a class="text-escapebox font-semibold" href="#">Contrat de location</a></div>
 
