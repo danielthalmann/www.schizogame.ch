@@ -66,7 +66,7 @@
 
                     </div>
 
-                    <div class="mt-10 mb-3">Toute demande de renseignements peut être faite via: <span class="font-semibold">secretariat@horizonsud.ch</span> (mardi-mercredi et jeudi matin)</div>
+                    <div class="mt-10 mb-3">Toute demande de renseignements peut être faite via: <span class="font-semibold">info@horizonsud.ch</span> (mardi-mercredi et jeudi matin)</div>
 
 
             </div>
