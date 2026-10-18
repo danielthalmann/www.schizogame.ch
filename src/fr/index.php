@@ -30,6 +30,7 @@
         'link_text' => 'Info et inscription'
     ]) ?>
 
+    <?= component('carousel') ?>
 
     <!-- Start block -->
     <section class="bg-neutral-900  ">

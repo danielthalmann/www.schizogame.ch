@@ -15,3 +15,4 @@
 
 <script src="<?= url('js/service.js') ?>"></script>
 <script src="<?= url('js/menu.js') ?>"></script>
+<script src="<?= url('js/carousel.js') ?>"></script>
