@@ -2,6 +2,7 @@ const Carousel = function (items, options) {
 
     items.forEach((item) => {
         item.el.classList.add('absolute');
+        item.el.classList.add('inset-0');
     });
 
     function showItem(position) {
@@ -25,17 +26,32 @@ const Carousel = function (items, options) {
             item.el.classList.remove('translate-x-0');
             item.el.classList.remove('translate-x-full');
             item.el.classList.remove('-translate-x-full');
-            item.el.classList.remove('z-10');
-            item.el.classList.remove('z-20');
             item.el.classList.remove('z-30');
-
+            item.el.classList.remove('z-20');
+            item.el.classList.remove('z-10');
         });
-        itemPrev.el.classList.add('z-30');
-        itemPrev.el.classList.add('-translate-x-full');
-        item.el.classList.add('z-20');
-        item.el.classList.add('translate-x-0');
-        itemNext.el.classList.add('z-10');
-        itemNext.el.classList.add('translate-x-full');
+
+//        itemPrev.el.classList.add('-translate-x-full');
+//        item.el.classList.add('translate-x-0');
+//        itemNext.el.classList.add('translate-x-full');
+        
+        if (position + items.length > items.length + currentPosition) {
+            itemPrev.el.classList.add('-translate-x-full');
+            item.el.classList.add('translate-x-0');
+            
+
+            itemPrev.el.classList.add('z-30');
+            item.el.classList.add('z-20');
+            itemNext.el.classList.add('z-10');
+        } else {
+            
+            item.el.classList.add('translate-x-0');
+            itemNext.el.classList.add('translate-x-full');
+
+            itemPrev.el.classList.add('z-10');
+            item.el.classList.add('z-20');
+            itemNext.el.classList.add('z-30');
+        }        
 
         // Show the selected item
         itemPrev.el.classList.remove('hidden');
@@ -125,9 +141,9 @@ if (!carouselElement) {
         interval: 3000,
 
         indicators: {
-            activeClasses: 'bg-white dark:bg-gray-800',
+            activeClasses: 'bg-white',
             inactiveClasses:
-                'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+                'bg-white/50 hover:bg-white',
             items: indicatorItems,
         },
         nextEl : carouselElement.querySelector('[data-carousel-next]'),
