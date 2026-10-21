@@ -5,59 +5,49 @@ const Carousel = function (items, options) {
         item.el.classList.add('inset-0');
     });
 
-    function showItem(position) {
+    const translateClasses = ['translate-x-0', 'translate-x-full', '-translate-x-full'];
 
-        if (position < 0) {
-            position = items.length - 1;
-        }
+    function setTranslate(item, translateClass) {
+        item.el.classList.remove(...translateClasses);
+        item.el.classList.add(translateClass);
+    }
 
-        position = position % items.length;
+    // direction: 1 = next, -1 = previous, 0 = no animation
+    function showItem(position, direction = 0) {
+
+        position = ((position % items.length) + items.length) % items.length;
 
         const item = items.find((item) => item.position === position);
-        const itemPrev = items.find((item) => item.position === (position - 1 + items.length) % items.length);
-        const itemNext = items.find((item) => item.position === (position + 1) % items.length);
-        if (!item || !itemPrev || !itemNext) {
+        if (!item) {
             throw new Error(`Item with position ${position} not found`);
         }
 
-        // Hide all items
-        items.forEach((item) => {
-            item.el.classList.add('hidden');
-            item.el.classList.remove('translate-x-0');
-            item.el.classList.remove('translate-x-full');
-            item.el.classList.remove('-translate-x-full');
-            item.el.classList.remove('z-30');
-            item.el.classList.remove('z-20');
-            item.el.classList.remove('z-10');
+        const itemCurrent = items.find((item) => item.position === currentPosition);
+        const animate = direction !== 0 && itemCurrent && itemCurrent !== item;
+
+        // Hide all items except the outgoing and incoming ones
+        items.forEach((other) => {
+            if (other !== item && (!animate || other !== itemCurrent)) {
+                other.el.classList.add('hidden');
+            }
         });
 
-//        itemPrev.el.classList.add('-translate-x-full');
-//        item.el.classList.add('translate-x-0');
-//        itemNext.el.classList.add('translate-x-full');
-        
-        if (position + items.length > items.length + currentPosition) {
-            itemPrev.el.classList.add('-translate-x-full');
-            item.el.classList.add('translate-x-0');
-            
+        if (animate) {
+            // Place the incoming item on the correct side without transition
+            item.el.style.transition = 'none';
+            setTranslate(item, direction > 0 ? 'translate-x-full' : '-translate-x-full');
+            item.el.classList.remove('hidden');
+            item.el.offsetWidth; // force reflow so the starting position is applied
+            item.el.style.transition = '';
 
-            itemPrev.el.classList.add('z-30');
-            item.el.classList.add('z-20');
-            itemNext.el.classList.add('z-10');
-        } else {
-            
-            item.el.classList.add('translate-x-0');
-            itemNext.el.classList.add('translate-x-full');
-
-            itemPrev.el.classList.add('z-10');
-            item.el.classList.add('z-20');
-            itemNext.el.classList.add('z-30');
-        }        
+            // Slide the outgoing item out on the opposite side
+            setTranslate(itemCurrent, direction > 0 ? '-translate-x-full' : 'translate-x-full');
+        }
 
         // Show the selected item
-        itemPrev.el.classList.remove('hidden');
+        setTranslate(item, 'translate-x-0');
         item.el.classList.remove('hidden');
-        itemNext.el.classList.remove('hidden');
-        
+
         // Update indicators
         if (options.indicators && options.indicators.items) {
             options.indicators.items.forEach((indicator) => {
@@ -84,14 +74,14 @@ const Carousel = function (items, options) {
     currentPosition = showItem(currentPosition);
 
     options.nextEl?.addEventListener('click', () => {
-        currentPosition = showItem(currentPosition + 1);
+        currentPosition = showItem(currentPosition + 1, 1);
         if (typeof options.onNext === 'function') {
             options.onNext(currentPosition);
         }
     });
     
     options.prevEl?.addEventListener('click', () => {                 
-        currentPosition = showItem(currentPosition - 1);
+        currentPosition = showItem(currentPosition - 1, -1);
         if (typeof options.onPrev === 'function') {
             options.onPrev(currentPosition);
         }
@@ -100,7 +90,7 @@ const Carousel = function (items, options) {
     if (options.indicators && options.indicators.items) {
         options.indicators.items.forEach((indicator) => {
             indicator.el.addEventListener('click', () => {
-                currentPosition = showItem(indicator.position);
+                currentPosition = showItem(indicator.position, Math.sign(indicator.position - currentPosition));
             });
         });
     }
