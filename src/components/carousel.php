@@ -17,7 +17,7 @@
                     'Découvrez les dernières améliorations',
                     '<span class="font-bold">Une nouvelle langue<br>Des questions actualisées</span>'
                 ],
-                'link_url' => 'https://psyquiz.ch/',
+                'link_url' => url( 'fr/psyquiz/'),
                 'link_text' => 'Plus d\'informations'
             ]) ?>
 

@@ -70,32 +70,19 @@
     </section>
     <!-- End block -->
 
-    <!-- Start block -->
-    <section class="bg-neutral-200">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-            <!-- Row -->
-            <div class="items-center">
-                <div class="text-gray-500 sm:text-lg">
-                    <?= component('title2', ['title' => 'Qui sommes nous ?']) ?>
-                    <div class="mb-3">
-                        <div>
-
-                            <p class="mb-5">Depuis 2004, l’association PositiveMinders coordonne en Suisse et au niveau international <span class="whitespace-pre">les Journées de la Schizophrénie (JdS)</span> pour raconter et dédramatiser la maladie psychique.</p>
-
-                            <p class="mb-5">Les partenaires des JdS organisent des événements visant à sensibiliser le grand public et les jeunes en particuliers sur les troubles psychiques. Ces manifestations ont également pour but d’aider les personnes concernées et leurs proches à sortir de l’isolement, les informer sur les possibilités de soins et de détection précoce pour augmenter les chances d’amélioration face à la maladie.</p>
-
-                            <p class="mb-5">Le comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, ils œuvrent à la déstigmatisation des troubles psychiques et au renforcement de l’accès aux prestations locales.</p>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End block -->
-
+    <?= component('block_sentence',
+    [
+        'css' => 'bg-neutral-200',
+        'title' => 'Qui sommes nous ?',
+        'title_center' => true,
+        'sentences' => [
+            "Le Comité fribourgeois des Journées de la schizophrénie (JdS) s’engage à parler de santé mentale autrement. L’objectif : briser les tabous, déconstruire les idées reçues et rendre les sujets de santé mentale plus accessibles.",
+            "Les partenaires du comité fribourgeois des JdS organisent, depuis 2004 en collaboration avec l'association PositiveMinders (qui coordonne en Suisse et au niveau international les Journées de la Schizophrénie pour raconter et dédramatiser la maladie psychique), des événements visant à sensibiliser le grand public et les jeunes en particuliers sur les troubles psychiques. Ces manifestations ont également pour but d’aider les personnes concernées et leurs proches à sortir de l’isolement, les informer sur les possibilités de soins et de détection précoce pour augmenter les chances d’amélioration face à la maladie.",
+            "Le comité fribourgeois des JdS est composé d’une personne concernée, de proches et professionnel-le-s ; ensemble, ils œuvrent à la déstigmatisation des troubles psychiques et au renforcement de l’accès aux prestations locales.",
+            "Parce que comprendre passe aussi par l’expérience, notre comité mise sur la ludification. Jeux, défis, immersion : ici, on apprend en jouant. Que ce soit à travers un jeu vidéo, un quiz sur mobile ou une escape box immersive, chaque outil propose une manière interactive de découvrir la réalité des troubles psychiques, et en particulier de la schizophrénie.",
+            "Ce site te permet d’explorer ces expériences, d’en apprendre plus et, surtout, d’ouvrir le dialogue sur la santé mentale.",
+        ]
+    ]) ?>
 
     <?= component('committee', ['lang' => 'fr']) ?>
 
