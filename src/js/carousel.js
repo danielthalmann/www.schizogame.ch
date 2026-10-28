@@ -95,6 +95,27 @@ const Carousel = function (items, options) {
         });
     }
 
+    let timerId = null;
+
+    function startTimer() {
+        if (options.interval) {
+            timerId = setInterval(() => {
+                currentPosition = showItem(currentPosition + 1, 1);
+            }, options.interval);
+        }
+    }
+    function stopTimer() {
+        if (timerId) {
+            clearInterval(timerId);
+            timerId = null;
+        }
+    }
+
+    carouselElement.addEventListener('mouseenter', stopTimer);
+    carouselElement.addEventListener('mouseleave', startTimer);
+
+    startTimer();
+
     return this;
 
 }
@@ -127,8 +148,8 @@ if (!carouselElement) {
     // options with default values
     const options = {
         carouselElement: carouselElement,
-        defaultPosition: 1,
-        interval: 3000,
+        defaultPosition: 0,
+        interval: 8000,
 
         indicators: {
             activeClasses: 'bg-white',
