@@ -11,15 +11,14 @@
                     <?= component('title2', ['title' => 'Partner']) ?>
                     <?php endif; ?>
 
-                    <div class="col-span-2 space-y-8 grid grid-cols-1 md:grid-cols-4 md:gap-12 md:space-y-0">
+                    <div class="col-span-2 space-y-8 grid grid-cols-1 md:grid-cols-5 md:gap-12 md:space-y-0">
                         <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://loro.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_loterie_romande.jpg') ?>" alt="logo_loterie_romande"></a>
                         </div>
                         <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://stopsuicide.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_stop_suicide.png') ?>" alt="logo_stop_suicide"></a>
                         </div>
-
-                        
+                     
                         <div class="flex mx-auto items-center">
                             <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo_white_ermine"></a>
                         </div>

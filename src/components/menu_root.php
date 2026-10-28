@@ -24,11 +24,14 @@
                             <div class="h-full inline-block border-jds-500 border-l-2"></div>
                         </li>                         
                         <?php endif; ?>
+                        <?php /*
                         <?php if ($lang == 'fr') : ?>
                         <?= menu('Psyquiz', 'https://psyquiz.ch/') ?>
                         <?php elseif ($lang == 'de') : ?>
                         <?= menu('Psyquiz', 'https://psyquiz.ch/de/') ?>
                         <?php endif; ?>
+                        */ ?>
+                        <?= menu('Psyquiz', url($lang . '/psyquiz/')) ?>
                         <?= menu('Between two realities', url($lang . '/between-two-realities/')) ?>
                         <?= menu('Escape box', url($lang . '/escape-box/')) ?>
                         <li class="hidden lg:inline m-2 bg-white rounded-xl lg:border-none lg:bg-transparent">
