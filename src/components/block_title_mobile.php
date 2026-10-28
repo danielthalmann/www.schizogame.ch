@@ -10,7 +10,7 @@
             <p class="mb-6 font-light text-gray-100 lg:mb-2 md:text-lg lg:text-xl">
                 <?= $description ?>
             </p>
-            <?php if ($lang == 'fr') : ?>
+            <?php if (!isset($lang) || $lang == 'fr') : ?>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4"><a
                     href="https://apps.apple.com/ch/app/psyquiz/id1610720564?l=fr-FR" target="_blank"
                     rel="noopener noreferrer"

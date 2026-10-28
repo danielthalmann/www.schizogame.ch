@@ -30,8 +30,6 @@
     ]) ?>    
 
 
-
-
     <!-- Start block -->
     <section class="bg-neutral-900">
 

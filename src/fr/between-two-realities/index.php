@@ -29,6 +29,15 @@
         ]
     ]) ?>
 
+    <?= component('block_main',
+    [
+        //'toptext' => 'nouvelles fonctionalités',
+        'title' => 'Between two realities',
+        'description' => 'Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. ',
+        'video' => url('videos/between_two_realities.mp4'),
+    ]) ?>    
+
+
     <?php /* 
     <header class="fixed w-full">
         <nav class="bg-gray-200 border-gray-200 py-2.5">
@@ -73,14 +82,10 @@
     */ ?>
 
     <!-- Start block -->
+    <a name="game"></a>
     <section class="bg-radial-[at_50%_75%] from-neutral-800 to-jdsgray-500 text-white">
         <div class="grid grid-cols-1 max-w-screen-xl mx-auto lg:min-h-screen">
             <div class="mt-20 p-5">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#50bd21]">Between two realities</h1>
-                <a name="game"></a>
-                <p class="max-w-2xl mb-6 font-light text-gray-100 lg:mb-2 md:text-lg lg:text-xl">
-                    Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. 
-                </p>
                 <div class="text-right">
                     <button class="bg-jds-500 cursor-pointer text-neutral-100 p-3 rounded-t-lg shadow-lg shadow-jdsgray-500/50" id="togglefullscreen">En plein écran</button>
                 </div>
