@@ -98,7 +98,7 @@ const Carousel = function (items, options) {
     let timerId = null;
 
     function startTimer() {
-        if (options.interval) {
+        if (options.interval && options.interval > 0) {
             timerId = setInterval(() => {
                 currentPosition = showItem(currentPosition + 1, 1);
             }, options.interval);
@@ -149,7 +149,7 @@ if (!carouselElement) {
     const options = {
         carouselElement: carouselElement,
         defaultPosition: 0,
-        interval: 8000,
+        interval: 0, //8000,
 
         indicators: {
             activeClasses: 'bg-white',

@@ -1,23 +1,21 @@
 
 
-
-<div id="carousel" class="relative w-full bg-gray-200 data-carousel="slide">
+<div id="carousel" class="w-full h-full cursor-grab" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden md:h-96">
+    <div class="relative h-full overflow-hidden">
          <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                //'toptext' => 'nouvelles fonctionalités',
-                'css' => 'bg-psyquiz',
+                'toptext' => 'Nouvelles fonctionnalités',
+                'picture' => url('images/hao-wang-unsplash-scaled.jpg'),
                 'title' => 'PsyQuiz 4.0',
                 'sentences' => [
                     'Info ou intox : sauras-tu distinguer le vrai du faux sur les troubles psychiques ?' , 
-                    '&nbsp;',
                     'Découvrez les dernières améliorations',
                     '<span class="font-bold">Une nouvelle langue<br>Des questions actualisées</span>'
                 ],
-                'link_url' => url( 'fr/psyquiz/'),
+                'link_url' => url('fr/psyquiz/'),
                 'link_text' => 'Plus d\'informations'
             ]) ?>
 
@@ -26,14 +24,13 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                //'toptext' => 'nouvelles fonctionalités',
-                'css' => ' bg-btr',
+                'picture' => url('images/btr_500x600.png'),
                 'title' => 'Between two realities',
                 'sentences' => [
                     'Un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.' , 
                     'Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.',
                 ],
-                'link_url' => url( 'fr/between-two-realities/'),
+                'link_url' => url('fr/between-two-realities/'),
                 'link_text' => 'Plus d\'informations'
             ]) 
             ?>
@@ -42,20 +39,19 @@
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                //'toptext' => 'nouvelles fonctionalités',
-                'css' => ' bg-btr',
+                'picture' => url('images/escape-game_500x600.png'),
                 'title' => 'Escape Box',
                 'sentences' => [
                     'En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
                 ],
-                'link_url' => url( 'fr/escape-box/'),
+                'link_url' => url('fr/escape-box/'),
                 'link_text' => 'Plus d\'informations'
             ]) 
             ?>
         </div>
     </div>
     <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-6 left-1/2 space-x-3 rtl:space-x-reverse">
         <button type="button" class="w-3 h-3 rounded-full w-5 h-5 cursor-pointer" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full w-5 h-5 cursor-pointer" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" class="w-3 h-3 rounded-full w-5 h-5 cursor-pointer" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>

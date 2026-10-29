@@ -29,9 +29,10 @@
         ]
     ]) ?>
 
-    <?= component('block_main',
+    <?= component('block_title',
     [
-        //'toptext' => 'nouvelles fonctionalités',
+        'colorFrom' => 'from-jds-500',
+        'colorTo' => 'to-jdsgray-500',
         'title' => 'Between two realities',
         'description' => 'Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive. ',
         'video' => url('videos/between_two_realities.mp4'),

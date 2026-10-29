@@ -2,7 +2,7 @@
 <section
     class="bg-radial-[at_50%_75%] <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?>  text-white">
     <div class="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
-        <div class="mt-20 p-5">
+        <div class="mt-25 p-5">
             <h1
                 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#50bd21]">
                 <?= $title ?></h1>
@@ -73,9 +73,9 @@
             </div>
             <?php endif; ?>
         </div>
-        <div class="mt-20 p-5 hidden md:flex justify-center items-center">
+        <div class="mt-25 mb-5 md:mb-10 p-5 hidden md:flex justify-center items-center">
             <div
-                class="relative w-72 h-145 bg-gray-900 rounded-[3rem] shadow-2xl border-8 border-gray-900 overflow-hidden transform rotate-[-5deg] hover:rotate-0 transition-all duration-500">
+                class="relative w-62 h-125 bg-gray-900 rounded-[3rem] shadow-2xl border-8 border-gray-900 overflow-hidden transform rotate-[-5deg] hover:rotate-0 transition-all duration-500">
                 <div class="absolute top-0 w-full h-8 bg-black z-20 flex justify-between px-6 items-center">
                     <div class="text-white text-xs">9:41</div>
                     <div class="flex gap-1">
@@ -85,7 +85,7 @@
                 <div class="w-full h-full bg-white pt-12 px-4 flex flex-col items-center"
                     data-alpine-devtools-right-click="">
                     <div
-                        class="w-full h-48 bg-primary/10 rounded-2xl mb-6 flex items-center justify-center overflow-hidden p-6">
+                        class="w-full h-28 bg-primary/10 rounded-2xl mb-6 flex items-center justify-center overflow-hidden p-6">
                         <img alt="PsyQuiz Logo" class="w-full h-full object-contain drop-shadow-lg"
                             src="<?php echo url('images/psyquiz/logo_app.png') ?>">
                     </div>

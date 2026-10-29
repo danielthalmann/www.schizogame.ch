@@ -19,56 +19,10 @@
 
     <?= component('menu_root', ['lang' => 'fr']) ?>
     
-    <?= component('block_main',
+    <?= component('block_main_carousel',
     [
-        //'toptext' => 'nouvelles fonctionalités',
-        'title' => 'Escape Box',
-        'description' => 'Pour son édition 2026, le comité fribourgeois des Journées de la Schizophrénie vous invite à plonger dans une expérience immersive où coopération, réflexion et émotions s’entremêlent ! En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
-        //'video' => '../videos/between_two_realities.mp4',
-        'image' => url('images/escapebox/escape-box.png'),
-        'link_url' => url('fr/escape-box/'),
-        'link_text' => 'Info et inscription'
+        'lang' => 'fr'
     ]) ?>
-
-    <?= component('carousel') ?>
-
-    <!-- Start block -->
-    <section class="bg-neutral-900  ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
-
-            <?= component('card_game',
-            [
-                //'toptext' => 'nouvelles fonctionalités',
-                'css' => 'bg-psyquiz',
-                'title' => 'PsyQuiz 4.0',
-                'sentences' => [
-                    'Info ou intox : sauras-tu distinguer le vrai du faux sur les troubles psychiques ?' , 
-                    '&nbsp;',
-                    'Découvrez les dernières améliorations',
-                    '<span class="font-bold">Une nouvelle langue<br>Des questions actualisées</span>'
-                ],
-                'link_url' => 'https://psyquiz.ch/',
-                'link_text' => 'Plus d\'informations'
-            ]) ?>
-
-            <?= component('card_game',
-            [
-                //'toptext' => 'nouvelles fonctionalités',
-                'css' => ' bg-btr',
-                'title' => 'Between two realities',
-                'sentences' => [
-                    'Un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.' , 
-                    'Incarne Kevin, un jeune qui souffre de troubles schizophréniques et accompagne-le dans une mini aventure interactive.',
-                ],
-                'link_url' => url( 'fr/between-two-realities/'),
-                'link_text' => 'Plus d\'informations'
-            ]) 
-            ?>
-            
-        </div>
-
-    </section>
-    <!-- End block -->
 
     <?= component('block_sentence',
     [
