@@ -25,19 +25,19 @@ html {
 }
 
 .bg-psyquiz {
-  background-image: url(/images/hao-wang-unsplash-scaled.jpg); 
+  background-image: url(/images/psyquiz_800x800.jpg); 
   background-size: cover; 
   background-position: center center; 
   background-repeat: no-repeat;
 }
 .bg-escape {
-  background-image: url(/images/escape-game_500x600.png); 
+  background-image: url(/images/escape-game_800x800.png); 
   background-size: cover; 
   background-position: center center; 
   background-repeat: no-repeat;
 }
 .bg-btr {
-  background-image: url(/images/btr_500x600.png); 
+  background-image: url(/images/btr_800x800.png); 
   background-size: cover; 
   background-position: center center; 
   background-repeat: no-repeat;

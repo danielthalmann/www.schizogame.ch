@@ -1,8 +1,7 @@
 <!-- Start block -->
-<section
-    class="bg-radial-[at_50%_75%] <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?>  text-white">
-    <div class="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto">
-        <div class="mt-25 p-5">
+<section class="bg-radial-[at_50%_75%] <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?> text-white flex flex-col justify-center">
+    <div class="my-15 py-15  px-4 grid grid-cols-1 md:grid-cols-2 md:gap-4 max-w-7xl mx-auto">
+        <div class="md:my-auto">
             <h1
                 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#50bd21]">
                 <?= $title ?></h1>
@@ -73,7 +72,7 @@
             </div>
             <?php endif; ?>
         </div>
-        <div class="mt-25 mb-5 md:mb-10 p-5 hidden md:flex justify-center items-center">
+        <div class="hidden md:flex mx-auto item-center justify-center max-w-xl">
             <div
                 class="relative w-62 h-125 bg-gray-900 rounded-[3rem] shadow-2xl border-8 border-gray-900 overflow-hidden transform rotate-[-5deg] hover:rotate-0 transition-all duration-500">
                 <div class="absolute top-0 w-full h-8 bg-black z-20 flex justify-between px-6 items-center">

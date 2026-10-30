@@ -1,7 +1,7 @@
     <!-- Start block -->
-    <section class="bg-radial-[at_50%_75%] min-h-168 <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?> text-white flex flex-col justify-center">
-        <div class="px-4 grid grid-cols-1 md:grid-cols-2 md:gap-4 max-w-7xl mx-auto">
-            <div class="mt-25">
+    <section class="bg-radial-[at_50%_75%] <?= $colorFrom ?? 'from-[#134570]' ?> <?= $colorTo ?? 'to-[#387b9a]' ?> text-white flex flex-col justify-center">
+        <div class="my-15 py-15  px-4 grid grid-cols-1 md:grid-cols-2 md:gap-4 max-w-7xl mx-auto">
+            <div class="md:my-auto">
                 <div class="m-auto relative">
                     <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-jds-500">
                         <?= $title ?>
@@ -19,7 +19,7 @@
                     <?php endif; ?>                    
                 </div>
             </div>
-            <div class="md:mt-25 mb-5 md:mb-10 mx-auto flex item-center justify-center max-w-xl">
+            <div class="mx-auto flex item-center justify-center max-w-xl">
                 <?php if (isset($video)) : ?>
                 <video class="w-full shadow-lg shadow-jdsgray-500/50 " loop="true" autoplay="true" muted>
                     <source src="<?= $video ?>" type="video/mp4">

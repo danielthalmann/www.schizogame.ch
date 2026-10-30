@@ -18,7 +18,10 @@
 <body>
     <?php include(base_path('components/body_googletag.php')); ?>
 
-    <?= component('menu_root', ['lang' => 'fr', 'path' => 'escape-box/']) ?>
+    <?= component('menu_root', [
+        'lang' => 'fr', 
+        'path' => 'escape-box/',
+    ]) ?>
 
     <?= component('block_title',
     [

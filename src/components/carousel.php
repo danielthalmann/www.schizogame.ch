@@ -4,27 +4,25 @@
     <!-- Carousel wrapper -->
     <div class="relative h-full overflow-hidden">
          <!-- Item 1 -->
-        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                'toptext' => 'Nouvelles fonctionnalités',
-                'picture' => url('images/hao-wang-unsplash-scaled.jpg'),
-                'title' => 'PsyQuiz 4.0',
+                'toptext' => 'Édition 2026',
+                'picture' => url('images/escape-game_800x800.png'),
+                'title' => 'Escape Box',
                 'sentences' => [
-                    'Info ou intox : sauras-tu distinguer le vrai du faux sur les troubles psychiques ?' , 
-                    'Découvrez les dernières améliorations',
-                    '<span class="font-bold">Une nouvelle langue<br>Des questions actualisées</span>'
+                    'En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
                 ],
-                'link_url' => url('fr/psyquiz/'),
+                'link_url' => url('fr/escape-box/'),
                 'link_text' => 'Plus d\'informations'
-            ]) ?>
-
-        </div>
+            ]) 
+            ?>
+        </div>          
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                'picture' => url('images/btr_500x600.png'),
+                'picture' => url('images/btr_800x800.png'),
                 'title' => 'Between two realities',
                 'sentences' => [
                     'Un jeu vidéo captivant qui vous plonge au cœur de la schizophrénie.' , 
@@ -36,18 +34,20 @@
             ?>
         </div>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
             [
-                'picture' => url('images/escape-game_500x600.png'),
-                'title' => 'Escape Box',
+                'picture' => url('images/psyquiz_800x800.png'),
+                'title' => 'PsyQuiz',
                 'sentences' => [
-                    'En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
+                    'Info ou intox : sauras-tu distinguer le vrai du faux sur les troubles psychiques ?' , 
+                    'Découvrez les dernières améliorations',
+                    '<span class="font-bold">Une nouvelle langue<br>Des questions actualisées</span>'
                 ],
-                'link_url' => url('fr/escape-box/'),
+                'link_url' => url('fr/psyquiz/'),
                 'link_text' => 'Plus d\'informations'
-            ]) 
-            ?>
+            ]) ?>
+
         </div>
     </div>
     <!-- Slider indicators -->

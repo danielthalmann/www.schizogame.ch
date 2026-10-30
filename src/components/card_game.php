@@ -22,9 +22,9 @@
             </div>            
         </div>
 
-        <div class="hidden lg:block rounded-4xl relative border-15 border-neutral-900/75 lg:h-5/8 m-auto overflow-hidden">
-            <div class="w-full h-full overflow-hidden bg-neutral-900/75">
-                <img class="w-full h-full object-cover object-center" src="<?= $picture ?>" alt="<?= $title ?>" />
+        <div class="hidden lg:block relative rounded-2xl  m-auto overflow-hidden">
+            <div class="w-full h-full overflow-hidden">
+                <img class="w-full h-full object-cover object-center [mask-image:linear-gradient(to_bottom,_black_50%,_transparent_100%)]" src="<?= $picture ?>" alt="<?= $title ?>" />
             </div>
             <?php if (isset($toptext)) : ?>
             <label class="top-0 right-0 whitespace-nowrap absolute">
