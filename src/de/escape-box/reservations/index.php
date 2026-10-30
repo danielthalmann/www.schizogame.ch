@@ -23,13 +23,30 @@
         'transparent' => false,
         'path' => 'escape-box/reservations/']) ?>
 
+    
+    <?= component('breadcrumbs', [
+        'lang' => 'fr', 
+        'breadcrumbs' => [
+            'Escape Box' => url('de/escape-box/'),
+            'Miete' => '#',
+        ]
+    ]) ?>
 
     <!-- Start block -->
-    <section class="bg-escapebox pt-16">
-        <div class="max-w-screen-xl py-4 px-4 mx-auto lg:grid lg:grid-cols-3 gap-4 lg:py-8 lg:px-6">
+    <section class="bg-escapebox">
+        <div class="max-w-7xl px-4 mx-auto lg:space-y-20 lg:px-6">
+            <h2 class="text-3xl font-extrabold tracking-tight text-jds-500">Escape Box zur Miete</h2>
+        </div>
+    </section>
+    <!-- End block -->
 
+    <!-- Start block -->
+    <section class="bg-escapebox">
+                
+        <div class="max-w-screen-xl py-4 px-4 mx-auto lg:grid lg:grid-cols-3 gap-4 lg:py-8 lg:px-6">
+            
             <div class="bg-white rounded-xl p-5 mb-5 lg:mb-0 ">
-                    
+                
                     <h2 class="mb-3 font-bold">Wo die Escape Box zu finden ist</h2>
                     
                     <div class="mb-3">
@@ -92,7 +109,7 @@
 
                     <p class="mb-5">
 
-                        Indiquez les informations de l'entreprise ou l'organisation qui souhaite louer l'Escape Box.<br>
+                        Geben Sie die Informationen des Unternehmens oder der Organisation an, das bzw. die die Escape Box mieten möchte.<br>
 
                     </p>
 

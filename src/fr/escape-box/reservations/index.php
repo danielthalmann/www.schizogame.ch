@@ -22,10 +22,26 @@
         'lang' => 'fr', 
         'transparent' => false,
         'path' => 'escape-box/reservations/']) ?>
-
+    
+    <?= component('breadcrumbs', [
+        'lang' => 'fr', 
+        'breadcrumbs' => [
+            'Escape Box' => url('fr/escape-box/'),
+            'Location' => '#',
+        ]
+    ]) ?>
 
     <!-- Start block -->
-    <section class="bg-escapebox pt-16">
+    <section class="bg-escapebox">
+        <div class="max-w-7xl px-4 mx-auto lg:space-y-20 lg:px-6">
+            <h2 class="text-3xl font-extrabold tracking-tight text-jds-500">Escape Box en location</h2>
+        </div>
+    </section>
+    <!-- End block -->
+
+    <!-- Start block -->
+    <section class="bg-escapebox">   
+
         <div class="max-w-screen-xl py-4 px-4 mx-auto lg:grid lg:grid-cols-3 gap-4 lg:py-8 lg:px-6">
 
             <div class="bg-white rounded-xl p-5 mb-5 lg:mb-0 ">

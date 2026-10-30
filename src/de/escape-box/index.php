@@ -40,43 +40,15 @@
             'Ob erfahrener Spieler oder neugierige Person, dieses Abenteuer lädt dich ein, Vorurteile zu überwinden und einen intensiven, zugleich spielerischen und zutiefst menschlichen Moment zu erleben. Eines ist sicher: Du wirst psychische Gesundheit mit anderen Augen sehen!',
         ]
     ]) ?>    
-    <?php /*
-    <?= component('block_image',
-    [
-        'title' => 'Komm und teste die Escape Box und andere einzigartige Spiele im Herzen von Freiburg!',
-        'sentences' => [
-            'Vom 14. bis 21. März 2026 öffnet das Freiburger Komitee der Schizophrenie-Tage (JdS) die Dachböden des Restaurants L\'Aigle Noir in der Stadt Freiburg für eine Woche, die Spielen und psychischer Gesundheit gewidmet ist. Melde dich jetzt an, um die Escape Box zu spielen. Du kannst auch das Psyquiz und das Videospiel Between Two Realities erneut testen, zwei Highlights früherer JdS-Ausgaben.',
-            'Neben den immersiven Spielen gibt es einen Austauschbereich mit Fachpersonen aus der psychischen Gesundheitsversorgung, die deine Fragen beantworten und den Dialog fördern. Eine einzigartige Gelegenheit, zu entdecken, zu spielen und sich in einer freundlichen, unterstützenden Atmosphäre auszutauschen!',
-        ],
-        'link_text' => 'Reservierungen',
-        'link_url' => 'https://reservations.schizogame.ch/',
-        'image' => url('images/affiche-jds2026-DE.png'),
-        'image_url' => url('medias/JDS2026_DE.pdf'),
-    ]) ?>    
-     */ ?>
-
-    <?= component('block_sentence',
-    [
-        'css' => 'bg-neutral-200',
-        'title' => 'Ludesco-Veranstaltung',
-        'sentences' => [
-            'Escape Box bei Ludesco: 28.–29. März 2026' , 
-            'Die Escape Box ist am 28. und 29. März beim Festival Ludesco (www.ludesco.ch) in La Chaux-de-Fonds vertreten! Komm vorbei und erlebe diese immersive Erfahrung im Herzen des größten Spiel-Festivals der Romandie.',
-            'Anmeldung erforderlich über die Website von Ludesco – Verpasse nicht diese einzigartige Gelegenheit zu spielen, dich auszutauschen und den Blick auf psychische Gesundheit in der festlichen Festivalstimmung zu verändern!',
-        ],
-        'link_text' => 'Ludesco',
-        'link_target' => 'blank',
-        'link_url' => 'https://ludesco.ch/',
-    ]) ?>
 
     <?php if((new DateTime()) > (new DateTime('2026-03-01'))): ?>
     <?= component('block_sentence',
     [
         'css' => 'bg-escapebox-light text-white',
-        'title' => 'Nach der Veranstaltung',
+        'title' => 'Zur Miete',
         'sentences' => [
             'Escape Box zur Miete: Stelle psychische Gesundheit in den Mittelpunkt deiner Veranstaltung!' , 
-            'Nach den JdS und Ludesco kann die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
+            'Die Escape Box für Schulen, Organisationen, Vereine und Veranstaltungen gemietet werden, die für psychische Gesundheit sensibilisieren möchten (Tags der offenen Tür, Festivals, Workshops usw.).',
         ],
         'link_text' => 'Informtionen und Escape Box-Vermietung',
         'link_url' => url('de/escape-box/reservations'),        
