@@ -11,18 +11,21 @@
                     <?= component('title2', ['title' => 'Partner']) ?>
                     <?php endif; ?>
 
-                    <div class="col-span-2 space-y-8 grid grid-cols-1 md:grid-cols-4 md:gap-12 md:space-y-0">
+                    <div class="col-span-2 space-y-8 grid grid-cols-1 md:grid-cols-5 md:gap-12 md:space-y-0">
                         <div class="flex mx-auto items-center">
-                            <a target="_blank" href="https://brickoccasion.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_brick_occasion.svg') ?>" alt="logo-logo_brick_occasion"></a>
+                            <a target="_blank" href="https://brickoccasion.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_brick_occasion.svg') ?>" alt="logo_brick_occasion"></a>
                         </div>
                         <div class="flex mx-auto items-center">
-                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo-logo_white_ermine"></a>
+                            <a target="_blank" href="https://white-ermine.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_white_ermine.svg') ?>" alt="logo_white_ermine"></a>
                         </div>
                         <div class="flex mx-auto items-center">
-                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_polygravia.svg') ?>" alt="logo-logo_polygravia"></a>
+                            <a target="_blank" href="https://polygravia.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_polygravia.svg') ?>" alt="logo_polygravia"></a>
                         </div>
                         <div class="flex mx-auto items-center">
-                            <a target="_blank" href="https://frilance.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_frilance.png') ?>" alt="logo-frilance"></a>
+                            <a target="_blank" href="https://frilance.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_frilance.png') ?>" alt="logo_frilance"></a>
+                        </div>
+                        <div class="flex mx-auto items-center">
+                            <a target="_blank" href="https://timperone.ch/"><img class="max-h-52" src="<?= url('images/partners/logo_timperone.png') ?>" alt="logo_timperone"></a>
                         </div>
                     </div>
 
