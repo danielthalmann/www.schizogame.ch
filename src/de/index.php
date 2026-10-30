@@ -18,56 +18,10 @@
     <?php include(base_path('components/body_googletag.php')); ?>
     <?= component('menu_root', ['lang' => 'de']) ?>
 
-    <?= component('block_main',
+    <?= component('block_main_carousel',
     [
-        //'toptext' => 'nouvelles fonctionalités',
-        'title' => 'Escape Box',
-        'description' => 'Das Fribourger Komitee der Schizophrenie-Tage 2026 lädt Sie zu einem immersiven Erlebnis ein, bei dem Zusammenarbeit, Reflexion und Emotionen ineinandergreifen! Stellen Sie sich in Teams Herausforderungen, lösen Sie Rätsel und erkunden Sie die Konzepte von gegenseitiger Unterstützung, Genesung und Verständnis für andere. Ein interaktives Spiel, das auf neue Weise über psychische Gesundheit spricht: mit Neugier, Humor und Menschlichkeit.',
-        //'video' => '../videos/between_two_realities_de.mp4',
-        'image' => url('images/escapebox/escape-box.png'),
-        'link_url' => url('de/escape-box/'),
-        'link_text' => 'Informationen und Anmeldung'
-    ]) ?>    
-
-
-    <!-- Start block -->
-    <section class="bg-neutral-900">
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto lg:min-h-[800px]">
-
-
-            <?= component('card_game',
-            [
-                //'toptext' => 'neue Funktionen',
-                'css' => 'bg-psyquiz',
-                'title' => 'PsyQuiz 4.0',
-                'sentences' => [
-                    'Info oder Intox: Testen Sie Ihre Kenntnisse über psychische Störungen.',
-                    '&nbsp;',
-                    'Entdecken Sie die neuesten Verbesserungen',
-                    '<span class="font-bold">Eine neue Sprache<br>Aktualisierte Fragen</span>'
-                ],
-                'link_url' => 'https://psyquiz.ch/de',
-                'link_text' => 'Weitere Informationen'
-            ]) ?>
-
-            <?= component('card_game',
-            [
-                //'toptext' => 'neue Funktionen',
-                'css' => ' bg-btr',
-                'title' => 'Between two realities',
-                'sentences' => [
-                    'Ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.' , 
-                    'Kevin ist ein junger Mensch mit Schizophrenie. In diesem interaktiven Spiel können Sie in seine Haut schlüpfen und seine Welt erleben.',
-                ],
-                'link_url' => url( 'de/between-two-realities/'),
-                'link_text' => 'Weitere Informationen'
-            ]) ?> 
-
-        </div>
-
-    </section>
-    <!-- End block -->
+        'lang' => 'de'
+    ]) ?>
 
     <?= component('block_sentence',
     [
@@ -126,8 +80,6 @@
         </div>
     </section>
     <!-- End block -->
-
-
 
     <?= component('footer', ['lang' => 'de']) ?>
 

@@ -111,8 +111,10 @@ const Carousel = function (items, options) {
         }
     }
 
-    carouselElement.addEventListener('mouseenter', stopTimer);
-    carouselElement.addEventListener('mouseleave', startTimer);
+    if (options.interval && options.interval > 0 && options.autoPauseOnHover !== false) {
+        carouselElement.addEventListener('mouseenter', stopTimer);
+        carouselElement.addEventListener('mouseleave', startTimer);
+    }
 
     startTimer();
 
@@ -124,7 +126,7 @@ const Carousel = function (items, options) {
 const carouselElement = document.getElementById('carousel');
 
 if (!carouselElement) {
-    throw new Error('Carousel element not found');
+    console.info('Carousel element not found');
 } else {
 
     const items = [];
@@ -149,7 +151,8 @@ if (!carouselElement) {
     const options = {
         carouselElement: carouselElement,
         defaultPosition: 0,
-        interval: 0, //8000,
+        interval: 8000,
+        autoPauseOnHover: false,
 
         indicators: {
             activeClasses: 'bg-white',

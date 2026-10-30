@@ -3,6 +3,8 @@
 <div id="carousel" class="w-full h-full cursor-grab" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-full overflow-hidden">
+        <?php if ($lang == 'fr') : ?>
+
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <?= component('card_game',
@@ -11,7 +13,8 @@
                 'picture' => url('images/escape-game_800x800.png'),
                 'title' => 'Escape Box',
                 'sentences' => [
-                    'En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre. Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
+                    'En équipe, relevez des défis, résolvez des énigmes et explorez les notions d’entraide, de rétablissement et de regard sur l’autre.',
+                    'Un jeu immersif pour parler de santé mentale autrement : avec curiosité, humour et humanité.',
                 ],
                 'link_url' => url('fr/escape-box/'),
                 'link_text' => 'Plus d\'informations'
@@ -49,6 +52,58 @@
             ]) ?>
 
         </div>
+
+        <?php elseif( $lang == 'de') : ?>
+
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <?= component('card_game',
+            [
+                'toptext' => 'Ausgabe 2026',
+                'picture' => url('images/escape-game_800x800.png'),
+                'title' => 'Escape Box',
+                'sentences' => [
+                    'Stellen Sie sich in Teams Herausforderungen, lösen Sie Rätsel und erkunden Sie die Konzepte von gegenseitiger Unterstützung, Genesung und Verständnis für andere.',
+                    'Ein interaktives Spiel, das auf neue Weise über psychische Gesundheit spricht: mit Neugier, Humor und Menschlichkeit.',
+                ],
+                'link_url' => url('de/escape-box/'),
+                'link_text' => 'Weitere Informationen'
+            ]) 
+            ?>
+        </div>
+        <!-- Item 2 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <?= component('card_game',
+            [
+                'picture' => url('images/btr_800x800.png'),
+                'title' => 'Between two realities',
+                'sentences' => [
+                    'Ein fesselndes Videospiel, das Sie in das Herz der Schizophrenie eintauchen lässt.' , 
+                    'Kevin ist ein junger Mensch mit Schizophrenie. In diesem interaktiven Spiel können Sie in seine Haut schlüpfen und seine Welt erleben.',
+                ],
+                'link_url' => url( 'de/between-two-realities/'),
+                'link_text' => 'Weitere Informationen'
+            ]) ?> 
+        
+        </div>
+        <!-- Item 3 -->
+        <div class="h-full hidden duration-700 ease-in-out" data-carousel-item>
+            <?= component('card_game',
+            [
+                'picture' => url('images/psyquiz_800x800.png'),
+                'title' => 'PsyQuiz',
+                'sentences' => [
+                    'Info oder Intox: Testen Sie Ihre Kenntnisse über psychische Störungen.',
+                    'Entdecken Sie die neuesten Verbesserungen',
+                    '<span class="font-bold">Eine neue Sprache<br>Aktualisierte Fragen</span>'
+                ],
+                'link_url' => url('de/psyquiz/'),
+                'link_text' => 'Weitere Informationen'
+            ]) ?>
+        </div>
+
+        <?php endif; ?>
+
     </div>
     <!-- Slider indicators -->
     <div class="absolute z-30 flex -translate-x-1/2 bottom-6 left-1/2 space-x-3 rtl:space-x-reverse">
